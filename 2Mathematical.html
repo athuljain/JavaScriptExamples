@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <h1>Arithmetic Operations</h1>
+    
+    <input type="number" id="number1" placeholder="Enter first number">
+    <input type="number" id="number2" placeholder="Enter second number">
+    <button onclick="performOperations()">Calculate</button>
+    
+    <div id="result"></div>
+
+    <script>
+        function performOperations() {
+            const num1 = parseFloat(document.getElementById('number1').value);
+            const num2 = parseFloat(document.getElementById('number2').value);
+            const resultDiv = document.getElementById('result');
+
+            if (isNaN(num1) || isNaN(num2)) {
+                resultDiv.innerHTML = "<span style='color: red;'>Please enter valid numbers.</span>";
+                return;
+            }
+
+            const addition = num1 + num2;
+            const subtraction = num1 - num2;
+            const multiplication = num1 * num2;
+            const division = num2 !== 0 ? (num1 / num2).toFixed(2) : "undefined (division by zero)";
+
+            resultDiv.innerHTML = `
+                <p><strong>Addition:</strong> ${addition}</p>
+                <p><strong>Subtraction:</strong> ${subtraction}</p>
+                <p><strong>Multiplication:</strong> ${multiplication}</p>
+                <p><strong>Division:</strong> ${division}</p>
+            `;
+        }
+    </script>
+</body>
+</html> -->
