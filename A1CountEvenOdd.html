@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Even and Odd Numbers</title>
+</head>
+<body>
+    <h2>Count Even and Odd Numbers</h2>
+    <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas (e.g., 1,2,3,4)">
+    <button onclick="countEvenOdd()">Count</button>
+    <p id="result"></p>
+
+    <script>
+        function countEvenOdd() {
+            let input = document.getElementById('arrayInput').value;
+            let array = input.split(',').map(Number);
+            let evenCount = array.filter(num => num % 2 === 0).length;
+            let oddCount = array.length - evenCount;
+            document.getElementById('result').textContent = `Even: ${evenCount}, Odd: ${oddCount}`;
+        }
+    </script>
+</body>
+</html>
