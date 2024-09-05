@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -56,14 +56,44 @@
     <script>
         function reverseNumber() {
             let number = document.getElementById('numberInput').value;
+
             if (number === "") {
                 document.getElementById('result').textContent = 'Please enter a valid number.';
                 return;
             }
 
+            // No explicit conversion needed, the input will be treated as a string
             let reversedNumber = number.split('').reverse().join('');
             document.getElementById('result').textContent = `Reversed Number: ${reversedNumber}`;
         }
     </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+const a = 532;
+const split = a.toString().split(""); // Convert number to string and split into individual digits
+console.log("split:", split);
+
+const reverse = split.reverse(); // Reverse the array
+console.log("reverse:", reverse);
+
+const join = reverse.join(""); // Join the array back into a string
+console.log("join:", join);
+</script>
+<body>
+    <div>
+        <h4>split</h4>
+        <h4>reverse</h4>
+        <h4>join</h4>
+    </div>
 </body>
 </html>
