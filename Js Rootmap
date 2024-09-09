@@ -1,0 +1,136 @@
+**1.What is JavaScript?**
+
+    ```javascript
+    # JavaScript (JS) is a programming language used to make web pages interactive. It is one of the key technologies of the web, along with HTML and CSS. With JavaScript, you can add things like sliders, popups, and buttons that respond when clicked. Besides the browser, JavaScript is also used in other places like Node.js for server-side coding, Electron for desktop apps, and React Native for mobile apps.
+    ```
+
+
+**2.Javascript Variables?**
+
+   ```javascript
+   javascript Most of the time, a JavaScript application needs to work with information. To store and represent this information in the JavaScript codebase, we use variables. A variable is a container for a value.
+    
+   ```
+
+    ```javascript
+    Variable Declarations
+    To use variables in JavaScript, we first need to create it i.e. declare a variable. To declare variables, we use one of the var, let, or const keywords.
+    ```
+
+    // Using var
+   ```javascript
+    var name = "Alice";
+    var age = 25;
+   ```
+
+    // Using let
+   ```javascript
+    let city = "New York";
+   ```
+
+    // Using const
+
+    ```javascript
+    const country = "USA";
+    ```
+
+    // Output the variables
+```javascript
+    console.log("Name:", name);
+    console.log("Age:", age);
+    console.log("City:", city);
+    console.log("Country:", country);
+```
+
+
+    
+    ```javascript
+    var declares a variable that can be redeclared and reassigned.
+    let declares a block-scoped variable that can be reassigned but not redeclared in the same scope.
+    const declares a block-scoped variable that cannot be reassigned or redeclared.
+    ```
+    
+
+
+    
+3.What is Hoisting?
+
+    ```javascript
+    Hoisting in JavaScript is when variable and function declarations are automatically moved to the top of the code before it runs. This lets you use variables and functions before they're written, but only the declaration is moved, not the value or code.
+    ```
+
+    ```javascript
+    console.log(greeting); // Output: undefined
+    var greeting = "Hello";
+
+    // The above code works like this because of hoisting:
+    var greeting;
+    console.log(greeting); // Output: undefined
+    greeting = "Hello";
+
+    ```
+
+
+
+
+
+4.Datatypes
+
+```javascript
+Data type refers to the type of data that a JavaScript variable can hold. There are seven primitive data types in JavaScript (Number, BigInt, String, Boolean, Null, Undefined and Symbol). Objects and arrays are non-primitives.
+```
+
+```javascript
+Number: Used for any kind of number, like 5 or 3.14.
+String: Used for text, like "Hello" or 'JavaScript'.
+Boolean: Represents true or false.
+Undefined: A variable that has been declared but not given a value.
+Null: Represents an empty or non-existent value.
+Object: Used for more complex data like arrays, functions, or other objects.
+Symbol: A unique and immutable value, mainly used in more advanced programming.
+BigInt: For working with numbers larger than the regular Number type can handle.
+```
+
+
+
+
+
+
+```javascript
+Object in Js
+```
+```javascript
+In JavaScript, an object is a way to store data using key-value pairs. Each key has a value, and the value can be of any data type. 
+```
+
+```javascript
+// Creating an object
+const pen = {
+  color: "blue",
+  design: "smooth",
+  material: "plastic"
+};
+
+// Accessing object properties
+console.log(pen.color);     // Output: blue
+console.log(pen.design);    // Output: smooth
+console.log(pen.material);  // Output: plastic
+```
+
+```javascript
+// Creating a car object
+const car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2022,
+  isElectric: false,
+  features: ["Air Conditioning", "Bluetooth", "Backup Camera"]
+};
+
+// Accessing object properties
+console.log(car.brand);     // Output: Toyota
+console.log(car.model);     // Output: Corolla
+console.log(car.year);      // Output: 2022
+console.log(car.isElectric); // Output: false
+console.log(car.features);  // Output: ["Air Conditioning", "Bluetooth", "Backup Camera"]
+```

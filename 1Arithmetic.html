@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -72,8 +72,63 @@
         }
     </script>
 </body>
-</html>
+</html> -->
 
+<!-- if else  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <h1>Arithmetic Operations</h1>
+    
+    <input type="number" id="number1" placeholder="Enter first number">
+    <input type="number" id="number2" placeholder="Enter second number">
+    
+    <br><br>
+    
+    <button onclick="performOperation('add')">Addition</button>
+    <button onclick="performOperation('subtract')">Subtraction</button>
+    <button onclick="performOperation('multiply')">Multiplication</button>
+    <button onclick="performOperation('divide')">Division</button>
+    
+    <div id="result"></div>
+
+    <script>
+        function performOperation(operation) {
+            const num1 = parseFloat(document.getElementById('number1').value);
+            const num2 = parseFloat(document.getElementById('number2').value);
+            const resultDiv = document.getElementById('result');
+
+            if (isNaN(num1) || isNaN(num2)) {
+                resultDiv.innerHTML = "<span style='color: red;'>Please enter valid numbers.</span>";
+                return;
+            }
+
+            let result;
+            if (operation === 'add') {
+                result = num1 + num2;
+                resultDiv.innerHTML = `<p><strong>Addition:</strong> ${result}</p>`;
+            } else if (operation === 'subtract') {
+                result = num1 - num2;
+                resultDiv.innerHTML = `<p><strong>Subtraction:</strong> ${result}</p>`;
+            } else if (operation === 'multiply') {
+                result = num1 * num2;
+                resultDiv.innerHTML = `<p><strong>Multiplication:</strong> ${result}</p>`;
+            } else if (operation === 'divide') {
+                result = num2 !== 0 ? (num1 / num2).toFixed(2) : "undefined (division by zero)";
+                resultDiv.innerHTML = `<p><strong>Division:</strong> ${result}</p>`;
+            } else {
+                resultDiv.innerHTML = "<span style='color: red;'>Unknown operation.</span>";
+            }
+        }
+    </script>
+</body>
+</html>
 
 
 
