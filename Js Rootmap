@@ -52,7 +52,7 @@
     
 
 
-    
+
 3.What is Hoisting?
 
     ```javascript
@@ -134,3 +134,32 @@ console.log(car.year);      // Output: 2022
 console.log(car.isElectric); // Output: false
 console.log(car.features);  // Output: ["Air Conditioning", "Bluetooth", "Backup Camera"]
 ```
+
+
+
+
+```javascript
+Js Array
+
+
+Arrays in JavaScript are used to store multiple values in a single variable. Each value in an array is called an element, and the elements are indexed starting from 0.
+
+
+// Creating an array
+const fruits = ["Apple", "Banana", "Cherry"];
+
+// Accessing array elements
+console.log(fruits[0]); // Output: Apple
+console.log(fruits[1]); // Output: Banana
+console.log(fruits[2]); // Output: Cherry
+
+// Adding an element to the array
+fruits.push("Date");
+console.log(fruits); // Output: ["Apple", "Banana", "Cherry", "Date"]
+
+// Removing the last element
+fruits.pop();
+console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
+
+```
+
