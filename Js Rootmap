@@ -44,11 +44,11 @@
 
 
     
-    ```javascript
+
     var declares a variable that can be redeclared and reassigned.
     let declares a block-scoped variable that can be reassigned but not redeclared in the same scope.
     const declares a block-scoped variable that cannot be reassigned or redeclared.
-    ```
+
     
 
 
@@ -69,8 +69,6 @@
     greeting = "Hello";
 
     ```
-
-
 
 
 
@@ -161,5 +159,15 @@ console.log(fruits); // Output: ["Apple", "Banana", "Cherry", "Date"]
 fruits.pop();
 console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
 
-```
 
+
+ // Removing the first element
+fruits.shift()
+console.log(fruits)
+
+
+// Adding an element to the array
+ fruits.unshift("Mango")
+ console.log(fruits)
+ 
+```
