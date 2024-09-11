@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Merge Arrays</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Merge Two Arrays</h2>
-    <input type="text" id="arrayInput1" placeholder="Enter first array (e.g., 1,2,3)">
-    <input type="text" id="arrayInput2" placeholder="Enter second array (e.g., 4,5,6)">
+    <input
+      type="text"
+      id="arrayInput1"
+      placeholder="Enter first array (e.g., 1,2,3)"
+    />
+    <input
+      type="text"
+      id="arrayInput2"
+      placeholder="Enter second array (e.g., 4,5,6)"
+    />
     <button onclick="mergeArrays()">Merge</button>
     <p id="result"></p>
 
     <script>
-        function mergeArrays() {
-            let array1 = document.getElementById('arrayInput1').value.split(',').map(Number);
-            let array2 = document.getElementById('arrayInput2').value.split(',').map(Number);
-            let mergedArray = array1.concat(array2);
-            document.getElementById('result').textContent = "Merged Array: " + mergedArray.join(', ');
-        }
+      function mergeArrays() {
+        let array1 = document
+          .getElementById("arrayInput1")
+          .value.split(",")
+          .map(Number);
+        let array2 = document
+          .getElementById("arrayInput2")
+          .value.split(",")
+          .map(Number);
+        let mergedArray = array1.concat(array2);
+        document.getElementById("result").textContent =
+          "Merged Array: " + mergedArray.join(", ");
+      }
     </script>
-</body>
+  </body>
 </html>

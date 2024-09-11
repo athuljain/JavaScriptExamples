@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find Common Elements</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Find Common Elements Between Two Arrays</h2>
-    <input type="text" id="arrayInput1" placeholder="Enter first array (e.g., 1,2,3)">
-    <input type="text" id="arrayInput2" placeholder="Enter second array (e.g., 2,3,4)">
+    <input
+      type="text"
+      id="arrayInput1"
+      placeholder="Enter first array (e.g., 1,2,3)"
+    />
+    <input
+      type="text"
+      id="arrayInput2"
+      placeholder="Enter second array (e.g., 2,3,4)"
+    />
     <button onclick="findCommon()">Find Common Elements</button>
     <p id="result"></p>
 
     <script>
-        function findCommon() {
-            let array1 = document.getElementById('arrayInput1').value.split(',').map(Number);
-            let array2 = document.getElementById('arrayInput2').value.split(',').map(Number);
-            let common = array1.filter(value => array2.includes(value));
-            document.getElementById('result').textContent = "Common Elements: " + common.join(', ');
-        }
+      function findCommon() {
+        let array1 = document
+          .getElementById("arrayInput1")
+          .value.split(",")
+          .map(Number);
+        let array2 = document
+          .getElementById("arrayInput2")
+          .value.split(",")
+          .map(Number);
+        let common = array1.filter((value) => array2.includes(value));
+        document.getElementById("result").textContent =
+          "Common Elements: " + common.join(", ");
+      }
     </script>
-</body>
+  </body>
 </html>
