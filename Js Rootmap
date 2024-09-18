@@ -189,31 +189,33 @@ Practical/Hands-on Questions:
 
 
 Basic JavaScript Questions
-What is JavaScript?
 
-Answer: JavaScript is a high-level, interpreted programming language used to create interactive effects within web browsers. It is commonly used for client-side scripting to enhance the functionality of web pages.
+> What is JavaScript?
 
-What are the data types supported in JavaScript?
+  Answer: JavaScript is a high-level, interpreted programming language used to create interactive effects within web browsers. It is commonly used for client-side scripting to enhance the functionality of web pages.
 
-Answer: JavaScript supports the following data types:
+> What are the data types supported in JavaScript?
+
+   Answer: JavaScript supports the following data types:
 
 Primitive Types: Number, String, Boolean, Undefined, Null, Symbol (ES6), and BigInt (ES11).
 Non-Primitive Type: Object (which includes Arrays, Functions, and Dates).
-How do you declare a variable in JavaScript?
+
+
+> How do you declare a variable in JavaScript?
 
 Answer: Variables can be declared using var, let, or const. For example:
 
-javascript
-Copy code
+
 let name = 'John'; // Variable that can be reassigned
 const age = 30;   // Constant variable that cannot be reassigned
 var city = 'New York'; // Function-scoped variable (use `let` or `const` instead)
-What is a function in JavaScript, and how do you declare one?
+
+
+> What is a function in JavaScript, and how do you declare one?
 
 Answer: A function in JavaScript is a block of code designed to perform a particular task. It can be declared using the function keyword or as an arrow function. For example:
 
-javascript
-Copy code
 // Function declaration
 function greet(name) {
     return `Hello, ${name}!`;
@@ -221,20 +223,23 @@ function greet(name) {
 
 // Arrow function
 const greet = (name) => `Hello, ${name}!`;
-What is the difference between == and === in JavaScript?
+
+
+
+> What is the difference between == and === in JavaScript?
 
 Answer: == is the equality operator that performs type coercion before comparing values. === is the strict equality operator that checks both value and type, without performing type coercion. For example:
 
-javascript
-Copy code
+
 5 == '5';   // true (type coercion occurs)
 5 === '5';  // false (different types)
-What is an object in JavaScript?
+
+
+> What is an object in JavaScript?
 
 Answer: An object in JavaScript is a collection of key-value pairs where the keys are strings (or Symbols) and the values can be of any data type. Objects are used to store and manage data in a structured way. For example:
 
-javascript
-Copy code
+
 const person = {
     name: 'Alice',
     age: 25,
@@ -242,28 +247,31 @@ const person = {
         return `Hello, my name is ${this.name}`;
     }
 };
-How do you create an array in JavaScript?
+
+
+> How do you create an array in JavaScript?
 
 Answer: Arrays in JavaScript are used to store multiple values in a single variable. They can be created using square brackets []. For example:
 
-javascript
-Copy code
+
 const fruits = ['Apple', 'Banana', 'Cherry'];
-What is an event in JavaScript?
+
+
+> What is an event in JavaScript?
 
 Answer: An event is an occurrence that can be detected by JavaScript, such as user interactions (e.g., clicks, key presses) or changes in the document. JavaScript can be used to handle these events using event listeners. For example:
 
-javascript
-Copy code
+
 document.getElementById('myButton').addEventListener('click', () => {
     alert('Button clicked!');
 });
-What is a callback function?
+
+
+> What is a callback function?
 
 Answer: A callback function is a function that is passed as an argument to another function and is executed after the completion of that function. Callbacks are commonly used for asynchronous operations. For example:
 
-javascript
-Copy code
+
 function fetchData(callback) {
     setTimeout(() => {
         const data = 'Data fetched';
@@ -274,7 +282,10 @@ function fetchData(callback) {
 fetchData((data) => {
     console.log(data); // Output: Data fetched
 });
-What is the difference between null and undefined in JavaScript?
+
+
+
+> What is the difference between null and undefined in JavaScript?
 
 Answer:
 
@@ -282,12 +293,9 @@ null is a special value assigned to variables as a placeholder to indicate that 
 undefined is a value automatically assigned to variables that have been declared but not yet initialized.
 
 
+> Create a function that alerts "Hello, World!" when a button is clicked.
 
 
-
- Create a function that alerts "Hello, World!" when a button is clicked.
-
- 
 
 
 

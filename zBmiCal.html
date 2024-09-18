@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMI Calculator</title>
+
+</head>
+<body>
+    <h2>BMI Calculator</h2>
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" name="weight"><br><br>
+    <label for="height">Height (m):</label>
+    <input type="number" id="height" name="height"><br><br>
+    
+    <button onclick="calculateBMI()">Calculate BMI</button><br><br>
+    <div id="result"></div>
+    
+    <script>
+        function calculateBMI() {
+            // Get input values
+            let weight = parseFloat(document.getElementById("weight").value);
+            let height = parseFloat(document.getElementById("height").value);
+    
+            // Calculate BMI
+            let bmi = weight / Math.pow(height, 2);
+    
+            // Determine BMI category
+            let bmiCategory;
+          
+                if (bmi < 18.5) {
+                    bmiCategory = "Underweight";
+                } else if (bmi >= 18.5 && bmi < 24.9) {
+                    bmiCategory = "Normal weight";
+                } else if (bmi >= 24.9 && bmi < 29.9) {
+                    bmiCategory = "Overweight";
+                } else {
+                    bmiCategory = "Obese";
+                }
+            
+            // Display result
+            document.getElementById("result").innerHTML = "Your BMI: " + bmi.toFixed(2) + "<br>BMI Category: " + bmiCategory;
+            // document.getElementById("result").innerHTML = `Your BMI:   ${bmi.toFixed(2)}  <br>BMI Category: ${bmiCategory}`;
+        }            
+
+    </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMI Calculator</title>
+</head>
+<body>
+    <h2>BMI Calculator</h2>
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" name="weight"><br><br>
+    <label for="height">Height (m):</label>
+    <input type="number" id="height" name="height"><br><br>
+    
+    <button onclick="calculateBMI()">Calculate BMI</button><br><br>
+    <div id="result"></div>
+    <script>
+        function calculateBMI() {
+            let weight = parseFloat(document.getElementById("weight").value);
+            let height = parseFloat(document.getElementById("height").value);
+    
+            let bmi = weight / Math.pow(height, 2);
+    
+            let bmiCategory;
+          
+            switch (true) {
+                case (bmi < 18.5):
+                    bmiCategory = "Underweight";
+                    break;
+                case (bmi >= 18.5 && bmi < 24.9):
+                    bmiCategory = "Normal weight";
+                    break;
+                case (bmi >= 24.9 && bmi < 29.9):
+                    bmiCategory = "Overweight";
+                    break;
+                default:
+                    bmiCategory = "Obese";
+                    break;
+            }
+            
+            document.getElementById("result").innerHTML = "Your BMI: " + bmi.toFixed(2) + "<br>BMI Category: " + bmiCategory;
+        }
+    </script>
+</body>
+</html>
