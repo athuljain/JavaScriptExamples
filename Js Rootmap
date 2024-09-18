@@ -322,4 +322,110 @@ Write a function to reverse a string in JavaScript.
 
 
 
+Filter Even Numbers from an Array
+Question: How would you filter out even numbers from an array in JavaScript?
+Example: const numbers = [1, 2, 3, 4, 5, 6]
+Output: [2, 4, 6]
+
+
+
+Sum of All Elements in an Array
+Question: How would you calculate the sum of all elements in an array in JavaScript?
+Example: const numbers = [1, 2, 3, 4, 5]
+Output: 15
+
+
+Find All Unique Characters in a String
+Question: How would you find all unique characters in a string in JavaScript?
+Example: const str = "ababc"
+Output: "abc"
+
+
+```javascript
+function uniqueCharacters(str) {
+    return Array.from(new Set(str)).join('');
+}
+
+// Example usage
+const str = "ababc";
+const uniqueChars = uniqueCharacters(str);
+console.log(uniqueChars); // Output: "abc"
+
+```
+
+
+
+Reverse the Words in a String
+Question: How would you reverse the order of words in a string in JavaScript?
+Example: const str = "hello world"
+Output: "world hello"
+
+
+```javascript
+function reverseWords(str) {
+    return str.split(' ').reverse().join(' ');
+}
+
+// Example usage
+const str = "hello world";
+const reversedWords = reverseWords(str);
+console.log(reversedWords); // Output: "world hello"
+```
+
+
+
+ Find the Minimum Value in an Array
+Question: How would you find the minimum value in an array in JavaScript?
+Example: const numbers = [5, 1, 9, 3, 7]
+Output: 1
+
+```javascript
+function findMinValue(array) {
+    return Math.min(...array);
+}
+
+// Example usage
+const numbers = [5, 1, 9, 3, 7];
+const minValue = findMinValue(numbers);
+console.log(minValue); // Output: 1
+
+```
+
+Find the Average of an Array
+Question: How would you calculate the average of all elements in an array in JavaScript?
+Example: const numbers = [10, 20, 30, 40]
+Output: 25
+
+```javascript
+function calculateAverage(array) {
+    const sum = array.reduce((accumulator, current) => accumulator + current, 0);
+    return sum / array.length;
+}
+
+// Example usage
+const numbers = [10, 20, 30, 40];
+const average = calculateAverage(numbers);
+console.log(average); // Output: 25
+```
+
+
+
+Sort an Array in Ascending Order
+Question: How would you sort an array in ascending order in JavaScript?
+Example: const numbers = [4, 1, 7, 3, 5]
+Output: [1, 3, 4, 5, 7]
+
+
+```javascript
+function sortArray(array) {
+    return array.slice().sort((a, b) => a - b);
+}
+
+// Example usage
+const numbers = [4, 1, 7, 3, 5];
+const sortedArray = sortArray(numbers);
+console.log(sortedArray); // Output: [1, 3, 4, 5, 7]
+
+```
+
 
