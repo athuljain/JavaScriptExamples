@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            scroll-behavior: smooth;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* #movieList {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 5px;
+            border: 2px solid black;
+        } */
+
+        img {
+            width: 200px;
+            height: 200px;
+            transition: 0.5s all ease-in-out;
+            border: 2px solid red;
+            box-shadow: 5px 5px 5px black;
+            border-radius: 5px;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        li {
+            list-style: none;
+            max-width: 200px;
+            height: 380px;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-shadow: 0px 5px 8px gray gray;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        li:hover {
+            cursor: pointer;
+        }
+
+        h2 {
+            font-size: medium;
+            text-shadow: 0px 2px 2px grey;
+        }
+
+        h3 {
+            transition: 0.5s all ease;
+            background-color: white;
+            min-height: 30px;
+            padding-top: 4px;
+        }
+
+        h3:hover,
+        p:hover {
+            transform: scale(1.25);
+            border-radius: 5px;
+            box-shadow: 5px 5px 8px gray;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="movieList"></ul>
+
+    <script>
+        fetch('http://blackfarm.in/react/view_filims.php')
+            .then(res => {
+                return res.json()
+            })
+            .then(data => {
+                const movieList = document.getElementById('movieList');
+                data.forEach(el => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `<h2>${el.name}</h2>
+                                      <img src='${el.image}'>
+                                      <h3>${el.description}</h3>`;
+                    movieList.appendChild(listItem);
+                });
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  In JavaSIcript, promises represent asynchronous operations and their eventual results. A promise can be in one of the following three states:
+
+        // 1. Pending: The initial state, where the operation has not yet completed.
+        // 2. Fulfilled: The operation was successful, and the promise has a result.
+        // 3. Rejected: The operation failed, and the promise has a reason for the failure.
+
+        // While there aren't different "types" of promises in JavaScript, promises can behave differently depending on how they are handled in code. Here are some common patterns or types of usage involving promises:
+
+        //  1. Resolved Promise
+
+        // This type of promise is already fulfilled with a result.
+
+        // # Example:
+
+       
+        let resolvedPromise = Promise.resolve("Success");
+
+        resolvedPromise.then(result => {
+            console.log(result); // Output: Success
+        });
+
+
+        // Here, `Promise.resolve` creates a promise that is immediately fulfilled with the value `"Success"`.
+
+        //  2. Rejected Promise
+
+        // This type of promise is immediately rejected with an error or failure reason.
+
+        // # Example:
+
+
+        let rejectedPromise = Promise.reject("Error occurred");
+
+        rejectedPromise.catch(error => {
+            console.log(error); // Output: Error occurred
+        });
+
+
+        // Here, `Promise.reject` creates a promise that is immediately rejected with the reason `"Error occurred"`.
+
+        //  3. Pending Promise
+
+        // A promise that is still waiting for its asynchronous operation to complete.
+
+        // # Example:
+
+
+        let pendingPromise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("Operation completed");
+            }, 2000);
+        });
+
+        pendingPromise.then(result => {
+            console.log(result); // Output (after 2 seconds): Operation completed
+        });
+
+
+        // This promise stays in the pending state for 2 seconds due to the `setTimeout`, and then it is resolved with the value `"Operation completed"`.
+
+        //  4. Chained Promises
+
+        // Promises can be chained together to handle a sequence of asynchronous operations, where each `.then()` returns a new promise.
+
+        // # Example:
+
+        let chainedPromise = new Promise((resolve, reject) => {
+            resolve(2);
+        });
+
+        chainedPromise
+            .then(result => {
+                console.log(result); // Output: 2
+                return result * 2;
+            })
+            .then(result => {
+                console.log(result); // Output: 4
+                return result * 2;
+            })
+            .then(result => {
+                console.log(result); // Output: 8
+            });
+
+
+        // Here, each `.then()` returns a new promise, passing the result from one handler to the next.
+
+        //  5. Promise.all()
+
+        // `Promise.all()` takes an array of promises and resolves when all of the promises resolve, or rejects if any one of the promises is rejected.
+
+        // # Example:
+
+
+        let promise1 = Promise.resolve("First");
+        let promise2 = new Promise((resolve, reject) => {
+            setTimeout(resolve, 1000, "Second");
+        });
+        let promise3 = Promise.resolve("Third");
+
+        Promise.all([promise1, promise2, promise3])
+            .then(results => {
+                console.log(results); // Output: ["First", "Second", "Third"]
+            })
+            .catch(error => {
+                console.log(error);
+            });
+
+
+        // Here, `Promise.all()` waits for all promises to be fulfilled and then returns an array of their results.
+
+        //  6. Promise.race()
+
+        // `Promise.race()` takes an array of promises and resolves or rejects as soon as any one of the promises resolves or rejects.
+
+        // # Example:
+
+        javascript
+        let promise1 = new Promise((resolve) => setTimeout(resolve, 500, "First"));
+        let promise2 = new Promise((resolve) => setTimeout(resolve, 1000, "Second"));
+
+        Promise.race([promise1, promise2])
+            .then(result => {
+                console.log(result); // Output: First
+            })
+            .catch(error => {
+                console.log(error);
+            });
+
+
+        // Here, `Promise.race()` resolves with the first promise (`promise1`) that completes after 500 milliseconds.
+
+        //  7. Promise.allSettled()
+
+        // `Promise.allSettled()` waits for all promises to either resolve or reject, and then returns an array of results. Each result is an object with the status (`fulfilled` or `rejected`) and value or reason.
+
+        // # Example:
+
+        javascript
+        let promise1 = Promise.resolve("Resolved");
+        let promise2 = Promise.reject("Rejected");
+
+        Promise.allSettled([promise1, promise2])
+            .then(results => {
+                console.log(results);
+                // Output:
+                // [
+                //   { status: "fulfilled", value: "Resolved" },
+                //   { status: "rejected", reason: "Rejected" }
+                // ]
+            });
+
+
+        // Here, both promises are handled, even though one resolves and the other rejects.
+
+        //  8. Promise.any()
+
+        // `Promise.any()` resolves as soon as any one of the promises resolves, or it rejects if all promises are rejected.
+
+        // # Example:
+
+
+        let promise1 = Promise.reject("Failed 1");
+        let promise2 = new Promise((resolve) => setTimeout(resolve, 100, "Success 2"));
+        let promise3 = Promise.reject("Failed 3");
+
+        Promise.any([promise1, promise2, promise3])
+            .then(result => {
+                console.log(result); // Output: Success 2
+            })
+            .catch(error => {
+                console.log("All promises failed");
+            });
+
+
+        // Here, `Promise.any()` resolves as soon as the second promise (`promise2`) succeeds.
+
+        //  Summary of Promise Patterns
+
+        // | Pattern            | Description                                                                 |
+        // |--------------------|-----------------------------------------------------------------------------|
+        // | Resolved Promise    | A promise that is immediately fulfilled with a value.                       |
+        // | Rejected Promise    | A promise that is immediately rejected with a reason.                       |
+        // | Pending Promise     | A promise that stays in the pending state until the async operation is done.|
+        // | Chained Promises    | A sequence of promises linked by `.then()` handlers.                        |
+        // | `Promise.all()`     | Resolves when all promises in an array resolve or rejects if any reject.    |
+        // | `Promise.race()`    | Resolves or rejects as soon as any promise in an array resolves or rejects. |
+        // | `Promise.allSettled()` | Waits for all promises to settle, and returns the results.                 |
+        // | `Promise.any()`     | Resolves as soon as any promise resolves, rejects if all promises fail.     |
+
+        // Each pattern serves a different purpose depending on how you want to handle multiple asynchronous operations.
+    </script>
+</body>
+
+</html>

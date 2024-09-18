@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations</title>
+</head>
+<body>
+    <h1>String Operations</h1>
+    
+    <!-- String inputs -->
+    <input type="text" id="string1" placeholder="Enter first string">
+    <input type="text" id="string2" placeholder="Enter second string (Optional)">
+    
+    <br><br>
+    
+    <!-- Buttons to trigger different string operations -->
+    <button onclick="performStringOperations('concat')">Concatenate</button>
+    <button onclick="performStringOperations('length')">String Length</button>
+    <button onclick="performStringOperations('toUpperCase')">To Upper Case</button>
+    <button onclick="performStringOperations('toLowerCase')">To Lower Case</button>
+    <button onclick="performStringOperations('trim')">Trim Whitespace</button>
+    <button onclick="performStringOperations('substring')">Substring</button>
+
+    <div id="result"></div>
+
+    <script>
+        // Function to perform various string operations
+        function performStringOperations(operation) {
+            const string1 = document.getElementById('string1').value;
+            const string2 = document.getElementById('string2').value || '';  // Optional second string
+            const resultDiv = document.getElementById('result');
+            
+            if (!string1) {
+                resultDiv.innerHTML = "<span style='color: red;'>Please enter a valid string.</span>";
+                return;
+            }
+
+            let result;
+            switch (operation) {
+                case 'concat':
+                    result = string1.concat(string2);
+                    resultDiv.innerHTML = `<p><strong>Concatenation:</strong> ${result}</p>`;
+                    break;
+                case 'length':
+                    result = `Length of first string: ${string1.length}, Length of second string: ${string2.length}`;
+                    resultDiv.innerHTML = `<p><strong>String Length:</strong> ${result}</p>`;
+                    break;
+                case 'toUpperCase':
+                    result = `First String: ${string1.toUpperCase()}, Second String: ${string2.toUpperCase()}`;
+                    resultDiv.innerHTML = `<p><strong>To Upper Case:</strong> ${result}</p>`;
+                    break;
+                case 'toLowerCase':
+                    result = `First String: ${string1.toLowerCase()}, Second String: ${string2.toLowerCase()}`;
+                    resultDiv.innerHTML = `<p><strong>To Lower Case:</strong> ${result}</p>`;
+                    break;
+                case 'trim':
+                    result = `First String: '${string1.trim()}', Second String: '${string2.trim()}'`;
+                    resultDiv.innerHTML = `<p><strong>Trimmed Strings:</strong> ${result}</p>`;
+                    break;
+                case 'substring':
+                    if (string1.length >= 5) {
+                        result = string1.substring(0, 5);  // Extract first 5 characters
+                        resultDiv.innerHTML = `<p><strong>Substring (first 5 characters):</strong> ${result}</p>`;
+                    } else {
+                        resultDiv.innerHTML = "<p><span style='color: red;'>The string is too short for a substring operation.</span></p>";
+                    }
+                    break;
+                default:
+                    resultDiv.innerHTML = "<span style='color: red;'>Unknown operation.</span>";
+            }
+        }
+    </script>
+</body>
+</html>

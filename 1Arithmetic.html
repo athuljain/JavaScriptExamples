@@ -76,7 +76,7 @@
 
 <!-- if else  -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -128,7 +128,7 @@
         }
     </script>
 </body>
-</html>
+</html> -->
 
 
 
@@ -137,8 +137,7 @@
 
 <!-- //Switch case -->
 
-
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -147,21 +146,22 @@
 </head>
 <body>
     <h1>Arithmetic Operations</h1>
+    <h3>Switch Case</h3>
     
     <input type="number" id="number1" placeholder="Enter first number">
     <input type="number" id="number2" placeholder="Enter second number">
     
     <br><br>
     
-    <button onclick="performOperation('add')">Addition</button>
-    <button onclick="performOperation('subtract')">Subtraction</button>
-    <button onclick="performOperation('multiply')">Multiplication</button>
-    <button onclick="performOperation('divide')">Division</button>
+    <button onclick="performOperations('add')">Addition</button>
+    <button onclick="performOperations('subtract')">Subtraction</button>
+    <button onclick="performOperations('multiply')">Multiplication</button>
+    <button onclick="performOperations('divide')">Division</button>
     
     <div id="result"></div>
 
     <script>
-        function performOperation(operation) {
+        function performOperations(operation) {
             const num1 = parseFloat(document.getElementById('number1').value);
             const num2 = parseFloat(document.getElementById('number2').value);
             const resultDiv = document.getElementById('result');
@@ -186,7 +186,7 @@
                     resultDiv.innerHTML = `<p><strong>Multiplication:</strong> ${result}</p>`;
                     break;
                 case 'divide':
-                    result = num2 !== 0 ? (num1 / num2).toFixed(2) : "undefined (division by zero)";
+                    result = num2 !== 0 ? (num1 / num2).toFixed(3) : "undefined (division by zero)";
                     resultDiv.innerHTML = `<p><strong>Division:</strong> ${result}</p>`;
                     break;
                 default:
@@ -195,4 +195,7 @@
         }
     </script>
 </body>
-</html> -->
+</html>
+
+
+
