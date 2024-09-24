@@ -313,16 +313,40 @@ undefined is a value automatically assigned to variables that have been declared
 
 
 
+>What is object destructuring?
+
+Object destructuring is a JavaScript feature to extract object properties and bind these properties to variables. It can be used to extract several properties in a single statement and can reach properties from nested objects. When no property exists, object destructuring can set default values.
 
 
 
+> Explain global variables in JavaScript.
+
+A variable declared outside of a function definition is referred to as a global variable, and its scope is across your entire program. This implies that its value is accessible and adjustable throughout your program.
 
 
+> Define the purpose of timers in JavaScript.
+
+Timers can be used to execute the code at an exact time or repeat the code within an interval. This can be accomplished by employing the methods setTimeout, setInterval, and clearInterval.
+
+> What is the use of the === operator?
+
+The === operator is a strict comparison operator, meaning it checks for both the value and the type of two variables.
 
 
+>How an HTML element is accessible in JavaScript code?
 
+1. getElementById
+Syntax: document.getElementById("elementId");
 
+2. getElementsByClassName
+Syntax: document.getElementsByClassName("className");
 
+3. getElementsByTagName
+Syntax: document.getElementsByTagName("tagName");
+
+> What is the difference between undefined and null?
+undefined: A variable that has been declared but not assigned a value yet. It is automatically assigned by JavaScript.
+null: Represents the intentional absence of any object value. It must be explicitly assigne
 
 
 
