@@ -202,6 +202,22 @@ Primitive Types: Number, String, Boolean, Undefined, Null, Symbol (ES6), and Big
 Non-Primitive Type: Object (which includes Arrays, Functions, and Dates).
 
 
+
+> Print the First 25 Even Numbers
+
+for (let i = 0; i < 25; i++) {
+    console.log(i * 2);
+}
+
+
+> Print First 25 Even Numbers in Reverse Order
+
+for (let i = 24; i >= 0; i--) {
+    console.log(i * 2);
+}
+
+
+
 > How do you declare a variable in JavaScript?
 
 Answer: Variables can be declared using var, let, or const. For example:
@@ -294,6 +310,9 @@ undefined is a value automatically assigned to variables that have been declared
 
 
 > Create a function that alerts "Hello, World!" when a button is clicked.
+
+
+
 
 
 
@@ -429,3 +448,92 @@ console.log(sortedArray); // Output: [1, 3, 4, 5, 7]
 ```
 
 
+> How do you reverse a number in JavaScript?
+
+
+function reverseNumber(n) {
+  return parseInt(n.toString().split('').reverse().join(''));
+}
+
+console.log(reverseNumber(12345));  // Result: 54321
+
+
+
+
+ Sorting an Array of Numbers (Descending Order):
+To sort numbers in descending order, you can reverse the comparison:
+
+javascript
+Copy code
+let numbers = [3, 8, 1, 6, 4, 2];
+numbers.sort((a, b) => b - a);  // Descending order
+
+console.log(numbers);  // Result: [8, 6, 4, 3, 2, 1]
+
+
+
+the array let fruits = ['apple', 'orange', 'banana', 'mango']; in JavaScript:
+
+1. Accessing Elements:
+How do you access the second element in the array fruits?
+
+Answer: fruits[1] (arrays are zero-indexed in JavaScript).
+2. Finding the Length of an Array:
+How do you find the number of elements in the fruits array?
+
+Answer: fruits.length will return 4.
+3. Adding an Element to the End of the Array:
+How do you add the element 'grape' to the end of the fruits array?
+
+Answer: fruits.push('grape');
+4. Removing the Last Element from the Array:
+How do you remove the last element ('mango') from the fruits array?
+
+Answer: fruits.pop();
+5. Adding an Element to the Beginning of the Array:
+How do you add the element 'kiwi' to the beginning of the fruits array?
+
+Answer: fruits.unshift('kiwi');
+6. Removing the First Element from the Array:
+How do you remove the first element ('apple') from the fruits array?
+
+Answer: fruits.shift();
+7. Sorting the Array:
+How do you sort the fruits array in alphabetical order?
+
+Answer: fruits.sort();
+Result: ['apple', 'banana', 'mango', 'orange']
+8. Reversing the Array:
+How do you reverse the order of elements in the fruits array?
+
+Answer: fruits.reverse();
+9. Slicing the Array:
+How do you create a new array from the fruits array containing only the first two elements?
+
+Answer: fruits.slice(0, 2);
+Result: ['apple', 'orange']
+10. Filtering the Array:
+How do you filter out all fruits whose names contain more than 5 characters?
+
+Answer: fruits.filter(fruit => fruit.length > 5);
+Result: ['orange', 'banana']
+11. Checking if an Element Exists:
+How do you check if 'apple' is present in the fruits array?
+
+Answer: fruits.includes('apple');
+Result: true
+12. Finding the Index of an Element:
+How do you find the index of 'banana' in the fruits array?
+
+Answer: fruits.indexOf('banana');
+Result: 2
+13. Joining the Array into a String:
+How do you join all elements of the fruits array into a single string, separated by commas?
+
+Answer: fruits.join(', ');
+Result: 'apple, orange, banana, mango'
+14. Replacing an Element in the Array:
+How do you replace 'orange' with 'pineapple' in the fruits array?
+
+Answer: fruits[1] = 'pineapple';
+Result: ['apple', 'pineapple', 'banana', 'mango']
