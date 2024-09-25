@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+
+<h1>Multiplication Table (1 to 10)</h1>
+<div id="tableContainer"></div>
+
+<script>
+    function generateMultiplicationTable() {
+        let result = ""; // Store the result in a string
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 1; j <= 10; j++) {
+                result += i + " * " + j + " = " + (i * j) + "<br>"; // Concatenate the multiplication format
+            }
+            result += "<br>"; // Add a line break between different sets of multipliers
+        }
+        document.getElementById("tableContainer").innerHTML = result; // Display the result
+    }
+
+    // Call the function to generate the table
+    generateMultiplicationTable();
+</script>
+
+</body>
+</html>
