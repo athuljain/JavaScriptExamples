@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table</title>
+  <style>
+    table {
+      width: 50%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: center;
+    }
+    input[type="number"] {
+      width: 50px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center;">
+    <h1>Multiplication Table</h1>
+    <label for="number">Enter a number: </label>
+    <input type="number" id="number" value="1" min="1">
+    <button onclick="generateTable()">Generate Table</button>
+  </div>
+
+  <div id="tableContainer" style="text-align: center;"></div>
+
+  <!-- <script src="script.js"></script> -->
+
+
+  <script>
+
+function generateTable() {
+  const num = document.getElementById('number').value;
+  let tableContent = '<table><tr><th>Multiplication Table of ' + num + '</th></tr>';
+
+  for (let i = 1; i <= 10; i++) {
+    tableContent += '<tr><td>' + num + ' x ' + i + ' = ' + num * i + '</td></tr>';
+  }
+
+  tableContent += '</table>';
+
+  document.getElementById('tableContainer').innerHTML = tableContent;
+}
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

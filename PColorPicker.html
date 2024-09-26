@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker</title>
+  <style>
+    #colorBox {
+      width: 300px;
+      height: 300px;
+      border: 2px solid black;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center;">
+    <h1>Pick a Color</h1>
+    <input type="color" id="colorPicker" value="#ff0000">
+    <div id="colorBox"></div>
+  </div>
+
+  <script>
+    const colorPicker = document.getElementById('colorPicker');
+    const colorBox = document.getElementById('colorBox');
+
+    // Set initial background color to match the default color picker value
+    colorBox.style.backgroundColor = colorPicker.value;
+
+    // Change the background color dynamically when a new color is picked
+    colorPicker.addEventListener('input', function() {
+      colorBox.style.backgroundColor = colorPicker.value;
+    });
+  </script>
+</body>
+</html>
