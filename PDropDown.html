@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Dropdown</title>
+  <style>
+    .dropdown-container {
+      width: 300px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    select {
+      padding: 10px;
+      font-size: 16px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dropdown-container">
+    <label for="countries">Choose a country:</label>
+    <select id="countries" onchange="displayCapital()">
+      <option value="">-- Select a country --</option>
+      <option value="India">India</option>
+      <option value="United States">United States</option>
+      <option value="Canada">Canada</option>
+      <option value="Australia">Australia</option>
+      <option value="Japan">Japan</option>
+    </select>
+
+    <p id="capital">Capital will be displayed here</p>
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+   <script>
+    function displayCapital() {
+  const country = document.getElementById('countries').value;
+  const capitalElement = document.getElementById('capital');
+  
+  let capital = '';
+
+  switch (country) {
+    case 'India':
+      capital = 'New Delhi';
+      break;
+    case 'United States':
+      capital = 'Washington, D.C.';
+      break;
+    case 'Canada':
+      capital = 'Ottawa';
+      break;
+    case 'Australia':
+      capital = 'Canberra';
+      break;
+    case 'Japan':
+      capital = 'Tokyo';
+      break;
+    default:
+      capital = 'Capital will be displayed here';
+  }
+
+  capitalElement.textContent = capital;
+}
+
+   </script>
+
+</body>
+</html>
