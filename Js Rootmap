@@ -140,7 +140,8 @@ console.log(car.features);  // Output: ["Air Conditioning", "Bluetooth", "Backup
 Js Array
 
 
-Arrays in JavaScript are used to store multiple values in a single variable. Each value in an array is called an element, and the elements are indexed starting from 0.
+Arrays in JavaScript are used to store multiple values in a single variable.
+Each value in an array is called an element, and the elements are indexed starting from 0.
 
 
 // Creating an array
