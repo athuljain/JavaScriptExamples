@@ -1,4 +1,4 @@
-**1.What is JavaScript?**
+<!-- **1.What is JavaScript?**
 
     ```javascript
     # JavaScript (JS) is a programming language used to make web pages interactive. It is one of the key technologies of the web, along with HTML and CSS. With JavaScript, you can add things like sliders, popups, and buttons that respond when clicked. Besides the browser, JavaScript is also used in other places like Node.js for server-side coding, Electron for desktop apps, and React Native for mobile apps.
@@ -40,23 +40,25 @@
     console.log("Age:", age);
     console.log("City:", city);
     console.log("Country:", country);
-```
+``` -->
 
 
     
-
+<!-- 
     var declares a variable that can be redeclared and reassigned.
     let declares a block-scoped variable that can be reassigned but not redeclared in the same scope.
-    const declares a block-scoped variable that cannot be reassigned or redeclared.
+    const declares a block-scoped variable that cannot be reassigned or redeclared. -->
 
     
 
 
 
-3.What is Hoisting?
+<!-- 3.What is Hoisting?
 
     ```javascript
-    Hoisting in JavaScript is when variable and function declarations are automatically moved to the top of the code before it runs. This lets you use variables and functions before they're written, but only the declaration is moved, not the value or code.
+    Hoisting in JavaScript is when variable and function declarations are automatically moved to 
+    the top of the code before it runs. This lets you use variables and functions before they're written, 
+    but only the declaration is moved, not the value or code.
     ```
 
     ```javascript
@@ -68,11 +70,11 @@
     console.log(greeting); // Output: undefined
     greeting = "Hello";
 
-    ```
+    ``` -->
 
 
 
-4.Datatypes
+<!-- 4.Datatypes
 
 ```javascript
 Data type refers to the type of data that a JavaScript variable can hold. There are seven primitive data types in JavaScript (Number, BigInt, String, Boolean, Null, Undefined and Symbol). Objects and arrays are non-primitives.
@@ -86,7 +88,7 @@ Undefined: A variable that has been declared but not given a value.
 Null: Represents an empty or non-existent value.
 Object: Used for more complex data like arrays, functions, or other objects.
 Symbol: A unique and immutable value, mainly used in more advanced programming.
-BigInt: For working with numbers larger than the regular Number type can handle.
+BigInt: For working with numbers larger than the regular Number type can handle. -->
 ```
 
 
@@ -106,7 +108,8 @@ In JavaScript, an object is a way to store data using key-value pairs. Each key 
 const pen = {
   color: "blue",
   design: "smooth",
-  material: "plastic"
+  material: "plastic",
+  price:1000
 };
 
 // Accessing object properties
@@ -122,7 +125,7 @@ const car = {
   model: "Corolla",
   year: 2022,
   isElectric: false,
-  features: ["Air Conditioning", "Bluetooth", "Backup Camera"]
+  features: ["Air Conditioning", "Bluetooth", "Backup Camera"],
 };
 
 // Accessing object properties
@@ -173,7 +176,52 @@ console.log(fruits)
  
 ```
 
+// const fruits = ["Apple", "Banana", "Cherry"];
+// console.log("fruits : ",fruits)
 
+// Accessing the length of the array
+console.log("fruits.length : ",fruits.length);
+
+// // Concatenating arrays
+const moreFruits = ["Date", "Elderberry"];
+const allFruits = fruits.concat(moreFruits);
+console.log("fruits.concat : ",allFruits);
+
+// // Finding an element's index
+const index = fruits.indexOf("Banana");
+console.log("Find element index : ",index);
+
+// // Checking if an array includes a value
+const hasCherry = fruits.includes("Cherry");
+console.log("includes : ",hasCherry);
+
+
+const SliceFruits = fruits.slice()
+console.log("SliceFruits",SliceFruits)
+
+// // Reversing the array
+const reversedFruits = fruits.reverse();
+console.log("ReversedArray",reversedFruits);
+
+// Sorting the array alphabetically
+const sortedFruits = fruits.sort();
+// console.log("Sort Array",sortedFruits);
+
+// // Slicing the array (getting a portion)
+const slicedFruits = fruits.slice(0,2 );
+console.log("SlicedFruits",slicedFruits);
+
+// // Splicing (removing or replacing elements)
+fruits.splice(1, 1, "Blueberry","apple");
+console.log(fruits);
+
+// // Mapping over the array (creating a new array with modified elements)
+const upperCaseFruits = fruits.map(data => data.toUpperCase());
+console.log(upperCaseFruits); // Output: ["APPLE", "BLUEBERRY", "CHERRY"]
+
+// // Filtering the array (getting a new array with elements that satisfy a condition)
+const shortNamedFruits = fruits.filter(fruit => fruit.length <= 5);
+console.log(shortNamedFruits); // Output: ["Apple"]
 
 
 
