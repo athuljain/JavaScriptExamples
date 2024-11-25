@@ -1,4 +1,4 @@
-<!-- **1.What is JavaScript?**
+<!-- <!-- **1.What is JavaScript?** -->
 
     ```javascript
     # JavaScript (JS) is a programming language used to make web pages interactive. It is one of the key technologies of the web, along with HTML and CSS. With JavaScript, you can add things like sliders, popups, and buttons that respond when clicked. Besides the browser, JavaScript is also used in other places like Node.js for server-side coding, Electron for desktop apps, and React Native for mobile apps.
@@ -44,10 +44,10 @@
 
 
     
-<!-- 
+
     var declares a variable that can be redeclared and reassigned.
     let declares a block-scoped variable that can be reassigned but not redeclared in the same scope.
-    const declares a block-scoped variable that cannot be reassigned or redeclared. -->
+    const declares a block-scoped variable that cannot be reassigned or redeclared. 
 
     
 
@@ -403,6 +403,12 @@ null: Represents the intentional absence of any object value. It must be explici
 
 
 
+
+<!-- First stage -->
+
+
+
+
 How would you merge two arrays in JavaScript without duplicates?
 Example: const array1 = [1, 2, 3], array2 = [2, 3, 4] -> [1, 2, 3, 4]
 
@@ -610,3 +616,26 @@ How do you replace 'orange' with 'pineapple' in the fruits array?
 
 Answer: fruits[1] = 'pineapple';
 Result: ['apple', 'pineapple', 'banana', 'mango']
+
+
+
+
+
+
+
+
+
+Why are promises used in JavaScript?
+
+
+Promises help in managing asynchronous operations, such as server requests in JavaScript. Earlier, callbacks were used for the same purpose. However, callbacks have limited functionality and, thus, can make the code unmanageable. There are four states of the promise object:
+
+Pending: This is the first state of the promise and shows that the promise has been neither fulfilled nor rejected.
+
+Fulfilled: This state represents the completion of the asynchronous operation. In other words, the promise has been fulfilled.
+
+Rejected: This state represents the failure of the asynchronous operation due to some reason. In other words, the promise has been rejected.
+
+Settled: This is the last state of the promise, showing that the promise has been either fulfilled or rejected.
+
+A promise constructor uses a callback with two parameters - resolve and reject - to create a promise. The resolve function is called when the asynchronous operation has succeeded. The reject function is called when the asynchronous operation has failed.
