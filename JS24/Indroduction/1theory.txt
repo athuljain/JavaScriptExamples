@@ -77,6 +77,8 @@ What are Variables?
     Avoid using var in modern code—it has unpredictable scoping.
 
 
+----------------------------------------------------------------------------------------------
+
 Data Types
     In JavaScript, there are several data types that you can use to store different types of data. Some common data types include:
 
