@@ -33,11 +33,19 @@ What are Variables?
             you use the "var" keyword followed by the name of the variable.
 
                 var x;
+
+                    * var:-
+                        Used in earlier versions of JavaScript.
+                        Function-scoped or globally-scoped.
+                        Can be re-declared and updated.
+
             
             This declares a variable called "x" but does not assign any value to it. 
             You can also assign a value to a variable when you declare it
 
                 var x=10
+
+
 
             In JavaScript, you can also use the "let" and "const" keywords to declare variables.
             The "let" keyword is used to declare a variable that can be reassigned later, 
@@ -46,3 +54,80 @@ What are Variables?
                 let y = 20;
                 const z = 30;
 
+
+                        * let:-
+                            Introduced in ES6.
+                            Block-scoped.
+                            Can be updated but not re-declared in the same scope.
+
+                        * const:-
+                            Introduced in ES6.
+                            Block-scoped.
+                            Cannot be updated or re-declared. Must be initialized during declaration.
+
+
+        let variableName = value; // Declaring a variable using `let`
+        const constantName = value; // Declaring a constant using `const`
+        var oldVariable = value; // Declaring a variable using `var`
+
+
+
+    Use const for values that won't change.
+    Use let for values that will change.
+    Avoid using var in modern code—it has unpredictable scoping.
+
+
+Data Types
+    In JavaScript, there are several data types that you can use to store different types of data. Some common data types include:
+
+        Numbers (e.g. 10, 3.14)
+        Strings (e.g. "hello", 'world')
+        Booleans (e.g. true, false)
+        Arrays (e.g. [1, 2, 3])
+        Objects (e.g. { name: "John", age: 30 })
+
+
+
+Data types in JavaScript represent the type of data that can be stored and manipulated 
+within a program. JavaScript has two categories of data types: 
+Primitive and Non-Primitive (Reference).
+
+    Primitives are the simplest and most basic data types in JavaScript. 
+
+        Numbers (e.g. 10, 3.14)
+        Strings (e.g. "hello", 'world')
+        Booleans (e.g. true, false)
+        Null (a special value that represents an absence of value)
+        Undefined (a special value that represents an uninitialized variable)
+        Primitives are immutable, which means that once they are created, they cannot be changed.
+           
+            let x = 10;
+            x = 20; // x is now 20
+
+    
+    Non Primitive (Object) are more complex data types in JavaScript and are 
+    used to represent real-world objects or abstract concepts. 
+    They are composed of key-value pairs, where the keys are strings and the values 
+    can be any data type (including primitives and other objects).
+    Objects are mutable, which means that they can be changed after they are created.
+
+
+    --------------------------------------------------------------------------------------
+
+
+
+Operators and Expressions
+    Operators in JavaScript are symbols that perform specific operations 
+    on one or more operands (values or variables). For example, 
+    the addition operator (+) adds two operands together and 
+    the assignment operator (=) assigns a value to a variable.
+    There are several types of operators in JavaScript, including:
+
+        Arithmetic operators (e.g. +, -, *, /, %)
+        Comparison operators (e.g. >, <, >=, <=, ==, !=)
+        Logical operators (e.g. &&, ||, !)
+        Assignment operators (e.g. =, +=, -=, *=, /=)
+        Conditional (ternary) operator (e.g. ?:)
+
+
+        
