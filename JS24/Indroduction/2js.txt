@@ -1,2 +1,29 @@
+If else conditionals
+
+    The if...else statement in JavaScript is used to execute a block of code based on a 
+    specified condition. If the condition evaluates to true, the code inside the if block runs. 
+    Otherwise, the code inside the else block executes.
+
+        if (condition) {
+        // Code to execute if condition is true
+        } else {
+            // Code to execute if condition is false
+        }
+
+
+
+                let age = 18;
+
+                if (age >= 18) {
+                    console.log("You are eligible to vote.");
+                }
+
+---------------------------------------------------------------------------------------------------
+
+Practice Example:
+Write a program to determine if a person is a child, teenager, or adult based on their age.
+
+
+
 
 
