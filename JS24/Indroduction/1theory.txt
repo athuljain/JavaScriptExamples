@@ -21,6 +21,9 @@ Do we need to install Javascript?
         NO. 
         JavaScript is present everywhere in browsers, on your phone, etc.
 
+
+-----------------------------------------------------------------------------------------
+
 What are Variables?
         In JavaScript, variables are used to store data. 
         They are an essential part of any programming language, 
