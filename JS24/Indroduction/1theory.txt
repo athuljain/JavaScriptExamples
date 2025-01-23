@@ -1,0 +1,48 @@
+What is Programming?
+        Programming is the process of giving instructions to a computer to perform specific tasks. 
+        These instructions are written in a language that the computer can understand, 
+        known as a programming language.
+
+Why do we need programming?
+        -   To solve problems efficiently using computers.
+        -   To automate repetitive tasks.
+        -   To create applications, websites, games, and more.
+
+What is JavaScript?
+        JavaScript is a lightweight, OOP language.
+        It is a scripting language for web pages.
+        It is used to add interactivity and dynamic effects to web pages.
+        “.js” is the extension.
+        Nowadays used in server-side development.
+        JS Frontend Frameworks: React, Angular, Vue.
+        JS Backend Frameworks: Express, Node.
+
+Do we need to install Javascript?
+        NO. 
+        JavaScript is present everywhere in browsers, on your phone, etc.
+
+What are Variables?
+        In JavaScript, variables are used to store data. 
+        They are an essential part of any programming language, 
+        as they allow you to store, retrieve, and manipulate data in your programs.
+
+        There are a few different ways to declare variables in JavaScript, 
+        each with its own syntax and rules.
+
+            To declare a variable in JavaScript, 
+            you use the "var" keyword followed by the name of the variable.
+
+                var x;
+            
+            This declares a variable called "x" but does not assign any value to it. 
+            You can also assign a value to a variable when you declare it
+
+                var x=10
+
+            In JavaScript, you can also use the "let" and "const" keywords to declare variables.
+            The "let" keyword is used to declare a variable that can be reassigned later, 
+            while the "const" keyword is used to declare a variable that cannot be reassigned.
+
+                let y = 20;
+                const z = 30;
+
