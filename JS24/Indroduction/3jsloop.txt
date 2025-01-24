@@ -36,9 +36,56 @@ even if the condition is false.
             // Code to execute
         } while (condition);
 
+------------------------------------------------------------------------------------
 
 
-Print all even numbers from 1 to 10 using a for loop:?
 
 
 ------------------------------------------------------------------------------------
+
+
+Write a program using a for loop to print numbers from 1 to 20.
+Print all even numbers from 1 to 10 using a for loop:?
+Use a while loop to calculate the sum of all odd numbers from 1 to 50.?
+Reverse the digits of a given number using a while loop.
+Example: Input = 1234, Output = 4321.
+
+
+
+For Loop Questions
+Write a program using a for loop to print numbers from 1 to 20.
+Use a for loop to calculate the sum of the first 10 natural numbers.
+Write a program to print the multiplication table of a given number (e.g., input = 5, output = 5, 10, 15, ...).
+Print all even numbers between 1 and 50 using a for loop.
+Iterate through an array of names and print each name using a for loop.
+Write a program to find the factorial of a given number using a for loop.
+
+
+
+
+
+
+While Loop Questions
+Print numbers from 1 to 10 using a while loop.
+Use a while loop to calculate the sum of all odd numbers from 1 to 50.
+Write a program that accepts a number and continues to halve it until it becomes less than 1, printing each result.
+Reverse the digits of a given number using a while loop.
+Example: Input = 1234, Output = 4321.
+Count the number of digits in a given number using a while loop.
+Example: Input = 5489, Output = 4.
+Use a while loop to find the largest number in an array.
+Create a program to repeatedly ask the user for a number until they enter a negative number.
+
+
+
+
+Do-While Loop Questions
+Write a program using a do-while loop to print numbers from 1 to 5.
+Use a do-while loop to prompt the user for a password until the correct password is entered.
+Print the first 10 numbers of the Fibonacci sequence using a do-while loop.
+Write a program that prints all uppercase alphabets (A-Z) using a do-while loop.
+Calculate the product of digits of a number using a do-while loop.
+Example: Input = 123, Output = 1 * 2 * 3 = 6.
+Write a do-while loop to find the sum of the digits of a given number.
+Example: Input = 543, Output = 5 + 4 + 3 = 12.
+Write a program to display menu options (e.g., 1. Add, 2. Subtract, 3. Exit) using a do-while loop, and keep looping until the user selects "Exit."

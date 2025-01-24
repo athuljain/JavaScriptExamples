@@ -94,3 +94,121 @@ Ternary Operator
 
 Check if a number is even or odd?
 Assign a grade based on marks?
+
+----------------------------------------------------------------------------------------------
+
+
+
+Practical Questions for Conditional Operators
+Basic Comparison:
+
+Write a program that checks if a number is positive, negative, or zero using conditional (if, else if, else) statements.
+Input: 5, Output: Positive
+Input: -3, Output: Negative
+
+Ternary Operator:
+
+Use the ternary operator to check if a number is even or odd.
+Input: 4, Output: Even
+Input: 7, Output: Odd
+
+Logical Operators:
+
+Create a program to check if a user is eligible to vote. The conditions are:
+Age must be greater than or equal to 18.
+Citizenship must be true.
+Input: { age: 20, citizen: true }, Output: Eligible
+Input: { age: 15, citizen: true }, Output: Not Eligible
+
+
+Comparison of Two Numbers:
+
+Write a program to find the largest of two numbers.
+Input: 12, 8, Output: 12 is larger
+
+
+
+Grade Evaluation:
+
+Write a program to determine a student's grade based on their score using conditional operators:
+Score >= 90: Grade A
+Score >= 75: Grade B
+Score >= 50: Grade C
+Score < 50: Fail
+
+
+
+Nested Conditions:
+
+Create a program to check if a given year is a leap year:
+A year is a leap year if it is divisible by 4, but not divisible by 100, unless it is also divisible by 400.
+Input: 2000, Output: Leap Year
+Input: 1900, Output: Not a Leap Year
+
+
+
+Checking Range:
+
+Write a program to check if a number lies between 10 and 50 (inclusive) using logical operators.
+Input: 25, Output: Number is within range
+Input: 9, Output: Number is out of range
+
+
+Multiple Conditions:
+
+Write a program to check if a person is eligible for a discount:
+Age less than 12 or greater than 60 gets a discount.
+Input: { age: 8 }, Output: Eligible for discount
+Input: { age: 35 }, Output: Not eligible
+
+
+Ternary with Multiple Conditions:
+
+Use a nested ternary operator to classify a number as "Positive", "Negative", or "Zero".
+Input: 10, Output: Positive
+Input: -5, Output: Negative
+
+
+String Comparison:
+
+Write a program to check if a username is valid:
+The username must be "admin" or "user".
+Input: "admin", Output: Valid
+Input: "guest", Output: Invalid
+
+
+Voting System:
+
+Write a program to decide the winner of an election:
+If votes for candidate A are more than candidate B, output Candidate A wins.
+If votes for candidate B are more than candidate A, output Candidate B wins.
+If votes are equal, output It's a tie.
+
+
+Check Divisibility:
+
+Write a program to check if a number is divisible by both 3 and 5.
+Input: 15, Output: Divisible
+Input: 10, Output: Not Divisible
+
+
+Check Leap Year Using Ternary:
+
+Convert the leap year program into a single-line ternary statement.
+
+
+Login Validation:
+
+Create a program to check login credentials:
+Username must be "admin".
+Password must be "1234".
+If both are correct, output Login Successful.
+Otherwise, output Invalid Credentials.
+
+
+Temperature Checker:
+
+Write a program to classify temperature:
+temp > 30: Hot
+temp between 15 and 30: Warm
+temp < 15: Cold
