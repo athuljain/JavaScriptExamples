@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <title>Javascript String method</title>
+</head>
+<body>
+    <h1>Javascript String method</h1>
+    <label for="inputText">Enter a string:</label>
+    <input type="text" id="inputText" value="Hello, world!" />
+    <button onclick="processString()">process String</button>
+    <h2>Results:</h2>
+    <p><strong>Original:</strong><span id="original"></span></p>
+    <p><strong>Length:</strong><span id="length"></span></p>
+    <p><strong>Uppercase:</strong><span id="uppercase"></span></p>
+    <p><strong>Lowercase:</strong><span id="lowercase"></span></p>
+    <p><strong>Trimmed:</strong><span id="trimmed"></span></p>
+    <p><strong>First Index:</strong><span id="indexOf"></span></p>
+    <p><strong>Substring (0-5):</strong><span id="Substring"></span></p>
+    <p><strong>Split by ',':</strong><span id="split"></span></p>
+
+    <script>
+        function processString() {
+            let str = document.getElementById("inputText").value;
+            document.getElementById("original").innerText = str;
+            document.getElementById("length").innerText = str.length;
+            document.getElementById("uppercase").innerHTML = str.toUpperCase();
+            document.getElementById("lowercase").innerText = str.toLowerCase();
+            document.getElementById("trimmed").innerText = str.trim();
+            document.getElementById("indexOf").innerText = str.indexOf("w");
+            document.getElementById("Substring").innerText = str.substring(0, 5);
+            document.getElementById("split").innerText = str.split(",").join("|");
+        }
+    </script>
+</body>
+</html>
