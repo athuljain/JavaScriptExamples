@@ -1,0 +1,139 @@
+What is DOM Manipulation?
+ - DOM (Document Object Model) is the interface that allows programs to interact with HTML and XML documents.
+ - DOM manipulation refers to using JavaScript to dynamically update the content, structure, and style of a webpage.
+
+Connecting HTML and JavaScript
+    HTML: Structure of the webpage.
+    JavaScript: Adds interactivity by manipulating the DOM.
+
+To connect JavaScript with HTML:
+
+    Use the <script> tag to include JavaScript either in the same file or an external file.
+
+
+Inline script
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Inline JavaScript Example</title>
+            </head>
+            <body>
+                <h1 id="title">Hello, World!</h1>
+                <button onclick="changeText()">Click Me</button>
+
+                <script>
+                    function changeText() {
+                        document.getElementById('title').innerText = 'Hello, JavaScript!';
+                    }
+                </script>
+            </body>
+            </html>
+
+
+
+External Script
+
+
+
+
+
+Common DOM Manipulation Methods
+    Accessing Elements:
+
+        document.getElementById('id'): Access an element by its ID.
+        document.querySelector('selector'): Select the first element matching a CSS selector.
+
+    Modifying Content:
+
+        element.innerText: Set or get the text inside an element.
+        element.innerHTML: Set or get the HTML content inside an element.
+
+    Changing Styles:
+
+        element.style.property: Modify CSS styles (e.g., element.style.color = 'red';).
+
+    Handling Events:
+
+        addEventListener(event, callback): Attach event handlers to elements.
+
+
+---------------------------------------------------------------------------------------------
+
+
+
+
+Use JavaScript to dynamically manipulate the DOM for a more interactive webpage.
+Connect HTML and JavaScript via <script> tags (inline or external).
+Use DOM methods like getElementById, innerText, and addEventListener for effective manipulation.
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+Practical Questions
+
+Perform Arithmetic Operations
+
+Create a webpage with two input fields to enter two numbers. Add buttons for the following arithmetic operations:
+Addition
+Subtraction
+Multiplication
+Division
+Display the results of each operation below the buttons when clicked.
+
+
+Check if a Number is Odd or Even
+
+Create a webpage with an input field to enter a number and a button labeled "Check Odd or Even."
+Write JavaScript code to determine whether the entered number is odd or even and display the result.
+
+
+Find the Factorial of a Number
+
+Create a webpage with an input field to enter a number and a button labeled "Calculate Factorial."
+Write JavaScript code to calculate and display the factorial of the entered number.
+
+
+Check if a Number is Prime
+
+Create a webpage with an input field to enter a number and a button labeled "Check Prime."
+Write JavaScript code to check whether the entered number is a prime number or not and display the result.
+
+
+Reverse a Number
+
+Create a webpage with an input field to enter a number and a button labeled "Reverse Number."
+Write JavaScript code to reverse the digits of the entered number and display the reversed number.
+Sum of Digits in a Number
+
+Create a webpage with an input field to enter a number and a button labeled "Calculate Sum of Digits."
+Write JavaScript code to calculate the sum of the digits in the entered number and display the result.
+
+
+Generate Multiplication Table
+
+Create a webpage with an input field to enter a number and a button labeled "Generate Multiplication Table."
+Write JavaScript code to generate and display the multiplication table for the entered number.
+
+
+
+Find the Largest Number in an Array
+
+Create a webpage with an input field where users can enter an array of numbers (comma-separated) and a button labeled "Find Largest."
+Write JavaScript code to find and display the largest number in the array.
+
+
+Check Palindrome Number
+
+Create a webpage with an input field to enter a number and a button labeled "Check Palindrome."
+Write JavaScript code to check whether the entered number is a palindrome (e.g., 121 is a palindrome) and display the result.
+
+
+Fibonacci Sequence
+
+Create a webpage with an input field to enter the number of terms and a button labeled "Generate Fibonacci Sequence."
+Write JavaScript code to generate and display the Fibonacci sequence up to the entered number of terms.
