@@ -30,3 +30,52 @@ Arrow Functions: A concise syntax for writing functions.
 Immediately Invoked Function Expressions (IIFE): 
 Functions that execute as soon as they are defined.
 
+
+
+
+
+
+
+Named Functions
+    A function with a specific name, typically used for reusable tasks.
+
+
+        function greet(name) {
+        return `Hello, ${name}!`;
+        }
+        console.log(greet("John")); // Output: Hello, John!
+
+
+Anonymous Functions
+    Functions without a name, often assigned to variables or used as callbacks.
+
+        const greet = function(name) {
+        return `Hi, ${name}!`;
+        };
+        console.log(greet("Alice")); // Output: Hi, Alice!
+
+
+Arrow Functions
+
+        const greet = (name) => `Hey, ${name}!`;
+        console.log(greet("Bob")); // Output: Hey, Bob!
+
+
+Immediately Invoked Function Expressions (IIFE)
+
+    Functions that execute as soon as they are defined, often used to create a private scope.
+
+            (function() {
+            console.log("This IIFE runs immediately!");
+            })(); 
+            // Output: This IIFE runs immediately!
+
+
+ JavaScript has several other types of functions, each designed for specific use cases.
+
+
+
+ Print numbers from 1 to 10 using a while loop.?(named function)
+ Calculate the sum of all odd numbers from 1 to 50 using a while loop.?Anonymous Function
+ Halve a number repeatedly until it becomes less than 1, printing each result.?(Arrow Function)
+ 
