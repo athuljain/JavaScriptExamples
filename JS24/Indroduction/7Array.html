@@ -1,0 +1,119 @@
+<!-- Write a JavaScript program to find the sum of all elements in a given array. -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Array Elements</title>
+</head>
+<body>
+    <h1>Sum of Array Elements</h1>
+    
+    <p>Array: [1, 2, 3, 4, 5]</p>
+    
+    <button onclick="calculateSum()">Calculate Sum</button>
+    
+    <p id="result"></p>
+
+    <script>
+        // Function to calculate the sum of array elements
+        function calculateSum() {
+            // Given array
+            const array = [1, 2, 3, 4, 5];
+            
+            // Calculate the sum using reduce method
+            const sum = array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+            
+            // Display the result
+            document.getElementById("result").innerText = "Sum of array elements: " + sum;
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- Sum of User-Entered Numbers -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of User-Entered Numbers</title>
+</head>
+<body>
+    <h1>Sum of User-Entered Numbers</h1>
+    
+    <label for="numbers">Enter numbers (comma-separated):</label>
+    <input type="text" id="numbers" placeholder="e.g., 1, 2, 3, 4, 5">
+    
+    <button onclick="calculateSum()">Calculate Sum</button>
+    
+    <p id="result"></p>
+
+    <script>
+        // Function to calculate the sum of user-entered numbers
+        function calculateSum() {
+            // Get the user input
+            const input = document.getElementById("numbers").value;
+            
+            // Split the input into an array of strings, then convert to numbers
+            const numbersArray = input.split(',').map(Number);
+            
+            // Check if all values are valid numbers
+            if (numbersArray.some(isNaN)) {
+                document.getElementById("result").innerText = "Please enter valid numbers separated by commas.";
+                return;
+            }
+            
+            // Calculate the sum using reduce method
+            const sum = numbersArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+            
+            // Display the result
+            document.getElementById("result").innerText = "Sum of numbers: " + sum;
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- ------------------------------------------------------------------------------------ -->
+
+
+<!-- Write a JavaScript program that takes two arrays as input and finds the common elements between them. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Elements Finder</title>
+   
+</head>
+<body>
+    <h2>Find Common Elements Between Two Arrays</h2>
+    <input type="text" id="array1" placeholder="Enter first array (comma-separated)">
+    <input type="text" id="array2" placeholder="Enter second array (comma-separated)">
+    <button onclick="findCommonElements()">Find Common Elements</button>
+    <h3>Common Elements:</h3>
+    <p id="result"></p>
+
+    <script>
+        function findCommonElements() {
+            let arr1 = document.getElementById('array1').value.split(',').map(item => item.trim());
+            let arr2 = document.getElementById('array2').value.split(',').map(item => item.trim());
+            let common = arr1.filter(value => arr2.includes(value));
+            document.getElementById('result').textContent = common.length > 0 ? common.join(', ') : 'No common elements found';
+        }
+    </script>
+</body>
+</html>
