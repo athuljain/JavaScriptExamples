@@ -31,11 +31,6 @@ Immediately Invoked Function Expressions (IIFE):
 Functions that execute as soon as they are defined.
 
 
-
-
-
-
-
 Named Functions
     A function with a specific name, typically used for reusable tasks.
 
