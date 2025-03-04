@@ -1,0 +1,16 @@
+objects
+
+An object in JavaScript is a collection of key-value pairs, 
+where keys are strings (property names) and values can be any data type. 
+Objects help store and organize data efficiently.
+
+
+syntax
+
+const objectName = {
+  key1: value1,
+  key2: value2,
+  key3: value3
+};
+
+

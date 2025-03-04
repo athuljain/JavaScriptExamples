@@ -8,8 +8,8 @@
 // You can access an element of an array using its index.
 
 // let fruits = ["Apple", "Banana", "Cherry"];
-// console.log(fruits[1]); // Output: Banana
-
+// console.log(fruits)
+// console.log(fruits[1]); 
 
 
 // Modifying Array Elements:
@@ -17,8 +17,8 @@
 // You can modify an array element by using its index.
 
 // let fruits = ["Apple", "Banana", "Cherry"];
-// fruits[1] = "Mango"; // Changes "Banana" to "Mango"
-// console.log(fruits); // Output: ["Apple", "Mango", "Cherry"]
+// fruits[1] = "Mango"; 
+// console.log(fruits); 
 
 
 // Array Length:
@@ -26,7 +26,7 @@
 // The length property returns the number of elements in an array.
 
 // let fruits = ["Apple", "Banana", "Cherry"];
-// console.log(fruits.length); // Output: 3
+// console.log(fruits.length); 
 
 
 // Adding Elements to an Array:
@@ -34,15 +34,15 @@
 // Use push() to add elements to the end of an array.
 
 // let fruits = ["Apple", "Banana"];
-// fruits.push("Cherry"); // Adds "Cherry" to the end
-// console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
+// fruits.push("Cherry"); 
+// console.log(fruits);
 
 
 // Use unshift() to add elements to the beginning of an array.
 
 // let fruits = ["Banana", "Cherry"];
-// fruits.unshift("Apple"); // Adds "Apple" to the beginning
-// console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
+// fruits.unshift("Apple"); 
+// console.log(fruits); 
 
 
 // Removing Elements from an Array:
@@ -50,15 +50,14 @@
 // Use pop() to remove the last element of an array.
 
 // let fruits = ["Apple", "Banana", "Cherry"];
-// fruits.pop(); // Removes "Cherry"
-// console.log(fruits); // Output: ["Apple", "Banana"]
-
+// fruits.pop(); 
+// console.log(fruits);
 
 // Use shift() to remove the first element of an array.
 
-// let fruits = ["Apple", "Banana", "Cherry"];
-// fruits.shift(); // Removes "Apple"
-// console.log(fruits); // Output: ["Banana", "Cherry"]
+let fruits = ["Apple", "Banana", "Cherry"];
+fruits.shift(); 
+console.log(fruits);
 
 
 // Finding the Index of an Element:
