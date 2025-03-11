@@ -73,6 +73,8 @@ What are Variables?
 
                 var x=10
 
+            
+
 
 
             In JavaScript, you can also use the "let" and "const" keywords to declare variables.
@@ -108,7 +110,8 @@ What are Variables?
 ----------------------------------------------------------------------------------------------
 
 Data Types
-    In JavaScript, there are several data types that you can use to store different types of data. Some common data types include:
+    In JavaScript, there are several data types that you can use to store different types of data. 
+    Some common data types include:
 
         Numbers (e.g. 10, 3.14)
         Strings (e.g. "hello", 'world')
