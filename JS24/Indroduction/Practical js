@@ -1,0 +1,62 @@
+1. Variables & Data Types
+✅ Q1: Write a JavaScript program to declare two variables, a and b, assign them values, and print their sum.
+
+✅ Q2: Declare a variable name and store your name in it. Print "Hello, [name]!" using string concatenation.
+
+✅ Q3: Create a variable to store your age. Check if it is greater than or equal to 18 and print "You are an adult" or "You are a minor".
+
+2. Operators & Conditionals
+✅ Q4: Write a program to check if a number is even or odd.
+
+✅ Q5: Take two numbers as input and print the larger number using an if-else statement.
+
+✅ Q6: Write a program that takes a number as input and prints:
+
+"Positive" if it's greater than zero,
+"Negative" if it's less than zero,
+"Zero" otherwise.
+3. Loops
+✅ Q7: Write a program to print numbers from 1 to 10 using a for loop.
+
+✅ Q8: Use a while loop to print all even numbers between 1 and 20.
+
+✅ Q9: Write a program to find the sum of all numbers from 1 to 100 using a loop.
+
+✅ Q10: Write a program that prints the multiplication table of a given number.
+
+4. Arrays
+✅ Q11: Create an array of five fruits and print each fruit using a loop.
+
+✅ Q12: Given an array [10, 20, 30, 40, 50], write a program to find and print the largest number.
+
+✅ Q13: Write a program to reverse an array without using the .reverse() method.
+
+✅ Q14: Given an array [5, 10, 15, 20, 25], write a function to find the sum of all elements in the array.
+
+5. Functions
+✅ Q15: Write a function that takes two numbers as parameters and returns their sum.
+
+✅ Q16: Write a function that takes a string as input and returns its length.
+
+✅ Q17: Create a function that checks whether a given number is prime or not.
+
+✅ Q18: Write a function that converts Celsius to Fahrenheit. Formula:
+fahrenheit = (celsius × 9/5) + 32
+
+✅ Q19: Write a function that counts the number of vowels in a given string.
+
+6. Strings & Manipulation
+✅ Q20: Write a JavaScript program to take a string as input and print it in uppercase.
+
+✅ Q21: Write a function that takes a string and checks whether it is a palindrome (reads the same forward and backward).
+
+✅ Q22: Write a program that replaces all occurrences of the word "bad" with "good" in a given sentence.
+
+✅ Q23: Given a string "JavaScript", write a program to extract and print only "Script".
+
+7. Basic DOM Manipulation
+✅ Q24: Write a JavaScript program that changes the text of a <p> element when a button is clicked.
+
+✅ Q25: Create an HTML button and write a script to change the background color of the page when the button is clicked.
+
+✅ Q26: Write a program that takes user input using prompt() and displays it inside an HTML <h1> element.
