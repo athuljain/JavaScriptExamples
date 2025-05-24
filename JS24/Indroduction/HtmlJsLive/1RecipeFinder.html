@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="1Recipe.css">
+
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>Recipe Finder</h1>
+    <input type="text" id="searchInput" placeholder="Search for a recipe...">
+   <button id="search-btn">Search</button>
+    <div id="results"></div>
+  </div>
+
+ 
+  <script>
+
+let searchBtn = document.getElementById("search-btn");
+let input = document.getElementById("searchInput");
+let result = document.getElementById("results");
+
+// Only attach event after DOM is ready
+document.addEventListener("DOMContentLoaded", () => {
+  input.focus();
+  searchBtn.addEventListener("click", searchRecipe);
+  input.addEventListener("keyup", (e) => {
+    if (e.key === "Enter") searchRecipe();
+  });
+});
+
+function searchRecipe() {
+  input.focus();
+  let userValue = input.value;
+  if (userValue.trim() === "") {
+    result.innerHTML = `<h3>Input Field Cannot be Empty</h3>`;
+    return;
+  }
+
+  fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + userValue)
+    .then((res) => res.json())
+    .then((data) => {
+      if (!data.meals) {
+        result.innerHTML = `<h3>No recipe found for "${userValue}"</h3>`;
+        return;
+      }
+
+      let meal = data.meals[0];
+      let ingredients = [];
+      let count = 1;
+
+      for (let key in meal) {
+        if (key.startsWith("strIngredient") && meal[key]) {
+          let ingredient = meal[key];
+          let measure = meal["strMeasure" + count];
+          ingredients.push(`${measure} ${ingredient}`);
+          count++;
+        }
+      }
+
+      result.innerHTML = `
+        <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
+        <div class="details">
+          <h2>${meal.strMeal}</h2>
+          <h4>${meal.strArea}</h4>
+        </div>
+        <div class="ingredient-content"></div>
+        <div class="recipe" style="display: none;">
+          <button id="hide-recipe">X</button>
+          <pre>${meal.strInstructions}</pre>
+        </div>
+        <button id="show-recipe">View Recipe</button>
+      `;
+
+      let recipe = document.querySelector(".recipe");
+      document.getElementById("hide-recipe").onclick = () =>
+        (recipe.style.display = "none");
+      document.getElementById("show-recipe").onclick = () =>
+        (recipe.style.display = "block");
+
+      let ingredientList = document.querySelector(".ingredient-content");
+      let ul = document.createElement("ul");
+      ingredients.forEach((i) => {
+        let li = document.createElement("li");
+        li.innerText = i;
+        ul.appendChild(li);
+      });
+      ingredientList.appendChild(ul);
+    })
+    .catch(() => {
+      result.innerHTML = `<h3>Error fetching recipe. Try again.</h3>`;
+    });
+}
+
+  </script>
+</body>
+
+</html>

@@ -1,13 +1,13 @@
 // // Using var
-// var greeting = "Hello";
-// console.log(greeting); 
+var greeting = "Hello";
+console.log(greeting); 
 
 // // Using let
-// let age = 25;
-// console.log(age); 
+let age = 25;
+console.log(age); 
 
-// age = 26; // Updating value
-// console.log(age); 
+age = 26; // Updating value
+console.log(age); 
 
 // // Using const
 // const country = "India";

@@ -28,6 +28,7 @@ let fruits = ["Apple", "Banana", "Cherry"];
 console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
 
 
+
 Common Array Operations:
 
 
