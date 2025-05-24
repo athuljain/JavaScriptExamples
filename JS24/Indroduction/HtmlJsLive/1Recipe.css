@@ -1,133 +1,120 @@
-* {
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
+   body {
+      font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #f43f5e, #f97316);
       color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      min-height: 100vh;
-      padding: 40px 20px;
+      margin: 0;
+      padding: 30px 20px;
     }
 
     .container {
-      background-color: #ffffff10;
+      max-width: 800px;
+      margin: auto;
+      background: #ffffff10;
       padding: 30px;
       border-radius: 16px;
-      max-width: 600px;
-      width: 100%;
       box-shadow: 0 8px 16px rgba(0,0,0,0.2);
       backdrop-filter: blur(10px);
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 20px;
-      font-size: 2.5em;
+      margin-bottom: 30px;
     }
 
     input[type="text"] {
-      width: calc(100% - 110px);
+      width: 65%;
       padding: 12px;
-      border: none;
+      font-size: 16px;
       border-radius: 8px;
-      outline: none;
-      font-size: 1em;
+      border: none;
       margin-right: 10px;
     }
 
-    button {
+    #search-btn {
       padding: 12px 20px;
-      border: none;
-      background-color: #fff;
-      color: #f43f5e;
-      font-weight: bold;
+      font-size: 16px;
       border-radius: 8px;
+      border: none;
+      background: white;
+      color: #f43f5e;
       cursor: pointer;
-      transition: background 0.3s ease;
+      font-weight: bold;
     }
 
-    button:hover {
-      background-color: #ffe4e6;
+    #search-btn:hover {
+      background: #ffe4e6;
+    }
+
+    .special-recipes {
+      margin-bottom: 30px;
+    }
+
+    .special-recipes h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .card {
+      background-color: #fff3;
+      border-radius: 12px;
+      overflow: hidden;
+      width: calc(50% - 10px);
+      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 10px;
+    }
+
+    .card-body h3 {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    .card-body button {
+      background-color: #16a34a;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .card-body button:hover {
+      background-color: #22c55e;
     }
 
     #results img {
       width: 100%;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-
-    .details h2 {
-      margin: 10px 0 5px;
-      font-size: 1.8em;
-    }
-
-    .details h4 {
-      margin: 0;
-      font-size: 1.2em;
-      font-weight: normal;
-      opacity: 0.9;
-    }
-
-    .ingredient-content ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 20px 0;
-    }
-
-    .ingredient-content li {
-      background: #fff3;
-      margin-bottom: 6px;
-      padding: 8px 12px;
-      border-radius: 6px;
-    }
-
-    .recipe {
-      background-color: #fff2;
       border-radius: 10px;
-      padding: 15px;
       margin-top: 20px;
-      position: relative;
     }
 
-    .recipe button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: #dc2626;
-      color: white;
-      font-size: 14px;
-      padding: 5px 10px;
-    }
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
 
-    pre {
-      white-space: pre-wrap;
-      font-size: 1em;
-      line-height: 1.5;
-    }
-
-    #show-recipe {
-      margin-top: 10px;
-      background-color: #16a34a;
-      color: white;
-    }
-
-    #show-recipe:hover {
-      background-color: #22c55e;
-    }
-
-    @media screen and (max-width: 600px) {
       input[type="text"] {
         width: 100%;
         margin-bottom: 10px;
       }
 
-      button {
+      #search-btn {
         width: 100%;
       }
     }
