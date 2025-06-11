@@ -54,6 +54,6 @@ const post = {
   ]
 };
 
-
+console.log({...post,banned:"false"})
 
 

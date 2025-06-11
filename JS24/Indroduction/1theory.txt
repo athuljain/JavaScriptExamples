@@ -168,3 +168,131 @@ Operators and Expressions
 
 
         
+
+
+Q&a -------------------------------------------------------------------------------------------------------
+
+
+ 1. What is JavaScript and why is it used?
+Answer:
+JavaScript is a lightweight, object-oriented scripting language used to create dynamic and interactive web pages. 
+It allows you to control web page behavior, manipulate the DOM, handle events, perform validations, 
+and even build full backend services using Node.js.
+
+
+
+
+
+2. What is the difference between var, let, and const?
+
+| Keyword | Scope           | Re-declaration | Reassignment | Use Case              |
+| ------- | --------------- | -------------- | ------------ | --------------------- |
+| var     | Function/global | Yes            | Yes          | Older JS code         |
+| let     | Block           | No             | Yes          | Variables that change |
+| const   | Block           | No             | No           | Constants (fixed)     |
+
+
+
+
+3. What are the different data types in JavaScript?
+
+
+Primitive types: Number, String, Boolean, Null, Undefined, Symbol, BigInt.
+
+Non-Primitive (Reference): Objects, Arrays, Functions.
+
+
+4. What is the difference between undefined and null?
+
+
+undefined means a variable has been declared but not assigned a value.
+
+null is an assignment value that represents "no value" or "empty".
+
+
+
+let a;
+console.log(a); // undefined
+
+let b = null;
+console.log(b); // null
+
+
+
+5. What are JavaScript operators? Give examples.
+
+
+Operators are symbols used to perform operations on values/variables.
+
+Examples:
+
+Arithmetic: +, -, *, /, %
+
+Comparison: ==, ===, >, <, !=
+
+Logical: &&, ||, !
+
+Assignment: =, +=, -=
+
+Ternary: condition ? value1 : value2
+
+
+
+
+6. What are variables in JavaScript? How are they declared?
+
+
+Variables store data in memory. They are declared using:
+
+var (function scoped),
+
+let (block scoped, can be updated),
+
+const (block scoped, cannot be updated).
+
+
+
+7. What is the use of typeof operator?
+
+
+The typeof operator is used to find the type of a variable.
+
+
+
+typeof "Hello"     // "string"
+typeof 42          // "number"
+typeof true        // "boolean"
+typeof undefined   // "undefined"
+typeof null        // "object"
+
+
+
+8. What is the difference between == and === in JavaScript?
+
+== compares values after type coercion (loose equality).
+
+=== compares both value and type (strict equality).
+
+'5' == 5   // true
+'5' === 5  // false
+
+
+9. What is an object in JavaScript?
+
+const person = {
+  name: "Athul",
+  age: 25,
+  isStudent: false
+};
+
+10. Why is JavaScript called a dynamic language?
+
+JavaScript is called dynamic because:
+
+Variables can hold values of any type.
+
+Data types are determined at runtime.
+
+You can change the type of value stored in a variable dynamically.
+
+
