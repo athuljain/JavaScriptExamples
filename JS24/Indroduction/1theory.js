@@ -4,28 +4,30 @@ console.log(greeting);
 
 // // Using let
 let age = 25;
-console.log(age); 
+ console.log(age);
 
 age = 26; // Updating value
+
 console.log(age); 
 
 // // Using const
-// const country = "India";
-// console.log(country); 
+const country = "India";
+console.log(country); 
 
-// // country = "USA"; // Error: Assignment to constant variable
+// country = "USA"; // Error: Assignment to constant variable
 
+// console.log(country)
 
 // ------------------------------------------------------------------------------------
 
 
-// var x = 10;
-// var y = 20;
-// var z = x + y; 
+var x = 10;
+var y = 20;
+var z = x + y; 
 
-// var str1 = "hello";
-// var str2 = "world";
-// var str3 = str1 + " " + str2; 
+var str1 = "hello";
+var str2 = "world";
+var str3 = str1 + " " + str2; 
 
 
 // console.log(str3);

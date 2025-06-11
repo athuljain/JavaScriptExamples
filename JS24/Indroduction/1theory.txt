@@ -40,7 +40,11 @@ Advantages of JavaScript
 
 
 JavaScript is a powerful and widely used programming language for web development. 
-It enables interactivity, enhances user experience, and is essential for both frontend and backend development.
+It enables interactivity, enhances user experience, and is essential for 
+both frontend and backend development.
+
+
+
 
 Do we need to install Javascript?
         NO. 
