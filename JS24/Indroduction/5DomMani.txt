@@ -11,6 +11,10 @@ To connect JavaScript with HTML:
     Use the <script> tag to include JavaScript either in the same file or an external file.
 
 
+👉 DOM = Document Object Model
+👉 A tree-like structure created by the browser to represent HTML elements as objects
+👉 JavaScript uses the DOM to access and manipulate HTML and CSS
+
 Inline script
 
             <!DOCTYPE html>
@@ -68,6 +72,27 @@ Common DOM Manipulation Methods
 Use JavaScript to dynamically manipulate the DOM for a more interactive webpage.
 Connect HTML and JavaScript via <script> tags (inline or external).
 Use DOM methods like getElementById, innerText, and addEventListener for effective manipulation.
+
+
+
+
+
+Selecting Elements
+👉 You must select elements before manipulating them
+
+| Method                     | Example                                      |
+| -------------------------- | -------------------------------------------- |
+| `getElementById()`         | `document.getElementById('myId')`            |
+| `getElementsByClassName()` | `document.getElementsByClassName('myClass')` |
+| `getElementsByTagName()`   | `document.getElementsByTagName('p')`         |
+| `querySelector()`          | `document.querySelector('.myClass')`         |
+| `querySelectorAll()`       | `document.querySelectorAll('div')`           |
+
+
+
+
+
+
 
 
 

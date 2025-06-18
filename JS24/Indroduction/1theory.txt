@@ -138,7 +138,7 @@ Primitive and Non-Primitive (Reference).
         Undefined (a special value that represents an uninitialized variable)
         Primitives are immutable, which means that once they are created, they cannot be changed.
            
-            let x = 10;
+            let x = 10
             x = 20; // x is now 20
 
     

@@ -1,7 +1,6 @@
-
 <!-- Inline script -->
 
-            <!-- <!DOCTYPE html>
+<!-- <!DOCTYPE html>
             <html lang="en">
             <head>
                 <meta charset="UTF-8">
@@ -20,18 +19,12 @@
             </body>
             </html> -->
 
-
-
 <!-- ----------------------------------------------------------------------------------------------- -->
-
-
 
 <!-- external script -->
 
-
-
 <!-- HTML File -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,5 +35,91 @@
     <h1 id="message">Welcome!</h1>
     <button id="updateButton">Update Message</button>
     <script src="5Dom.js"></script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Practical</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Hello DOM</h1>
+      <input type="text" id="myInput" placeholder="Type something" />
+      <button id="btn">Click me</button>
+      <div id="myDiv"></div>
+    </div>
+
+    <script>
+      // Change text
+      document.getElementById("title").textContent = "Welcome to DOM Practice";
+
+      // Create and append paragraph
+      const newPara = document.createElement("p");
+      newPara.textContent = "This paragraph is added using JS!";
+      document.getElementById("myDiv").appendChild(newPara);
+
+      // Button click event
+      document.getElementById("btn").addEventListener("click", function () {
+        alert("Button clicked!");
+      });
+
+      // Input keyup event
+      document
+        .getElementById("myInput")
+        .addEventListener("keyup", function (e) {
+          console.log("Typing:", e.target.value);
+        });
+    </script>
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div>
+
+    <input type="text" id="itemInput" placeholder="Enter item">
+<button id="addItemBtn">Add Item</button>
+<ul id="itemList"></ul>
+
+<script>
+  const addItemBtn = document.getElementById('addItemBtn');
+  const itemInput = document.getElementById('itemInput');
+  const itemList = document.getElementById('itemList');
+
+  addItemBtn.addEventListener('click', function() {
+    const itemText = itemInput.value;
+    if (itemText.trim() !== "") {
+      const li = document.createElement('li');
+      li.textContent = itemText;
+
+      // Add delete on click
+      li.addEventListener('click', function() {
+        li.remove();
+      });
+
+      itemList.appendChild(li);
+      itemInput.value = "";
+    }
+  });
+</script>
+
+</div>
+
+
+
+
+
+
+    
 </body>
 </html>
