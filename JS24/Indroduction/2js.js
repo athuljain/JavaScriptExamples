@@ -1,4 +1,4 @@
-// let age = 16;
+// let age = 26;
 
 // if (age >= 18) {
 //     console.log("You are eligible to vote.");
@@ -28,15 +28,15 @@
 // Write a program to determine if a person is a child, teenager, or adult based on their age.
 
 
-let age = 15;
+// let age = 15;
 
-if (age < 13) {
-    console.log("You are a child.");
-} else if (age >= 13 && age <= 19) {
-    console.log("You are a teenager.");
-} else {
-    console.log("You are an adult.");
-}
+// if (age < 13) {
+//     console.log("You are a child.");
+// } else if (age >= 13 && age <= 19) {
+//     console.log("You are a teenager.");
+// } else {
+//     console.log("You are an adult.");
+// }
 
 // -----------------------------------------------------------------------------
 
@@ -98,7 +98,7 @@ if (age < 13) {
 
 // ternary operator
 
-// // Check if a number is even or odd?
+// Check if a number is even or odd?
 
 // let number = 5;
 

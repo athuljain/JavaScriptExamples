@@ -4,6 +4,9 @@ If else conditionals
     specified condition. If the condition evaluates to true, the code inside the if block runs. 
     Otherwise, the code inside the else block executes.
 
+    
+    //////   syntax ///////
+    
         if (condition) {
         // Code to execute if condition is true
         } else {
