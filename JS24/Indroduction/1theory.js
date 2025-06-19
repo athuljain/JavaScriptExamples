@@ -1,6 +1,6 @@
 // // Using var
-var greeting = "Hello";
-console.log(greeting); 
+// var greeting = "Hello";
+// console.log(greeting); 
 
 // // Using let
 // let age = 25;
@@ -8,11 +8,11 @@ console.log(greeting);
 
 // age = 26; // Updating value
 
-console.log(age); 
+// console.log(age); 
 
 // // // Using const
-const country = "India";
-console.log(country); 
+// const country = "India";
+// console.log(country); 
 
 // country = "USA"; // Error: Assignment to constant variable
 
@@ -45,14 +45,14 @@ console.log(country);
 
 //  + (Addition), - (Subtraction), * (Multiplication), / (Division), % (Modulus).
 
-let a = 10;
-let b = 3;
+// let a = 10;
+// let b = 3;
 
-console.log("addition :",a + b); 
-console.log(a - b); 
-console.log(a * b); 
-console.log(a / b); 
-console.log(a % b); 
+// console.log("addition :",a + b); 
+// console.log(a - b); 
+// console.log(a * b); 
+// console.log(a / b); 
+// console.log(a % b); 
 
 
 
@@ -61,27 +61,27 @@ console.log(a % b);
 
 // Examples: >, <, >=, <=, ==, !=, ===, !==.
 
-let x = 5;
-let y = 10;
+// let x = 5;
+// let y = 10;
 
-let z=5
-let u="5"
-
-
-
-console.log(z+u);
-
-console.log("==",z==u)
-console.log("===",z===u)
+// let z=5
+// let u="5"
 
 
 
-console.log("x > y",x > y); 
-console.log(x < y); 
-console.log(x == y); 
-console.log(x != y); 
-console.log("===",x === 5);
-console.log(x !== "5"); 
+// console.log(z+u);
+
+// console.log("==",z==u)
+// console.log("===",z===u)
+
+
+
+// console.log("x > y",x > y); 
+// console.log(x < y); 
+// console.log(x == y); 
+// console.log(x != y); 
+// console.log("===",x === 5);
+// console.log(x !== "5"); 
 
 
 
@@ -91,12 +91,12 @@ console.log(x !== "5");
 // Examples: && (AND), || (OR), ! (NOT).
 
 
-let p = true;
-let q = false;
+// let p = true;
+// let q = false;
 
-console.log("",p && q);
-console.log("",p || q); 
-console.log("",!p);     
+// console.log("",p && q);
+// console.log("",p || q); 
+// console.log("",!p);     
 
 
 
@@ -105,19 +105,24 @@ console.log("",!p);
 
 // Examples: =, +=, -=, *=, /=.
 
-let num = 10;
+// let num = 10;
 
-num += 5; 
-console.log(num);
+// num += 5; 
+// console.log(num);
 
-num *= 2;
-console.log(num);
+// num *= 2;
+// console.log(num);
 
 
 // Conditional (Ternary) Operator
 // A shorthand for if-else statements. Syntax: condition ? valueIfTrue : valueIfFalse.
 
-let age = 18;
+// let age = 18;
 
-let message = (age >= 18) ? "You are an adult" : "You are a minor";
-console.log(message); 
+// let message = (age >= 18) ? "You are an adult" : "You are a minor";
+// console.log(message); 
+
+
+
+// let A=null
+// console.log(A)

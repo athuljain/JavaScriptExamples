@@ -244,7 +244,7 @@ Ternary: condition ? value1 : value2
 
 Variables store data in memory. They are declared using:
 
-var (function scoped),
+var (function scoped or global scope),
 
 let (block scoped, can be updated),
 
