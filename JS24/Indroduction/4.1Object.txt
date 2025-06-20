@@ -36,3 +36,75 @@ const user = {
 
 
 
+-----------------------------------------------------------
+
+
+Q&A
+
+ What is an object in JavaScript?
+Answer:
+
+An object in JavaScript is a collection of key-value pairs. 
+Keys are strings (or Symbols), and the values can be any data type 
+(string, number, boolean, array, function, or even another object). 
+Objects are used to store structured data.
+
+
+How do you access properties of an object?
+Answer:
+You can access object properties using dot notation or bracket notation:
+
+
+const user = {
+  name: "Athul Jain",
+  age: 25,
+  email: "athul@example.com",
+  isVerified: true
+};
+
+
+console.log(user.name); // dot notation
+console.log(user['email']); // bracket notation
+
+
+What is the difference between an object and an array?
+Answer:
+
+Object: key-value pairs
+
+Array: indexed collection of values
+
+
+const user = { name: "Athul", age: 25 };
+const array = [1, 2, 3, 4];
+
+
+How can you check if a property exists in an object?
+Answer:
+You can use the in operator or hasOwnProperty():
+
+'name' in user; // true
+user.hasOwnProperty('email'); // true
+
+
+What is object destructuring?
+Answer:
+It allows extracting values from an object into variables:
+
+
+const { name, email } = user;
+console.log(name, email);
+
+
+
+ How can you merge two objects?
+Answer:
+Using Object.assign() or spread operator:
+
+
+const obj1 = { a: 1 };
+const obj2 = { b: 2 };
+const merged = { ...obj1, ...obj2 };
+console.log(merged); // { a: 1, b: 2 }
+
+
