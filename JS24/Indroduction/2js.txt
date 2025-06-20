@@ -217,3 +217,93 @@ Write a program to classify temperature:
 temp > 30: Hot
 temp between 15 and 30: Warm
 temp < 15: Cold
+
+
+
+
+
+// Q&a
+
+
+
+What is the purpose of if...else statements in JavaScript?
+Answer:
+
+The if...else statement allows you to execute certain code only if a condition is true, 
+and a different block of code if the condition is false. It helps control the flow of the 
+program based on dynamic conditions.
+
+
+What is a nested if statement? Give an example.
+
+Answer:
+A nested if statement is an if statement inside another if. 
+It is used to check multiple levels of conditions.
+
+eg:
+
+let age = 25;
+if (age > 18) {
+    if (age < 60) {
+        console.log("You are an adult.");
+    }
+}
+
+
+
+What is an if...else ladder and when is it used?
+
+Answer:
+An if...else ladder allows testing multiple conditions one after the other. 
+It is used when there are multiple possibilities to check.
+
+eg:
+
+let score = 75;
+
+if (score >= 90) {
+    console.log("Grade A");
+} else if (score >= 75) {
+    console.log("Grade B");
+} else if (score >= 50) {
+    console.log("Grade C");
+} else {
+    console.log("Failed");
+}
+
+
+What is a switch statement and how does it differ from if...else ladder?
+Answer:
+
+A switch statement checks the value of an expression and executes code based on matching case values.
+It is generally used when testing one variable against multiple possible constant values, 
+making the code more readable than a long if...else ladder.
+
+
+What happens if you forget the break statement in a switch case?
+
+Answer:
+If you forget to include break, the program will execute the matched case and then 
+continue executing the remaining cases ("fall-through behavior") until it reaches 
+a break or the end of the switch.
+
+
+What is the ternary operator and why is it useful?
+Answer:
+The ternary operator is a shorthand way to write an if...else statement. 
+It makes the code more concise.
+
+syntax:
+
+condition ? valueIfTrue : valueIfFalse;
+
+eg:
+
+let age = 20;
+let message = (age >= 18) ? "Adult" : "Minor";
+console.log(message);
+
+
+
+
+
