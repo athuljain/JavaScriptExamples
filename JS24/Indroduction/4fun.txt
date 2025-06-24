@@ -13,10 +13,16 @@ Advantages of Using Functions
 ----------------------------------------------------------------------------------------------
 
 
+        function FunctionOne(){
+
+        }
+
+
         function functionName(parameters) {
             // Code to be executed
             return value; // Optional
         }
+
 
 
 -----------------------------------------------------------------------------------------------
