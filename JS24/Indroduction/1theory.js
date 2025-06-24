@@ -64,15 +64,13 @@
 // let x = 5;
 // let y = 10;
 
-// let z=5
-// let u="5"
+let z=5
+let u="5"
 
+console.log(z+u);
 
-
-// console.log(z+u);
-
-// console.log("==",z==u)
-// console.log("===",z===u)
+console.log("==",z==u)
+console.log("===",z===u)
 
 
 
