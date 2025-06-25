@@ -1,6 +1,8 @@
 What is DOM Manipulation?
- - DOM (Document Object Model) is the interface that allows programs to interact with HTML and XML documents.
- - DOM manipulation refers to using JavaScript to dynamically update the content, structure, and style of a webpage.
+ - DOM (Document Object Model) is the interface that allows programs to interact with HTML 
+    and XML documents.
+ - DOM manipulation refers to using JavaScript to dynamically update the content, 
+ structure, and style of a webpage.
 
 Connecting HTML and JavaScript
     HTML: Structure of the webpage.

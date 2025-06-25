@@ -31,3 +31,14 @@ else {
 }
     
     
+
+
+const add=()=> console.log(5+3)
+add()
+
+
+
+function sum(name){
+    return `hi, ${name}`;
+}
+console.log(sum("sdfghjkl"))
