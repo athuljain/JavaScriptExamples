@@ -5,10 +5,12 @@ const user = {
   isVerified: true
 };
 
-// console.log("user object :",user.name)
+// console.log("user object :",user)
+// console.log('user Name :',user.name);
 
-console.log(user.name); // dot notation
-console.log(user['email']); // bracket notation
+
+console.log("Dot notation :",user.email); // dot notation
+console.log("bracket notation :",user['email']); // bracket notation
 
 
 // if a property exists in an object?
@@ -21,66 +23,75 @@ console.log(user.hasOwnProperty('email'));
 // object destructuring
 
 
-const { name, email } = user;
-console.log(name, email);
+const { name, email ,age} = user;
+console.log(name, email,age);
 
 
 // ----------------------------------------------------
 
 
 
-// const product = {
-//   id: "P1001",
-//   name: "Wireless Mouse",
-//   price: 499,
-//   inStock: true,
-//   tags: ["electronics", "accessories"]
-// };
+const product = {
+  id: "P1001",
+  name: "Wireless Mouse",
+  price: 499,
+  inStock: true,
+  tags: ["electronics", "accessories"]
+};
 
 
-// console.log("Product :",product.tags)
+console.log("Product :",product.tags)
 
 
 // ----------------------------------------------------
 
 
-// const users = [
-//   { name: "Alice", age: 22 },
-//   { name: "Bob", age: 30 },
-//   { name: "Charlie", age: 28 }
-// ];
+const users = [
+  { name: "Alice", age: 22 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 28 }
+];
+
+console.log("Array object",users)
+
+console.log(users.name);
 
 
-// console.log(users.name);
-
-
-// users.forEach(user => {
-//   console.log(user.name);
-// });
+users.forEach(event => {
+  console.log(event.name);
+});
 
 
 
 // -------------------------------------------------------
 
 
-// const post = {
-//   title: "Learning JavaScript Objects",
-//   author: "Athul Jain",
-//   content: "Objects in JavaScript are key-value structures...",
-//   likes: 105,
-//   comments: [
-//     { user: "rahul", comment: "Very helpful!" },
-//     { user: "meera", comment: "Great explanation!" }
-//   ]
-// };
-// console.log("before",post);
+const post = {
+  title: "Learning JavaScript Objects",
+  author: "Athul Jain",
+  content: "Objects in JavaScript are key-value structures...",
+  likes: 105,
+  comments: [
+    { user: "rahul", comment: "Very helpful!" },
+    { user: "meera", comment: "Great explanation!" }
+  ]
+};
+console.log("before",post);
 
-// console.log({...post,banned:"false"})
-
-
+console.log({...post,banned:"false"})
 
 
-const obj1 = { a: 1 };
-const obj2 = { b: 2 };
+
+
+const obj1 = {   title: "Learning JavaScript Objects",
+  author: "Athul Jain",
+  content: "Objects in JavaScript are key-value structures...",
+  likes: 105, };
+const obj2 = {   title: "Learning React js",
+  author: "Athul Jain",
+  content: "Objects in JavaScript are key-value structures...",
+  likes: 101, };
+
+
 const merged = { ...obj1, ...obj2 };
-console.log(merged); // { a: 1, b: 2 }
+console.log(merged.name); // { a: 1, b: 2 }

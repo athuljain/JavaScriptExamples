@@ -218,10 +218,6 @@ temp > 30: Hot
 temp between 15 and 30: Warm
 temp < 15: Cold
 
-
-
-
-
 // Q&a
 
 
