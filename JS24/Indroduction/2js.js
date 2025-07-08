@@ -44,33 +44,33 @@
 
 // // Nested if 
 
-let number = -10;
+// let number = -10;
 
-if (number > 0) {
-    if (number % 2 === 0) {
-        console.log("The number is positive and even.");
-    } else {
-        console.log("The number is positive but odd.");
-    }
-} else {
-    console.log("The number is not positive.");
-}
+// if (number > 0) {
+//     if (number % 2 === 0) {
+//         console.log("The number is positive and even.");
+//     } else {
+//         console.log("The number is positive but odd.");
+//     }
+// } else {
+//     console.log("The number is not positive.");
+// }
 
 
 
 // // if else ladder
 
-let marks = 85;
+// let marks = 85;
 
-if (marks >= 90) {
-    console.log("Grade: A");
-} else if (marks >= 75) {
-    console.log("Grade: B");
-} else if (marks >= 50) {
-    console.log("Grade: C");
-} else {
-    console.log("Grade: F");
-}
+// if (marks >= 90) {
+//     console.log("Grade: A");
+// } else if (marks >= 75) {
+//     console.log("Grade: B");
+// } else if (marks >= 50) {
+//     console.log("Grade: C");
+// } else {
+//     console.log("Grade: F");
+// }
 
 
 
@@ -80,21 +80,21 @@ if (marks >= 90) {
 
 
 
-let light = "green";
+// let light = "green";
 
-switch (light) {
-    case "red":
-        console.log("Stop");
-        break;
-    case "yellow":
-        console.log("Caution");
-        break;
-    case "green":
-        console.log("Go");
-        break;
-    default:
-        console.log("Invalid light color");
-}
+// switch (light) {
+//     case "red":
+//         console.log("Stop");
+//         break;
+//     case "yellow":
+//         console.log("Caution");
+//         break;
+//     case "green":
+//         console.log("Go");
+//         break;
+//     default:
+//         console.log("Invalid light color");
+// }
 
 
 // ----------------------------------------------------------------------------
