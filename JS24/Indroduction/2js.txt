@@ -94,6 +94,7 @@ Ternary Operator
     the condition is true or false.
 
         condition ? valueIfTrue : valueIfFalse;
+        
 
 
 
@@ -298,6 +299,9 @@ eg:
 let age = 20;
 let message = (age >= 18) ? "Adult" : "Minor";
 console.log(message);
+
+let numb=1999
+let msg=(numb%2 ==0)? "this is even" :"this is odd number"
 
 
 
