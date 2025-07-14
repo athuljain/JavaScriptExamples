@@ -40,6 +40,62 @@ const user = {
 -----------------------------------------------------------
 
 
+Nested Objects
+
+const student = {
+  name: "Arjun",
+  address: {
+    city: "Kochi",
+    zip: 682020
+  }
+};
+console.log(student.address.city); // Output: Kochi
+
+
+ Adding and Deleting Properties
+
+ const user = { name: "Athul" };
+user.age = 25; // Add
+delete user.name; // Delete
+console.log(user); // Output: { age: 25 }
+
+
+
+Object Methods
+Functions inside objects are called methods.
+
+
+const user = {
+  name: "Athul",
+  greet() {
+    return `Hello, ${this.name}`;
+  }
+};
+console.log(user.greet()); // Output: Hello, Athul
+
+
+Looping Through Object Properties
+Using for...in loop:
+
+
+const user = { name: "Athul", age: 25 };
+for (let key in user) {
+  console.log(key, user[key]);
+}
+
+Freezing and Sealing Objects
+Object.freeze() makes an object immutable.
+
+Object.seal() prevents adding or deleting properties but allows editing existing ones.
+
+
+const user = { name: "Athul" };
+Object.freeze(user);
+user.name = "Jain"; // No change
+console.log(user.name); // Output: Athul
+
+
+
 Q&A
 
  What is an object in JavaScript?
@@ -109,4 +165,10 @@ const merged = { ...obj1, ...obj2 };
 console.log(merged); // { a: 1, b: 2 }
 
 
+
+----------------------------------------
+
+
+Write a function to count how many keys are in an object.
+Merge two objects and overwrite the first if keys match.
 

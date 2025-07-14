@@ -1,17 +1,17 @@
 What is a Function in JavaScript?
+A function is a reusable block of code designed to perform a specific task.
 
-    A function is a reusable block of code that performs a specific task. 
-    Functions allow you to write clean, modular, and reusable code.
+✅ Benefits of Using Functions
+Code Reusability – Write once, reuse anywhere.
 
-Advantages of Using Functions
+Modularity – Break your code into logical parts.
 
-    Code Reusability: Write once, use multiple times.
-    Modularity: Breaks a program into smaller, manageable pieces.
-    Improved Readability: Makes the code easier to understand and debug.
-    Reduces Redundancy: Avoids repetition of code.
+Improved Readability – Easier to understand and debug.
+
+Reduces Redundancy – Avoid repetitive code.
 
 ----------------------------------------------------------------------------------------------
-
+// syntax
 
         function FunctionOne(){
 
@@ -25,6 +25,12 @@ Advantages of Using Functions
 
 
 
+function greet() {
+    console.log("Hello!");
+}
+greet();
+
+
 -----------------------------------------------------------------------------------------------
 
 Named Functions: A function with a specific name.
@@ -34,6 +40,7 @@ Anonymous Functions: Functions without a name, often used as expressions or call
 Arrow Functions: A concise syntax for writing functions.
 
 Immediately Invoked Function Expressions (IIFE): 
+
 Functions that execute as soon as they are defined.
 
 
@@ -58,6 +65,8 @@ Anonymous Functions
 
 Arrow Functions
 
+A shorthand way of writing functions (introduced in ES6).
+
         const greet = (name) => `Hey, ${name}!`;
         console.log(greet("Bob")); // Output: Hey, Bob!
 
@@ -65,6 +74,7 @@ Arrow Functions
 Immediately Invoked Function Expressions (IIFE)
 
     Functions that execute as soon as they are defined, often used to create a private scope.
+    A function that runs as soon as it is defined.
 
             (function() {
             console.log("This IIFE runs immediately!");
@@ -80,3 +90,18 @@ Immediately Invoked Function Expressions (IIFE)
  Calculate the sum of all odd numbers from 1 to 50 using a while loop.?Anonymous Function
  Halve a number repeatedly until it becomes less than 1, printing each result.?(Arrow Function)
  
+
+
+
+ Write a function to check if a number is even or odd.?
+ Create an arrow function to calculate the square of a number.?
+ Write a function to return the maximum of two numbers.?
+ Write an anonymous function that returns the factorial of a number.
+Arrow function to reverse a string.
+Function to find whether a number is prime.
+Function to print all even numbers from 1 to N.?
+Arrow function to calculate the average of 3 numbers.?
+IIFE to print the current date.?
+Create a function that counts vowels in a string.
+
+

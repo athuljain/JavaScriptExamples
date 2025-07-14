@@ -97,3 +97,26 @@
 
 // const merged = { ...obj1,obj2 };
 // console.log(merged); 
+
+
+
+
+// ------------------------------------
+
+
+// Write a function to count how many keys are in an object.
+
+function countKeys(obj) {
+  return Object.keys(obj).length;
+}
+console.log(countKeys({ a: 1, b: 2, c: 3 })); // Output: 3
+
+
+// Merge two objects and overwrite the first if keys match.?
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { b: 3, c: 4 };
+const merged = { ...obj1, ...obj2 };
+console.log(merged); // Output: { a: 1, b: 3, c: 4 }
+
+
