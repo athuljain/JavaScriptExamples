@@ -93,10 +93,10 @@ Immediately Invoked Function Expressions (IIFE)
 
 
 
- Write a function to check if a number is even or odd.?
- Create an arrow function to calculate the square of a number.?
- Write a function to return the maximum of two numbers.?
- Write an anonymous function that returns the factorial of a number.
+Write a function to check if a number is even or odd.?
+Create an arrow function to calculate the square of a number.?
+Write a function to return the maximum of two numbers.?
+Write an anonymous function that returns the factorial of a number.
 Arrow function to reverse a string.
 Function to find whether a number is prime.
 Function to print all even numbers from 1 to N.?

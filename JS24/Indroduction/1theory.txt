@@ -12,11 +12,11 @@ Why do we need programming?
 
 What is JavaScript?
 
-        JavaScript is a lightweight, OOP language.
+        JavaScript is a lightweight, OOP (Object oriented Programming) language.
         It is a scripting language for web pages.
         It is used to add interactivity and dynamic effects to web pages.
         “.js” is the extension.
-        Nowadays used in server-side development.
+        Nowadays used in server-side (Backend) development.
         JS Frontend Frameworks: React, Angular, Vue.
         JS Backend Frameworks: Express, Node.
 
@@ -68,6 +68,7 @@ What are Variables?
             you use the "var" keyword followed by the name of the variable.
 
                 var x;
+                var name
 
                     * var:-
                         Used in earlier versions of JavaScript.
@@ -79,6 +80,7 @@ What are Variables?
             You can also assign a value to a variable when you declare it
 
                 var x=10
+                var name="aleena"
 
             
 

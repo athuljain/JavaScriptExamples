@@ -1,6 +1,6 @@
 // // Using var
-// var greeting = "Hello";
-// console.log(greeting); 
+var greeting = "Hello";
+console.log(greeting); 
 // var greeting="mrng"
 // console.log(greeting); 
 
@@ -90,8 +90,8 @@
 
 //  + (Addition), - (Subtraction), * (Multiplication), / (Division), % (Modulus).
 
-let a = 10;
-let b = 3;
+// let a = 10;
+// let b = 3;
 
 // console.log("addition :",a + b); 
 // console.log("subtraction : ",a - b); 
@@ -107,31 +107,31 @@ let b = 3;
 // Examples: >, <, >=, <=, ==, !=, ===, !==.
 
 
-let z=5
-let u="5"
-let defenition=" is a number"
+// let z=5
+// let u="5"
+// let defenition=" is a number"
 
 
-console.log(z+u);
+// console.log(z+u);
 
-console.log(z+defenition);
+// console.log(z+defenition);
 
-console.log("==",z==u)
+// console.log("==",z==u)
 
-console.log("===",z===u)
-
-
-
-let x = 5;
-let y = 10;
+// console.log("===",z===u)
 
 
-console.log("x > y",x > y); 
-console.log(x < y); 
-console.log(x == y); 
-console.log(x != y); 
-console.log("===",x === 5);
-console.log(x !== "5"); 
+
+// let x = 5;
+// let y = 10;
+
+
+// console.log("x > y",x > y); 
+// console.log(x < y); 
+// console.log(x == y); 
+// console.log(x != y); 
+// console.log("===",x === 5);
+// console.log(x !== "5"); 
 
 
 
@@ -141,12 +141,12 @@ console.log(x !== "5");
 // Examples: && (AND), || (OR), ! (NOT).
 
 
-let p = true;
-let q = false;
+// let p = true;
+// let q = false;
 
-console.log("&& :",p && q);
-console.log("|| :",p || q); 
-console.log("! :",!p);     
+// console.log("&& :",p && q);
+// console.log("|| :",p || q); 
+// console.log("! :",!p);     
 
 
 
@@ -155,25 +155,25 @@ console.log("! :",!p);
 
 // Examples: =, +=, -=, *=, /=.
 
-let num = 10;
+// let num = 10;
 
-num += 5; 
-console.log(num);
+// num += 5; 
+// console.log(num);
 
-num *= 2;
-console.log(num);
+// num *= 2;
+// console.log(num);
 
 
 // Conditional (Ternary) Operator
 //    ?:
 // A shorthand for if-else statements. Syntax: condition ? valueIfTrue : valueIfFalse.
 
-let age = 15;
+// let age = 15;
 
-let message = (age >= 18) ? "You are an adult" : "You are a minor";
-console.log(message); 
+// let message = (age >= 18) ? "You are an adult" : "You are a minor";
+// console.log(message); 
 
 
 
-let A=null
-console.log(A)
+// let A=null
+// console.log(A)
