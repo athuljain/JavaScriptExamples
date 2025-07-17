@@ -1,20 +1,21 @@
 // // Using var
-var greeting = "Hello";
-console.log(greeting); 
+// var greeting = "Hello";
+// console.log(greeting); 
+
 // var greeting="mrng"
 // console.log(greeting); 
 
 // // Using let
 // let age = 25;
-//  console.log(age);
+//  console.log("age : ",age);
 
 // age = 26; // Updating value
 
-// console.log(age); 
+// console.log("updated age : ",age); 
 
 
 
-// // // Using const
+// // // // Using const
 // const country = "India";
 // console.log(country); 
 
@@ -24,48 +25,55 @@ console.log(greeting);
 
 // console.log(country)
 
+
+
+
 // ------------------------------------------------------------------------------------
 
 
-// var x = 11;
-// var y = 20;
-// var z = x + y; 
-// console.log(`sum of ${x} and ${y} = ${z}`)
-
-// var str1 = "hello";
-// var str2 = "world";
-// var str3 = str1 + " " + str2; 
+var x = 13;
+var y = 20;
+var z = x + y; 
+console.log(`sum of ${x} and ${y} = ${z}`)
+console.log("sum of",x,"and",y,"= ",z);
 
 
-// console.log(str3);
+var str1 = "hello";
+var str2 = "world";
+var str3 = str1 + " " + str2; 
+
+console.log(`${str1} ${str2}`);
+
+console.log("str3: ",str3);
+
 
 //---------------------------------------------------------
 
 
-// const name="naheel"
+const name="aleena"
 
-// console.log(typeof(name))
+console.log(typeof(name))
 
-// const age=25
+const age=25
 
-// console.log(typeof(age))
+console.log(typeof(age))
 
-// let skills1
+let skills1
 
-// console.log(typeof(skills1));
+console.log(typeof(skills1));
 
-// const skills=["html","js","css"]
+const skills=["html","js","css"]
 
-// console.log(skills)
-// console.log(typeof(skills));
+console.log(skills)
+console.log(typeof(skills));
 
-// const user={
-//     name:"naheel",
-//     tech:"mern"
-// }
+const user={
+    name:"aleena",
+    tech:"mern"
+}
 
-// console.log("object : ",user);
-// console.log(typeof(user));
+console.log("object : ",user);
+console.log(typeof(user));
 
 
 

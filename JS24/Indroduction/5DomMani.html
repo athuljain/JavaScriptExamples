@@ -38,13 +38,146 @@
 <body>
     <h1 id="message">Welcome!</h1>
     <button id="updateButton">Update Message</button>
+
     <script src="5Dom.js"></script>
 </body>
 </html> -->
 
 
+--------------------------------------------------------------------
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <input type="number" id="number1" placeholder="Enter first number">
+  <input type="number" id="number2" placeholder="Enter second number">
+  <button onclick="printNumber()">Print Numbers</button>
+  <button onclick="addNumber()">Add Numbers</button>
+
+  <p id="output"></p>
+
+  <script>
+    function printNumber() {
+      const num1 = document.getElementById('number1').value;
+      const num2 = document.getElementById('number2').value;
+      document.getElementById('output').textContent = 
+        `First number: ${num1}, Second number: ${num2}`;
+    }
+
+    function addNumber() {
+      const num1 = parseFloat(document.getElementById('number1').value);
+      const num2 = parseFloat(document.getElementById('number2').value);
+
+      const sum = num1 + num2;
+      document.getElementById('output').textContent = `Sum: ${sum}`;
+    }
+  </script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <input type="number" id="number1" placeholder="Enter first number">
+  <input type="number" id="number2" placeholder="Enter second number">
+  <button onclick="printNumber()">Print Numbers</button>
+  <button onclick="addNumber()">Add Numbers</button>
+
+  <p id="output"></p>
+
+  <script>
+    function printNumber() {
+      const num1 = document.getElementById('number1').value;
+      const num2 = document.getElementById('number2').value;
+      document.getElementById('output').textContent = 
+        `First number: ${num1}, Second number: ${num2}`;
+    }
+
+    function addNumber() {
+      const num1 = parseFloat(document.getElementById('number1').value);
+      const num2 = parseFloat(document.getElementById('number2').value);
+
+      if (!isNaN(num1) && !isNaN(num2)) {
+        const sum = num1 + num2;
+        document.getElementById('output').textContent = `Sum: ${sum}`;
+      } else {
+        document.getElementById('output').textContent = 'Please enter valid numbers.';
+      }
+    }
+  </script>
+
+</body>
+</html> -->
+
+
+-----------------------------------------------------------
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Operations</title>
+</head>
+<body>
+
+  <input type="number" id="number1" placeholder="Enter first number">
+  <input type="number" id="number2" placeholder="Enter second number">
+  <button id="printNumber">Print Numbers</button>
+  <button id="AddNumbers">Add Numbers</button>
+
+  <p id="output"></p>
+
+  <script>
+    const num1Input = document.getElementById('number1');
+    const num2Input = document.getElementById('number2');
+    const output = document.getElementById('output');
+
+    document.getElementById('printNumber').addEventListener('click', () => {
+      const num1 = num1Input.value;
+      const num2 = num2Input.value;
+      output.textContent = `First number: ${num1}, Second number: ${num2}`;
+    });
+
+    document.getElementById('AddNumbers').addEventListener('click', () => {
+      const num1 = parseFloat(num1Input.value);
+      const num2 = parseFloat(num2Input.value);
+
+      if (!isNaN(num1) && !isNaN(num2)) {
+        const sum = num1 + num2;
+        output.textContent = `Sum: ${sum}`;
+      } else {
+        output.textContent = 'Please enter valid numbers.';
+      }
+    });
+  </script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -66,7 +199,7 @@
   <div id="result"></div>
 
   <!-- ✅ Place script at the end of body -->
-  <script>
+  <!-- <script>
     function getNumbers() {
       const num1 = parseFloat(document.getElementById('number1').value);
       const num2 = parseFloat(document.getElementById('number2').value);
@@ -116,6 +249,49 @@
     function showResult(message) {
       document.getElementById('result').innerHTML = `<p>${message}</p>`;
     }
+  </script> -->
+<!-- </body>
+</html> --> -->
+
+
+
+--------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Odd or Even Checker</title>
+</head>
+<body>
+
+  <h2>Check if a Number is Odd or Even</h2>
+
+  <input type="number" id="numberInput" placeholder="Enter a number">
+  <button onclick="checkOddOrEven()">Check Odd or Even</button>
+
+  <p id="result"></p>
+
+  <script>
+    function checkOddOrEven() {
+      const number = parseInt(document.getElementById("numberInput").value);
+      const resultElement = document.getElementById("result");
+
+      if (isNaN(number)) {
+        resultElement.textContent = "Please enter a valid number.";
+        return;
+      }
+
+      if (number % 2 === 0) {
+        resultElement.textContent = `${number} is Even.`;
+      } else {
+        resultElement.textContent = `${number} is Odd.`;
+      }
+    }
   </script>
+
 </body>
 </html>

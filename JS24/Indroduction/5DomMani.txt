@@ -43,9 +43,6 @@ Inline script
 External Script
 
 
-
-
-
 Common DOM Manipulation Methods
     Accessing Elements:
 

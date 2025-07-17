@@ -86,8 +86,10 @@ What are Variables?
 
 
 
-            In JavaScript, you can also use the "let" and "const" keywords to declare variables.
+            In JavaScript, you can also use the "let" and "const" keywords to declare variables..
+
             The "let" keyword is used to declare a variable that can be reassigned later, 
+
             while the "const" keyword is used to declare a variable that cannot be reassigned.
 
                 let y = 20;
@@ -132,6 +134,7 @@ Data Types
 
 Data types in JavaScript represent the type of data that can be stored and manipulated 
 within a program. JavaScript has two categories of data types: 
+
 Primitive and Non-Primitive (Reference).
 
     Primitives are the simplest and most basic data types in JavaScript. 
@@ -141,6 +144,7 @@ Primitive and Non-Primitive (Reference).
         Booleans (e.g. true, false)
         Null (a special value that represents an absence of value)
         Undefined (a special value that represents an uninitialized variable)
+
         Primitives are immutable, which means that once they are created, they cannot be changed.
            
             let x = 10
@@ -159,6 +163,7 @@ Primitive and Non-Primitive (Reference).
 
 
 Operators and Expressions
+
     Operators in JavaScript are symbols that perform specific operations 
     on one or more operands (values or variables). For example, 
     the addition operator (+) adds two operands together and 
