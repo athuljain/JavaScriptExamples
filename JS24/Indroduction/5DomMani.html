@@ -47,7 +47,7 @@
 <!-- -------------------------------------------------------------------- -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -89,7 +89,7 @@
   </script>
   
 </body>
-</html>
+</html> -->
 
 
 
@@ -178,6 +178,8 @@
 
 </body>
 </html> -->
+
+
 
 
 <!-- ----------------------------------------------------------- -->
@@ -351,3 +353,97 @@
 
 </body>
 </html> -->
+
+
+
+
+<!-- Find the Factorial of a Number
+
+Create a webpage with an input field to enter a number and a button labeled "Calculate Factorial."
+Write JavaScript code to calculate and display the factorial of the entered number. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Factorial Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    input[type="number"] {
+      padding: 10px;
+      width: 200px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #result {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Factorial Calculator</h2>
+    <input type="number" id="number" placeholder="Enter a number" min="0">
+    <br>
+    <button onclick="calculateFactorial()">Calculate Factorial</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function calculateFactorial() {
+      const num = parseInt(document.getElementById("number").value);
+      const resultField = document.getElementById("result");
+
+      if (isNaN(num) || num < 0) {
+        resultField.textContent = "Please enter a non-negative integer.";
+        return;
+      }
+
+      let factorial = 1;
+      for (let i = 1; i <= num; i++) {
+        factorial *= i;
+      }
+
+      resultField.textContent = `Factorial of ${num} is ${factorial}`;
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
