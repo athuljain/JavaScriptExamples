@@ -44,7 +44,7 @@
 
 // // Nested if 
 
-// let number = -10;
+// let number = 3;
 
 // if (number > 0) {
 //     if (number % 2 === 0) {
@@ -80,7 +80,7 @@
 
 
 
-// let light = "green";
+// let light = "red";
 
 // switch (light) {
 //     case "red":
@@ -103,21 +103,21 @@
 
 // Check if a number is even or odd?
 
-// let number = 6;
+let number = 6;
 
-// let result = (number % 2 === 0) ? "Even" : "Odd";
-// console.log(result); // Output: Odd
+let result = (number % 2 === 0) ? "Even" : "Odd";
+console.log(result); // Output: Odd
 
 
 
 // // Assign a grade based on marks?
 
-// let marks = 85;
+let marks = 85;
 
-// let grade = (marks >= 90) ? "A" :
-//             (marks >= 75) ? "B" :
-//             (marks >= 50) ? "C" : "F";
-// console.log(grade); // Output: B
+let grade = (marks >= 90) ? "A" :
+            (marks >= 75) ? "B" :
+            (marks >= 50) ? "C" : "F";
+console.log(grade); // Output: B
 
 
 
