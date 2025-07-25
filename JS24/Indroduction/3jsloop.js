@@ -43,9 +43,9 @@
 // ------------------------------------------------------------------
 
 
-for (let i = 1; i <= 5; i++) {
-  console.log(i);
-}
+// for (let i = 1; i <= 5; i++) {
+//   console.log(i);
+// }
 
 // let i = 1 → Start from 1.
 
@@ -58,9 +58,9 @@ for (let i = 1; i <= 5; i++) {
 
 // ------------------------------------------------------------------
 
-for (let i = 2; i <= 10; i += 2) {
-  console.log(i);
-}
+// for (let i = 2; i <= 10; i += 2) {
+//   console.log(i);
+// }
 
 
 // Starts from 2.
@@ -71,11 +71,11 @@ for (let i = 2; i <= 10; i += 2) {
 // -------------------------------------------------------------------
 
 
-const fruits = ["apple", "banana", "cherry"];
+// const fruits = ["apple", "banana", "cherry"];
 
-for (let i = 0; i < fruits.length; i++) {
-  console.log(fruits[i]);
-}
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
 
 
 
@@ -90,13 +90,13 @@ for (let i = 0; i < fruits.length; i++) {
 
 
 
-let sum = 0;
+// let sum = 0;
 
-for (let i = 1; i <= 5; i++) {
-  sum += i;
-}
+// for (let i = 1; i <= 5; i++) {
+//   sum += i;
+// }
 
-console.log("Sum:", sum);
+// console.log("Sum:", sum);
 
 
 // Adds numbers 1 through 5 to the variable sum.
@@ -105,9 +105,9 @@ console.log("Sum:", sum);
 // --------------------------------------------------------------
 
 
-for (let i = 5; i >= 1; i--) {
-  console.log(i);
-}
+// for (let i = 5; i >= 1; i--) {
+//   console.log(i);
+// }
 
 
 // Start at 5.
@@ -120,13 +120,13 @@ for (let i = 5; i >= 1; i--) {
 
 
 
-for (let i = 1; i <= 5; i++) {
-  let row = "";
-  for (let j = 1; j <= i; j++) {
-    row += "* ";
-  }
-  console.log(row);
-}
+// for (let i = 1; i <= 5; i++) {
+//   let row = "";
+//   for (let j = 1; j <= i; j++) {
+//     row += "* ";
+//   }
+//   console.log(row);
+// }
 
 
 
@@ -143,13 +143,13 @@ for (let i = 1; i <= 5; i++) {
 
 // --------------------------------------------------------------------
 
-for (let i = 1; i <= 5; i++) {
-  let row = "";
-  for (let j = 1; j <= i; j++) {
-    row += j + " ";
-  }
-  console.log(row);
-}
+// for (let i = 1; i <= 5; i++) {
+//   let row = "";
+//   for (let j = 1; j <= i; j++) {
+//     row += j + " ";
+//   }
+//   console.log(row);
+// }
 
 
 // Outer loop runs 5 times (for 5 rows).
@@ -165,11 +165,11 @@ for (let i = 1; i <= 5; i++) {
 
 
 
-let n = 5;
-for (let i = 1; i <= n; i++) {
-  let row = " ".repeat(n - i) + "* ".repeat(i);
-  console.log(row);
-}
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//   let row = " ".repeat(n - i) + "* ".repeat(i);
+//   console.log(row);
+// }
 
 
 
@@ -186,13 +186,13 @@ for (let i = 1; i <= n; i++) {
 // --------------------------------------------------------------
 
 
-for (let i = 1; i <= 4; i++) {
-  let row = "";
-  for (let j = 1; j <= 4; j++) {
-    row += "* ";
-  }
-  console.log(row);
-}
+// for (let i = 1; i <= 4; i++) {
+//   let row = "";
+//   for (let j = 1; j <= 4; j++) {
+//     row += "* ";
+//   }
+//   console.log(row);
+// }
 
 
 
@@ -204,3 +204,16 @@ for (let i = 1; i <= 4; i++) {
 
 
 
+
+
+
+let num = 1234;
+let rev = 0;
+
+while (num > 0) {
+  let digit = num % 10;
+  rev = rev * 10 + digit;
+  num = Math.floor(num / 10);
+}
+
+console.log(rev); // Output: 4321
