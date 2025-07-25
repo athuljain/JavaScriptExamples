@@ -10,6 +10,8 @@ Why do we need programming?
         -   To automate repetitive tasks.
         -   To create applications, websites, games, and more.
 
+        
+
 What is JavaScript?
 
         JavaScript is a lightweight, OOP (Object oriented Programming) language.
