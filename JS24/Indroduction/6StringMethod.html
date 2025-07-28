@@ -19,15 +19,15 @@
 
     <script>
         function processString() {
-            let str = document.getElementById("inputText").value;
-            document.getElementById("original").innerText = str;
-            document.getElementById("length").innerText = str.length;
-            document.getElementById("uppercase").innerHTML = str.toUpperCase();
-            document.getElementById("lowercase").innerText = str.toLowerCase();
-            document.getElementById("trimmed").innerText = str.trim();
-            document.getElementById("indexOf").innerText = str.indexOf("w");
-            document.getElementById("Substring").innerText = str.substring(0, 5);
-            document.getElementById("split").innerText = str.split(",").join("|");
+            let InputString = document.getElementById("inputText").value;
+            document.getElementById("original").innerText = InputString;
+            document.getElementById("length").innerText = InputString.length;
+            document.getElementById("uppercase").innerHTML = InputString.toUpperCase();
+            document.getElementById("lowercase").innerText = InputString.toLowerCase();
+            document.getElementById("trimmed").innerText = InputString.trim();
+            document.getElementById("indexOf").innerText = InputString.indexOf("w");
+            document.getElementById("Substring").innerText = InputString.substring(0, 5);
+            document.getElementById("split").innerText = InputString.split(",").join("|");
         }
     </script>
 </body>
