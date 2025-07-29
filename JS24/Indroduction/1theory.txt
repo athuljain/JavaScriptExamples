@@ -14,6 +14,16 @@ Why do we need programming?
 
 What is JavaScript?
 
+
+
+        JavaScript is a high-level, interpreted (or JIT-compiled) programming language primarily 
+        known as the scripting language for Web pages. It is also used in many non-browser 
+        environments thanks to Node.js. It's prototype-based, multi-paradigm, single-threaded, 
+        dynamic, and supports object-oriented, imperative, and declarative 
+        (e.g., functional programming) styles.
+
+
+
         JavaScript is a lightweight, OOP (Object oriented Programming) language.
         It is a scripting language for web pages.
         It is used to add interactivity and dynamic effects to web pages.

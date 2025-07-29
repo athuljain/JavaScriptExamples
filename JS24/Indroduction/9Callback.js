@@ -93,4 +93,15 @@ console.log("second");
 
 // setTimeout(greet, 3000, "Athul"); // Executes after 3 seconds
 
+// ---------------------------------------------------------------
 
+// setImmediate
+
+
+console.log("Start");
+
+setImmediate(() => {
+  console.log("This runs immediately after current event loop");
+});
+
+console.log("End");

@@ -181,9 +181,54 @@ Arrays are flexible and can store data of mixed types.
 
 
 
+-----------------------------------------------------------------------------------------
+
+
+What are some common array methods? (Mention at least 5)**
+    
+    *   `push()`:** Adds one or more elements to the end of an array and returns the new length.
+    *   `pop()`:** Removes the last element from an array and returns that element.
+    *   `shift()`:** Removes the first element from an array and returns that element.
+    *   `unshift()`:** Adds one or more elements to the beginning of an array and returns the new length.
+    *   `slice(start, end)`:** Returns a shallow copy of a portion of an array into a new array object. Original array is not modified.
+    *   `splice(start, deleteCount, ...itemsToAdd)`:** Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. Modifies the original array.
+    *   `concat()`:** Merges two or more arrays. Returns a new array.
+    *   `join(separator)`:** Joins all elements of an array into a string.
+    *   `indexOf(element)`:** Returns the first index at which a given element can be found, or -1 if not present.
+    *   `includes(element)`:** Determines whether an array includes a certain value, returning `true` or `false`.
+
 
 
 -----------------------------------------------------------------------------------------
+
+
+What is array destructuring? Give an example.**
+     Array destructuring (ES6) is a syntax that allows unpacking values from arrays, or properties from objects, into distinct variables.
+    ```javascript
+    const numbers = [10, 20, 30, 40, 50];
+
+    // Basic destructuring
+    const [first, second] = numbers;
+    console.log(first);  // 10
+    console.log(second); // 20
+
+    // Skipping elements
+    const [, , third] = numbers;
+    console.log(third); // 30
+
+    // Using rest operator
+    const [one, two, ...rest] = numbers;
+    console.log(one);  // 10
+    console.log(two);  // 20
+    console.log(rest); // [30, 40, 50]
+    ```
+
+------------------------------------------------------------------------------
+
+
+
+
+
 
 
 Q/a

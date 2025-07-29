@@ -30,6 +30,21 @@ processUserInput(greeting);  // Pass greeting as a callback
 
 
 
+
+
+| Method         | Use Case                     | Executes When                 | Can Repeat |
+| -------------- | ---------------------------- | ----------------------------- | ---------- |
+| `setTimeout`   | Delay function execution     | After delay (once)            | ❌ No       |
+| `setInterval`  | Repeat function at intervals | Every interval ms             | ✅ Yes      |
+| `setImmediate` | Run after current event loop | Immediately after current I/O | ❌ No       |
+
+
+
+
+
+
+
+
 ---------------------------------------------------------------------------
 
 
