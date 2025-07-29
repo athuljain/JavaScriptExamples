@@ -193,4 +193,155 @@
         ```
 
 
-        
+        **Q: What are Promises? What states can a Promise be in?**
+    **A:** A Promise is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value. It's a placeholder for a future value.
+    States:
+    1.  **`pending`**: Initial state, neither fulfilled nor rejected.
+    2.  **`fulfilled` (or `resolved`)**: The operation completed successfully, and the Promise has a resulting value.
+    3.  **`rejected`**: The operation failed, and the Promise has a reason for the failure.
+    A promise is *settled* if it's either fulfilled or rejected (i.e., not pending).
+
+59. **Q: How do you use Promises? (e.g., `then`, `catch`, `finally`)**
+    **A:**
+    *   **`promise.then(onFulfilled, onRejected)`:** Attaches callbacks to handle the fulfilled or rejected state of the Promise. `onFulfilled` is called with the resolved value, and `onRejected` (optional) is called with the rejection reason. Returns a new Promise, allowing chaining.
+    *   **`promise.catch(onRejected)`:** A shorthand for `promise.then(null, onRejected)`. Attaches a callback to handle only the rejected state. Also returns a new Promise.
+    *   **`promise.finally(onFinally)`:** Attaches a callback that is executed when the Promise is settled (either fulfilled or rejected). It receives no arguments. Useful for cleanup. Returns a new Promise.
+    ```javascript
+    function fetchData() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const success = Math.random() > 0.5;
+                if (success) {
+                    resolve("Data fetched successfully!");
+                } else {
+                    reject(new Error("Failed to fetch data."));
+                }
+            }, 1000);
+        });
+    }
+
+    fetchData()
+        .then(data => {
+            console.log(data); // "Data fetched successfully!"
+            return data.toUpperCase(); // Value passed to next .then
+        })
+        .then(processedData => {
+            console.log("Processed:", processedData);
+        })
+        .catch(error => {
+            console.error(error.message); // "Failed to fetch data."
+        })
+        .finally(() => {
+            console.log("Fetch operation finished.");
+        });
+    ```
+
+60. **Q: What is `async/await`? How does it relate to Promises?**
+    **A:** `async/await` (ES2017) is syntactic sugar built on top of Promises, making asynchronous code look and behave a bit more like synchronous code, which can improve readability.
+    *   **`async` keyword:** Used to declare an asynchronous function. An `async` function implicitly returns a Promise. If the function returns a value, the Promise will be resolved with that value. If it throws an error, the Promise will be rejected.
+    *   **`await` keyword:** Can only be used inside an `async` function. It pauses the execution of the `async` function until the Promise it's waiting for is settled (resolved or rejected). If the Promise resolves, `await` returns the resolved value. If it rejects, `await` throws the rejection reason (which can be caught with `try...catch`).
+    ```javascript
+    async function fetchDataAsync() {
+        try {
+            console.log("Fetching data...");
+            const data = await fetchData(); // fetchData is the Promise-returning function from above
+            console.log(data);
+            const processedData = data.toUpperCase();
+            console.log("Processed:", processedData);
+            return processedData;
+        } catch (error) {
+            console.error("Error in async function:", error.message);
+            throw error; // Re-throw if needed
+        } finally {
+            console.log("Async fetch operation finished.");
+        }
+    }
+    fetchDataAsync().then(result => console.log("Final result:", result));
+    ```
+
+61. **Q: How do you handle errors in `async/await`?**
+    **A:** Errors in `async/await` are typically handled using standard `try...catch...finally` blocks, just like synchronous code. When an `await`ed Promise rejects, it throws an error that can be caught by a `catch` block.
+    ```javascript
+    async function riskyOperation() {
+        if (Math.random() < 0.5) {
+            throw new Error("Something went wrong!");
+        }
+        return "Success!";
+    }
+
+    async function performTask() {
+        try {
+            const result = await riskyOperation();
+            console.log(result);
+        } catch (error) {
+            console.error("Caught an error:", error.message);
+        }
+    }
+    performTask();
+    ```
+
+62. **Q: What is `Promise.all()`?**
+    **A:** `Promise.all(iterable)` takes an iterable (e.g., an array) of Promises and returns a single new Promise. This new Promise fulfills when *all* of the input Promises have fulfilled, with an array of their fulfillment values (in the same order as the input Promises). It rejects immediately if *any* of the input Promises reject, with the reason of the first Promise that rejected.
+
+63. **Q: What is `Promise.race()`?**
+    **A:** `Promise.race(iterable)` takes an iterable of Promises and returns a single new Promise. This new Promise settles (fulfills or rejects) as soon as *one* of the input Promises settles, with the value or reason from that first-settled Promise.
+
+64. **Q: What is `Promise.allSettled()`?**
+    **A:** `Promise.allSettled(iterable)` (ES2020) takes an iterable of Promises and returns a single new Promise. This new Promise fulfills when *all* of the input Promises have settled (either fulfilled or rejected). The fulfillment value is an array of objects, each describing the outcome of one Promise in the input iterable. Each result object has a `status` (`"fulfilled"` or `"rejected"`) and either a `value` (if fulfilled) or a `reason` (if rejected). Unlike `Promise.all()`, it doesn't short-circuit on rejection.
+
+65. **Q: What is `Promise.any()`?**
+    **A:** `Promise.any(iterable)` (ES2021) takes an iterable of Promises and returns a single new Promise. This new Promise fulfills as soon as *one* of the input Promises fulfills, with the value of that first fulfilled Promise. If *all* of the input Promises reject, then the returned Promise is rejected with an `AggregateError`, a new type of error object that groups together individual errors.
+
+66. **Q: Can you explain `setTimeout(callback, delay)` and `setInterval(callback, delay)`?**
+    **A:**
+    *   **`setTimeout(callback, delay)`:** Executes a `callback` function once after a specified `delay` (in milliseconds). It returns a timeout ID which can be used with `clearTimeout()` to cancel the timeout.
+    *   **`setInterval(callback, delay)`:** Repeatedly executes a `callback` function with a fixed `delay` (in milliseconds) between each call. It returns an interval ID which can be used with `clearInterval()` to stop the repetitions.
+
+67. **Q: What's the difference between the Microtask Queue and the Macrotask (Callback) Queue?**
+    **A:**
+    *   **Macrotask Queue (Task Queue / Callback Queue):** Holds tasks like `setTimeout`, `setInterval` callbacks, I/O operations, UI rendering (in browsers).
+    *   **Microtask Queue (Job Queue):** Holds tasks like Promise callbacks (`.then`, `.catch`, `.finally`), `queueMicrotask()`, `MutationObserver` callbacks.
+    **Execution Order:** The Event Loop prioritizes the Microtask Queue. After each macrotask from the Callback Queue finishes (and the call stack becomes empty), the Event Loop processes *all* tasks currently in the Microtask Queue before moving on to the next macrotask or rendering. This means microtasks can starve macrotasks if they keep adding more microtasks.
+
+    **Q: What is `fetch()` API? How does it differ from `XMLHttpRequest`?**
+    **A:** The `fetch()` API is a modern JavaScript interface for making network requests (e.g., HTTP requests to servers). It's Promise-based.
+    Differences from `XMLHttpRequest` (XHR):
+    *   **Promises:** `fetch()` returns a Promise, making it easier to work with `async/await` and chain operations. XHR is event-based.
+    *   **Simpler API:** `fetch()` has a cleaner and more straightforward API for common use cases.
+    *   **CORS:** `fetch()` handles CORS more gracefully by default (e.g., opaque responses for cross-origin no-CORS requests).
+    *   **Streaming:** `fetch()` supports Request and Response streaming.
+    *   **Error Handling:** `fetch()` only rejects its Promise on network errors (e.g., DNS failure, no connection). HTTP error statuses (like 404 or 500) are *not* considered network errors, so the Promise resolves. You need to check `response.ok` or `response.status`. XHR handles HTTP errors through its `onerror` or by checking status in `onreadystatechange`.
+
+
+
+    How do you select an HTML element using JavaScript? (Mention a few ways)**
+    **A:**
+    *   `document.getElementById('elementId')`: Selects an element by its ID.
+    *   `document.getElementsByClassName('className')`: Returns an HTMLCollection of elements with the given class name.
+    *   `document.getElementsByTagName('tagName')`: Returns an HTMLCollection of elements with the given tag name.
+    *   `document.querySelector('cssSelector')`: Returns the *first* element that matches the specified CSS selector.
+    *   `document.querySelectorAll('cssSelector')`: Returns a static NodeList representing a list of elements that match the specified CSS selector.
+
+
+
+    **Q: How do you handle errors in JavaScript?**
+    **A:**
+    *   **`try...catch...finally` Statement:**
+        *   `try`: Code block to attempt execution.
+        *   `catch (error)`: Code block to execute if an error occurs in the `try` block. The `error` object contains information about the error.
+        *   `finally`: Code block that executes regardless of whether an error occurred or not. Useful for cleanup.
+    *   **`throw` Statement:** Manually throws a custom error. You can throw any expression (string, number, boolean, object). It's best to throw `Error` objects or instances of `Error` subclasses.
+    *   **Window `onerror` Handler (Browser):** A global error handler for uncaught exceptions in the browser.
+    *   **Node.js `process.on('uncaughtException')`:** Global error handler for uncaught exceptions in Node.js.
+    *   **Promise `.catch()` and `async/await` `try/catch`:** For handling asynchronous errors.
+
+
+
+    **Q: What are common types of errors in JavaScript?**
+    **A:**
+    *   **`SyntaxError`:** Occurs when the JavaScript engine encounters code that violates the language's syntax rules (e.g., missing parenthesis, invalid keyword usage). Caught during parsing, before execution.
+    *   **`ReferenceError`:** Occurs when trying to access a variable that has not been declared or is outside the current scope.
+    *   **`TypeError`:** Occurs when an operation is performed on a value of an inappropriate type (e.g., calling a non-function, accessing properties of `null` or `undefined`).
+    *   **`RangeError`:** Occurs when a numeric variable or parameter is outside its valid range (e.g., invalid array length).
+    *   **`URIError`:** Occurs when global URI handling functions (like `encodeURIComponent()`) are used incorrectly.
+    *   Custom errors can also be created by extending the `Error` object.
