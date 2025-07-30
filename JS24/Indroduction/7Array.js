@@ -9,7 +9,7 @@
 
 // let fruits = ["Apple", "Banana", "Cherry"];
 // console.log(fruits)
-// console.log(fruits[1]); 
+// console.log(fruits[2]); 
 
 
 // Modifying Array Elements:
@@ -25,7 +25,7 @@
 
 // The length property returns the number of elements in an array.
 
-// let fruits = ["Apple", "Banana", "Cherry"];
+// let fruits = ["Apple", "Banana", "Cherry","Mango"];
 // console.log(fruits.length); 
 
 
@@ -33,7 +33,9 @@
 
 // Use push() to add elements to the end of an array.
 
-// let fruits = ["Apple", "Banana"];
+// let fruits = ["Apple", "Banana","Mango"];
+// console.log(fruits);
+
 // fruits.push("Cherry"); 
 // console.log(fruits);
 
@@ -52,6 +54,7 @@
 // let fruits = ["Apple", "Banana", "Cherry"];
 // fruits.pop(); 
 // console.log(fruits);
+
 
 // Use shift() to remove the first element of an array.
 
@@ -73,7 +76,7 @@
 
 // You can iterate over an array using a for loop or forEach() method.
 
-// let fruits = ["Apple", "Banana", "Cherry"];
+let fruits = ["Apple", "Banana", "Cherry"];
 
 // // Using for loop
 // for (let i = 0; i < fruits.length; i++) {
@@ -143,50 +146,50 @@
 
 
 // Initial array
-let items = ["apple", "banana", "cherry"];
-console.log("Initial Array:", items);
+// let items = ["apple", "banana", "cherry"];
+// console.log("Initial Array:", items);
 
-// 1. push()
-let pushLength = items.push("date");
-console.log("\n1. After push('date'):", items, "| New Length:", pushLength);
+// // 1. push()
+// let pushLength = items.push("date");
+// console.log("\n1. After push('date'):", items, "| New Length:", pushLength);
 
-// 2. pop()
-let poppedItem = items.pop();
-console.log("2. After pop():", items, "| Popped Item:", poppedItem);
+// // 2. pop()
+// let poppedItem = items.pop();
+// console.log("2. After pop():", items, "| Popped Item:", poppedItem);
 
-// 3. shift()
-let shiftedItem = items.shift();
-console.log("3. After shift():", items, "| Shifted Item:", shiftedItem);
+// // 3. shift()
+// let shiftedItem = items.shift();
+// console.log("3. After shift():", items, "| Shifted Item:", shiftedItem);
 
-// 4. unshift()
-let unshiftLength = items.unshift("apricot");
-console.log("4. After unshift('apricot'):", items, "| New Length:", unshiftLength);
+// // 4. unshift()
+// let unshiftLength = items.unshift("apricot");
+// console.log("4. After unshift('apricot'):", items, "| New Length:", unshiftLength);
 
-// 5. slice()
-let slicedItems = items.slice(0, 2);
-console.log("5. slice(0, 2):", slicedItems, "| Original Array:", items);
+// // 5. slice()
+// let slicedItems = items.slice(0, 2);
+// console.log("5. slice(0, 2):", slicedItems, "| Original Array:", items);
 
-// 6. splice()
-items.splice(1, 1, "blueberry", "cranberry");
-console.log("6. After splice(1, 1, 'blueberry', 'cranberry'):", items);
+// // 6. splice()
+// items.splice(1, 1, "blueberry", "cranberry");
+// console.log("6. After splice(1, 1, 'blueberry', 'cranberry'):", items);
 
-// 7. concat()
-let moreItems = ["elderberry", "fig"];
-let combined = items.concat(moreItems);
-console.log("7. After concat(['elderberry', 'fig']):", combined);
+// // 7. concat()
+// let moreItems = ["elderberry", "fig"];
+// let combined = items.concat(moreItems);
+// console.log("7. After concat(['elderberry', 'fig']):", combined);
 
-// 8. join()
-let joinedString = items.join(" - ");
-console.log("8. join(' - '):", joinedString);
+// // 8. join()
+// let joinedString = items.join(" - ");
+// console.log("8. join(' - '):", joinedString);
 
-// 9. indexOf()
-let index = items.indexOf("cranberry");
-console.log("9. indexOf('cranberry'):", index);
+// // 9. indexOf()
+// let index = items.indexOf("cranberry");
+// console.log("9. indexOf('cranberry'):", index);
 
-// 10. includes()
-let hasBanana = items.includes("banana");
-let hasBlueberry = items.includes("blueberry");
-console.log("10. includes('banana'):", hasBanana);
-console.log("10. includes('blueberry'):", hasBlueberry);
+// // 10. includes()
+// let hasBanana = items.includes("banana");
+// let hasBlueberry = items.includes("blueberry");
+// console.log("10. includes('banana'):", hasBanana);
+// console.log("10. includes('blueberry'):", hasBlueberry);
 
 
