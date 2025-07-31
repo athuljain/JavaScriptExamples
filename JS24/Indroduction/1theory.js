@@ -34,7 +34,7 @@
 var x = 13;
 var y = 20;
 var z = x + y; 
-console.log(`sum of ${x} and ${y} = ${z}`)
+console.log(`sum of ${x} and ${y} = ${z}`) //template literals
 console.log("sum of",x,"and",y,"= ",z);
 
 
@@ -58,13 +58,13 @@ const age=25
 
 console.log(typeof(age))
 
-let skills1
+// let skills1
 
-console.log(typeof(skills1));
+// console.log(typeof(skills1));
 
 const skills=["html","js","css"]
 
-console.log(skills)
+// console.log(skills)
 console.log(typeof(skills));
 
 const user={
@@ -72,7 +72,7 @@ const user={
     tech:"mern"
 }
 
-console.log("object : ",user);
+// console.log("object : ",user);
 console.log(typeof(user));
 
 
