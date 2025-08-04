@@ -6,8 +6,7 @@
 // };
 
 // console.log("user object :",user)
-// console.log('user Name :',user.name);
-// console.log("user email :",user.email);
+
 
 
 
@@ -27,6 +26,18 @@
 
 // const { name, email ,age} = user;
 // console.log(name, email,age);
+
+
+
+
+//  const user = { name: "Athul" };
+//  console.log(user)
+// user.age = 25; // Add
+// console.log(user)
+// delete user.name; // Delete
+// console.log(user); // Output: { age: 25 }
+
+
 
 
 // ----------------------------------------------------
@@ -56,7 +67,7 @@
 
 // console.log("Array object",users)
 
-// // console.log(users.name);
+// console.log(users.name);
 
 
 // users.forEach(event => {
@@ -80,7 +91,9 @@
 // };
 // console.log("before",post);
 
-// console.log({...post,banned:"false"})
+// console.log("after",{...post,banned:"false"})
+
+
 
 
 
@@ -89,13 +102,18 @@
 //   author: "Athul Jain",
 //   content: "Objects in JavaScript are key-value structures...",
 //   likes: 105, };
+
+
 // const obj2 = {   title: "Learning React js",
 //   author: "Athul Jain",
 //   content: "Objects in JavaScript are key-value structures...",
 //   likes: 101, };
 
 
-// const merged = { ...obj1,obj2 };
+//   console.log(obj2)
+
+
+// // const merged = { ...obj1,obj2 };
 // console.log(merged); 
 
 
@@ -106,17 +124,18 @@
 
 // Write a function to count how many keys are in an object.
 
-function countKeys(obj) {
-  return Object.keys(obj).length;
-}
-console.log(countKeys({ a: 1, b: 2, c: 3 })); // Output: 3
+// function countKeys(obj) {
+//   return Object.keys(obj).length;
+// }
+// console.log(countKeys({ a: 1, b: 2, c: 3 })); // Output: 3
 
 
 // Merge two objects and overwrite the first if keys match.?
 
-const obj1 = { a: 1, b: 2 };
-const obj2 = { b: 3, c: 4 };
-const merged = { ...obj1, ...obj2 };
-console.log(merged); // Output: { a: 1, b: 3, c: 4 }
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { b: 3, c: 4 };
+// const merged = { ...obj1, ...obj2 };
+// console.log(merged); // Output: { a: 1, b: 3, c: 4 }
+
 
 

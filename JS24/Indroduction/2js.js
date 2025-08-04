@@ -1,4 +1,4 @@
-// let age = 26;
+// let age = 6;
 
 // if (age >= 18) {
 //     console.log("You are eligible to vote.");
@@ -80,21 +80,21 @@
 
 
 
-// let light = "red";
+let light = "red";
 
-// switch (light) {
-//     case "red":
-//         console.log("Stop");
-//         break;
-//     case "yellow":
-//         console.log("Caution");
-//         break;
-//     case "green":
-//         console.log("Go");
-//         break;
-//     default:
-//         console.log("Invalid light color");
-// }
+switch (light) {
+    case "red":
+        console.log("Stop");
+        break;
+    case "yellow":
+        console.log("Caution");
+        break;
+    case "green":
+        console.log("Go");
+        break;
+    default:
+        console.log("Invalid light color");
+}
 
 
 // ----------------------------------------------------------------------------

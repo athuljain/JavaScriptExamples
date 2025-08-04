@@ -34,7 +34,7 @@
 </html> -->
 
 
-
+<!-- -- --------------------------------------------------------------------------- -- -->
 
 <!-- Sum of User-Entered Numbers -->
 
@@ -107,13 +107,25 @@
     <h3>Common Elements:</h3>
     <p id="result"></p>
 
-    <script>
-        function findCommonElements() {
-            let arr1 = document.getElementById('array1').value.split(',').map(item => item.trim());
-            let arr2 = document.getElementById('array2').value.split(',').map(item => item.trim());
-            let common = arr1.filter(value => arr2.includes(value));
-            document.getElementById('result').textContent = common.length > 0 ? common.join(', ') : 'No common elements found';
-        }
-    </script>
+ <script>
+    function findCommonElements() {
+        let arr1 = document.getElementById('array1').value
+            .split(',')
+            .map(item => item.trim());
+
+        let arr2 = document.getElementById('array2').value
+            .split(',')
+            .map(item => item.trim());
+
+        // Optional: Convert to numbers if you're expecting numeric comparison
+        // let arr1 = arr1Str.map(Number);
+        // let arr2 = arr2Str.map(Number);
+
+        let common = arr1.filter(value => arr2.includes(value));
+        document.getElementById('result').textContent = 
+            common.length > 0 ? common.join(', ') : 'No common elements found';
+    }
+</script>
+
 </body>
 </html>
