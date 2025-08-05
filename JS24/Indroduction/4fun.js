@@ -3,6 +3,7 @@
 //  function Wish(){
 //     console.log("hello good mrng")
 //  }
+//  Wish()
 
  
 
@@ -20,21 +21,21 @@
 //  -------------------------------------------------------
 
 
-    // function greet(name) {
-    //     return `Hello, ${name}!`;
-    // }
+//     function greet(name) {
+//         return `Hello, ${name}!`;
+//     }
 
-    // console.log(greet("Alice")); // Output: Hello, Alice!
+//     console.log(greet("Alice")); // Output: Hello, Alice!
 
 
     // ------------------------------------------------------
 
 
-    // function SumFun(num1,num2){
-    //     console.log(`sum of ${num1} and ${num2} is ${num1+num2}`)
-    // }
+//     function SumFun(num1,num2){
+//         console.log(`sum of ${num1} and ${num2} is ${num1+num2}`)
+//     }
 
-    // SumFun(10,10)  
+//     SumFun(10,11)  
 
 
 
@@ -45,32 +46,37 @@
 // Anonymous Functions: 
 
 
-    // const Wish = function(){
-    //     console.log('hi good morning')
-    // }
+    const Wish = function(){
+        console.log('hi good morning')
+    }
+
 
     
 
 
 
-    // const greet = function(name) {
-    //     return `Hi, ${name}!`;
-    // };
-    // console.log(greet("Bob")); // Output: Hi, Bob!
+    const greet = function(name) {
+        return `Hi, ${name}!`;
+    };
+    console.log(greet("Bob")); // Output: Hi, Bob!
 
-    // Wish()
+    Wish()
 
 
 // Arrow Functions: 
 
-    // const add=function (a,b){
-    //     return a+b
-    // }
+//     const add=function (a,b){
+//         return a+b
+//     }
 
 
+//     function AddNum(a,b){
+//         console.log(a+b)
+//     }
 
-    // const add = (a, b) => a + b;
-    // console.log(add(5, 3)); // Output: 8
+
+    const add = (a, b) => a + b;
+    console.log(add(5, 3)); // Output: 8
 
     // const wish=()=> console.log('good mrng')
 
@@ -86,9 +92,9 @@
 // Immediately Invoked Function Expressions (IIFE): 
 
 
-        // (function() {
-        //     console.log("This function runs immediately!");
-        // })();
+        (function() {
+            console.log("This function runs immediately!");
+        })();
 
 
 

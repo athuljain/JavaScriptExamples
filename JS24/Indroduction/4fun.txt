@@ -28,6 +28,7 @@ Reduces Redundancy – Avoid repetitive code.
 function greet() {
     console.log("Hello!");
 }
+
 greet();
 
 
