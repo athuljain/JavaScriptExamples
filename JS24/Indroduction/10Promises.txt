@@ -53,3 +53,13 @@ fetchData();
 
 
 
+Concept	Description
+new Promise() =	Creates a Promise object
+.then() =	Handles resolved result
+.catch() =	Handles error
+.finally() =	Runs always
+async/await	 = Cleaner syntax for handling Promises
+Promise.all() =	Waits for all to complete
+Promise.race() =	Resolves/rejects with the first one
+Promise.allSettled() =	Gets results of all
+Promise.any() =	Resolves with first fulfilled

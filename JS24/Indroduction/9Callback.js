@@ -48,15 +48,15 @@
 // Asynchronous Callback with setTimeout
 
 
-function displayMessage() {
-  console.log("This is printed after 2 seconds");
-}
+// function displayMessage() {
+//   console.log("This is printed after 2 seconds");
+// }
 
-console.log("First");
+// console.log("First");
 
-setTimeout(displayMessage, 2000); // Delay of 2 seconds
+// setTimeout(displayMessage, 2000); // Delay of 2 seconds
 
-console.log("second");
+// console.log("second");
 
 
 // -----------------------------------------------------------------------------------
