@@ -31,11 +31,11 @@
 // ------------------------------------------------------------------------------------
 
 
-var x = 13;
-var y = 20;
-var z = x + y; 
-console.log(`sum of ${x} and ${y} = ${z}`) //template literals
-console.log("sum of",x,"and",y,"= ",z);
+// var x = 13;
+// var y = 20;
+// var z = x + y; 
+// console.log(`sum of ${x} and ${y} = ${z}`) //template literals
+// console.log("sum of",x,"and",y,"= ",z);
 
 
 var str1 = "hello";
@@ -62,18 +62,18 @@ console.log(typeof(age))
 
 // console.log(typeof(skills1));
 
-const skills=["html","js","css"]
+// const skills=["html","js","css"]
 
 // console.log(skills)
-console.log(typeof(skills));
+// console.log(typeof(skills));
 
-const user={
-    name:"aleena",
-    tech:"mern"
-}
+// const user={
+//     name:"aleena",
+//     tech:"mern"
+// }
 
 // console.log("object : ",user);
-console.log(typeof(user));
+// console.log(typeof(user));
 
 
 
@@ -112,21 +112,21 @@ console.log(typeof(user));
 // Comparison Operators
 // Used to compare two values. The result is a boolean (true or false).
 
-// Examples: >, <, >=, <=, ==, !=, ===, !==.
+//  Examples: >, <, >=, <=, ==, !=, ===, !==.
 
 
-// let z=5
-// let u="5"
-// let defenition=" is a number"
+let z=5
+let u="5"
+let defenition=" is a number"
 
 
-// console.log(z+u);
+console.log(z+u);
 
-// console.log(z+defenition);
+console.log(z+defenition);
 
-// console.log("==",z==u)
+console.log("==",z==u)
 
-// console.log("===",z===u)
+console.log("===",z===u)
 
 
 

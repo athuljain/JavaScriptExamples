@@ -59,20 +59,20 @@
 // ----------------------------------------------------
 
 
-// const users = [
-//   { name: "Alice", age: 22 },
-//   { name: "Bob", age: 30 },
-//   { name: "Charlie", age: 28 }
-// ];
+const users = [
+  { name: "Alice", age: 22 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 28 }
+];
 
-// console.log("Array object",users)
+console.log("Array object",users)
 
 // console.log(users.name);
 
 
-// users.forEach(event => {
-//   console.log(event.name);
-// });
+users.forEach(event => {
+  console.log(event.name);
+});
 
 
 
@@ -98,23 +98,23 @@
 
 
 
-// const obj1 = {   title: "Learning JavaScript Objects",
-//   author: "Athul Jain",
-//   content: "Objects in JavaScript are key-value structures...",
-//   likes: 105, };
+const obj1 = {   title: "Learning JavaScript Objects",
+  author: "Athul Jain",
+  content: "Objects in JavaScript are key-value structures...",
+  likes: 105, };
 
 
-// const obj2 = {   title: "Learning React js",
-//   author: "Athul Jain",
-//   content: "Objects in JavaScript are key-value structures...",
-//   likes: 101, };
+const obj2 = {   title: "Learning React js",
+  author: "Athul Jain",
+  content: "Objects in JavaScript are key-value structures...",
+  likes: 101, };
 
 
-//   console.log(obj2)
+  console.log(obj2)
 
 
-// // const merged = { ...obj1,obj2 };
-// console.log(merged); 
+const merged = { ...obj1,obj2 };
+console.log(merged); 
 
 
 
