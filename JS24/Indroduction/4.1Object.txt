@@ -15,7 +15,7 @@ const objectName = {
 
 
 const array=[1,2,4,5,6,7]
-const skills=['html','css','js']
+const skills=['html','css','js',5]
 
 
 const arrayObj=[
@@ -35,6 +35,8 @@ const user = {
   isVerified: true
 };
 
+console.log(user.name)
+console.log(user["name])
 
 
 -----------------------------------------------------------

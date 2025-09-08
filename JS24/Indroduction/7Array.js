@@ -7,9 +7,9 @@
 
 // You can access an element of an array using its index.
 
-// let fruits = ["Apple", "Banana", "Cherry"];
-// console.log(fruits)
-// console.log(fruits[2]); 
+let fruits = ["Apple", "Banana", "Cherry"];
+console.log(fruits)
+console.log(fruits[2]); 
 
 
 // Modifying Array Elements:
@@ -148,51 +148,51 @@
 
 
 
-// Initial array
-let items = ["apple", "banana", "cherry"];
-console.log("Initial Array:", items);
+// // Initial array
+// let items = ["apple", "banana", "cherry"];
+// console.log("Initial Array:", items);
 
-// // 1. push()
-let pushLength = items.push("dates");
-console.log("\n1. After push('dates'):", items, "| New Length:", pushLength);
+// // // 1. push()
+// let pushLength = items.push("dates");
+// console.log("\n1. After push('dates'):", items, "| New Length:", pushLength);
 
-// // 2. pop()
-let poppedItem = items.pop();
-console.log("2. After pop():", items, "| Popped Item:", poppedItem);
+// // // 2. pop()
+// let poppedItem = items.pop();
+// console.log("2. After pop():", items, "| Popped Item:", poppedItem);
 
-// // 3. shift()
-let shiftedItem = items.shift();
-console.log("3. After shift():", items, "| Shifted Item:", shiftedItem);
+// // // 3. shift()
+// let shiftedItem = items.shift();
+// console.log("3. After shift():", items, "| Shifted Item:", shiftedItem);
 
-// // 4. unshift()
-let unshiftLength = items.unshift("apricot");
-console.log("4. After unshift('apricot'):", items, "| New Length:", unshiftLength);
+// // // 4. unshift()
+// let unshiftLength = items.unshift("apricot");
+// console.log("4. After unshift('apricot'):", items, "| New Length:", unshiftLength);
 
-// // 5. slice()
-let slicedItems = items.slice(0, 2);
-console.log("5. slice(0, 2):", slicedItems, "| Original Array:", items);
+// // // 5. slice()
+// let slicedItems = items.slice(0, 2);
+// console.log("5. slice(0, 2):", slicedItems, "| Original Array:", items);
 
-// // 6. splice()
-items.splice(1, 1, "blueberry", "cranberry");
-console.log("6. After splice(1, 1, 'blueberry', 'cranberry'):", items);
+// // // 6. splice()
+// items.splice(1, 1, "blueberry", "cranberry");
+// console.log("6. After splice(1, 1, 'blueberry', 'cranberry'):", items);
 
-// // 7. concat()
-let moreItems = ["elderberry", "fig"];
-let combined = items.concat(moreItems);
-console.log("7. After concat(['elderberry', 'fig']):", combined);
+// // // 7. concat()
+// let moreItems = ["elderberry", "fig"];
+// let combined = items.concat(moreItems);
+// console.log("7. After concat(['elderberry', 'fig']):", combined);
 
 // // 8. join()
-let joinedString = items.join(" - ");
-console.log("8. join(' - '):", joinedString);
+// let joinedString = items.join(" - ");
+// console.log("8. join(' - '):", joinedString);
 
 // // 9. indexOf()
-let index = items.indexOf("cranberry");
-console.log("9. indexOf('cranberry'):", index);
+// let index = items.indexOf("cranberry");
+// console.log("9. indexOf('cranberry'):", index);
 
 // // 10. includes()
-let hasBanana = items.includes("banana");
-let hasBlueberry = items.includes("blueberry");
-console.log("10. includes('banana'):", hasBanana);
-console.log("10. includes('blueberry'):", hasBlueberry);
+// let hasBanana = items.includes("banana");
+// let hasBlueberry = items.includes("blueberry");
+// console.log("10. includes('banana'):", hasBanana);
+// console.log("10. includes('blueberry'):", hasBlueberry);
 
 

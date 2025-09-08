@@ -1,21 +1,21 @@
 // Named function
 
-//  function Wish(){
-//     console.log("hello good mrng")
-//  }
-//  Wish()
+ function Wish(){
+    console.log("hello good mrng")
+ }
+ Wish()
 
  
 
 //  -----------------------------------------------------------------
 
 
-//  const msg="good mrng from soften"
+ const msg="good mrng from soften"
 
-//  function MrngWish(wish){
-//     console.log('Mrng Wish : ',wish)
-//  }
-//  MrngWish(msg)
+ function MrngWish(wish){
+    console.log('Mrng Wish : ',wish)
+ }
+ MrngWish(msg)
 
 
 //  -------------------------------------------------------
@@ -31,11 +31,11 @@
     // ------------------------------------------------------
 
 
-//     function SumFun(num1,num2){
-//         console.log(`sum of ${num1} and ${num2} is ${num1+num2}`)
-//     }
+    function SumFun(num1,num2){
+        console.log(`sum of ${num1} and ${num2} is ${num1+num2}`)
+    }
 
-//     SumFun(10,11)  
+    SumFun(10,11)  
 
 
 
@@ -55,12 +55,12 @@
 
 
 
-    const greet = function(name) {
-        return `Hi, ${name}!`;
-    };
-    console.log(greet("Bob")); // Output: Hi, Bob!
+    // const greet = function(name) {
+    //     return `Hi, ${name}!`;
+    // };
+    // console.log(greet("Bob")); // Output: Hi, Bob!
 
-    Wish()
+    // Wish()
 
 
 // Arrow Functions: 
@@ -75,8 +75,8 @@
 //     }
 
 
-    const add = (a, b) => a + b;
-    console.log(add(5, 3)); // Output: 8
+    // const add = (a, b) => a + b;
+    // console.log(add(5, 3)); // Output: 8
 
     // const wish=()=> console.log('good mrng')
 
@@ -92,9 +92,9 @@
 // Immediately Invoked Function Expressions (IIFE): 
 
 
-        (function() {
-            console.log("This function runs immediately!");
-        })();
+        // (function() {
+        //     console.log("This function runs immediately!");
+        // })();
 
 
 
