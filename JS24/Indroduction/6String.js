@@ -7,7 +7,6 @@
 // const reversed = str.split("").reverse().join("");
 // console.log(reversed); 
 
-....
 // -.---------------------------------------------------------------------
 
 // How can you check if a string contains a specific word?

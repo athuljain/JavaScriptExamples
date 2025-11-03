@@ -59,4 +59,4 @@ fahrenheit = (celsius × 9/5) + 32
 
 ✅ Q25: Create an HTML button and write a script to change the background color of the page when the button is clicked.
 
-✅ Q26: Write a program that takes user input using prompt() and displays it inside an HTML <h1> element.
+✅ Q26: Write a program that takes user input using prompt() and displays it inside an HTML <h1> element

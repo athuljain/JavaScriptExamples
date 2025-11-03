@@ -21,7 +21,8 @@
 
 
 
-// country = "USA"; // Error: Assignment to constant variable
+// // country = "USA"; // Error: Assignment to constant variable
+
 
 // console.log(country)
 
@@ -31,11 +32,11 @@
 // ------------------------------------------------------------------------------------
 
 
-// var x = 13;
-// var y = 20;
-// var z = x + y; 
-// console.log(`sum of ${x} and ${y} = ${z}`) //template literals
-// console.log("sum of",x,"and",y,"= ",z);
+var x = 13;
+var y = 20;
+var z = x + y; 
+console.log(`sum of ${x} and ${y} = ${z}`) //template literals
+console.log("sum of",x,"and",y,"= ",z);
 
 
 var str1 = "hello";
@@ -54,9 +55,9 @@ const name="aleena"
 
 console.log(typeof(name))
 
-const age=25
+// const age=25
 
-console.log(typeof(age))
+// console.log(typeof(age))
 
 // let skills1
 
@@ -115,18 +116,18 @@ console.log(typeof(age))
 //  Examples: >, <, >=, <=, ==, !=, ===, !==.
 
 
-let z=5
-let u="5"
-let defenition=" is a number"
+// let z=5
+// let u="5"
+// let defenition=" is a number"
 
 
-console.log(z+u);
+// console.log(z+u);
 
-console.log(z+defenition);
+// console.log(z+defenition);
 
-console.log("==",z==u)
+// console.log("==",z==u)
 
-console.log("===",z===u)
+// console.log("===",z===u)
 
 
 
