@@ -89,7 +89,7 @@ What are Variables?
             This declares a variable called "x" but does not assign any value to it. 
             You can also assign a value to a variable when you declare it
 
-                var x=10
+                var x=01
                 var name="aleena"
 
             
@@ -234,7 +234,7 @@ null is an assignment value that represents "no value" or "empty".
 let a;
 console.log(a); // undefined
 
-let b = null;
+let b =null;
 console.log(b); // null
 
 
@@ -254,10 +254,10 @@ Logical: &&, ||, !
 
 Assignment: =, +=, -=
 
-Ternary: condition ? value1 : value2
+Ternary: condition ? Truevalue1 : Falsevalue2
 
 
-
+ 
 
 6. What are variables in JavaScript? How are they declared?
 

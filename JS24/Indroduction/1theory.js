@@ -32,28 +32,28 @@
 // ------------------------------------------------------------------------------------
 
 
-var x = 13;
-var y = 20;
-var z = x + y; 
-console.log(`sum of ${x} and ${y} = ${z}`) //template literals
-console.log("sum of",x,"and",y,"= ",z);
+// var x = 13;
+// var y = 20;
+// var z = x + y; 
+// console.log(`sum of ${x} and ${y} = ${z}`) //template literals
+// console.log("sum of",x,"and",y,"= ",z);
 
 
-var str1 = "hello";
-var str2 = "world";
-var str3 = str1 + " " + str2; 
+// var str1 = "hello";
+// var str2 = "world";
+// var str3 = str1 + " " + str2; 
 
-console.log(`${str1} ${str2}`);
+// console.log(`${str1} ${str2}`);
 
-console.log("str3: ",str3);
+// console.log("str3: ",str3);
 
 
 //---------------------------------------------------------
 
 
-const name="aleena"
+// const name="aleena"
 
-console.log(typeof(name))
+// console.log(typeof(name))
 
 // const age=25
 
