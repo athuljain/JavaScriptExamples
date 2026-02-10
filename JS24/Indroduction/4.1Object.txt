@@ -14,7 +14,7 @@ const objectName = {
 };
 
 
-const array=[1,2,4,5,6,7]
+const array=[1,2,4,5,6,7,"num"]
 const skills=['html','css','js',5]
 
 
@@ -36,7 +36,7 @@ const user = {
 };
 
 console.log(user.name)
-console.log(user["name])
+console.log(user["name"])
 
 
 -----------------------------------------------------------
