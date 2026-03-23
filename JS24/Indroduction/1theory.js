@@ -21,7 +21,7 @@
 
 
 
-// // country = "USA"; // Error: Assignment to constant variable
+//  country = "USA"; // Error: Assignment to constant variable
 
 
 // console.log(country)
@@ -32,11 +32,12 @@
 // ------------------------------------------------------------------------------------
 
 
-// var x = 13;
-// var y = 20;
-// var z = x + y; 
+var x = 13;
+var y = 21;
+var z = x + y; 
 // console.log(`sum of ${x} and ${y} = ${z}`) //template literals
-// console.log("sum of",x,"and",y,"= ",z);
+console.log("sum of",x,"and",y,"= ",z);
+console.log(x+y)
 
 
 // var str1 = "hello";
