@@ -311,3 +311,95 @@ console.log("Factorial of 5 is:", factorial);
 
 // --------------------------------------------
 
+// 1. Print numbers from 1 to 10
+
+// let i = 1;
+// while (i <= 10) {
+//   console.log(i);
+//   i++;
+// }
+
+
+// ------------------------------------------
+
+
+
+// 2. Sum of odd numbers from 1 to 50
+
+
+// let sum = 0;
+// let i = 1;
+// while (i <= 50) {
+//   sum += i;
+//   i += 2; // Jump by 2 to stay on odd numbers
+// }
+// console.log("Total sum of odds:", sum);
+
+
+// -------------------------------------------------
+
+// 3. Halve a number until it's less than 1
+
+// let num = 20;
+// while (num >= 1) {
+//   console.log(num);
+//   num = num / 2;
+// }
+
+
+// ----------------------------------------------
+
+
+// 4. Reverse the digits of a number
+
+// We use the modulo operator % to grab the last digit and Math.floor to remove it.
+
+
+// let num = 1234;
+// let reversed = 0;
+
+// while (num > 0) {
+//   let lastDigit = num % 10;
+//   reversed = (reversed * 10) + lastDigit;
+//   num = Math.floor(num / 10);
+// }
+// console.log("Reversed number:", reversed);
+
+
+// ---------------------------------------------------
+
+
+
+// 5. Count the number of digits
+
+// let num = 5489;
+// let count = 0;
+
+// while (num > 0) {
+//   num = Math.floor(num / 10);
+//   count++;
+// }
+// console.log("Number of digits:", count);
+
+
+// --------------------------------------------------
+
+
+// 6. Find the largest number in an array
+
+// let numbers = [10, 55, 2, 89, 14];
+// let largest = numbers[0];
+// let i = 1;
+
+// while (i < numbers.length) {
+//   if (numbers[i] > largest) {
+//     largest = numbers[i];
+//   }
+//   i++;
+// }
+// console.log("Largest number is:", largest);
+
+
+// ----------------------------------------------
+
+

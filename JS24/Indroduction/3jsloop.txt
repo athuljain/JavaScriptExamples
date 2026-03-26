@@ -74,7 +74,7 @@ Example: Input = 1234, Output = 4321.
 Count the number of digits in a given number using a while loop.
 Example: Input = 5489, Output = 4.
 Use a while loop to find the largest number in an array.
-Create a program to repeatedly ask the user for a number until they enter a negative number.
+
 
 
 
