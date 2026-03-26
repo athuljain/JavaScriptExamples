@@ -217,3 +217,97 @@
 // }
 
 // console.log(rev); // Output: 4321
+
+
+
+
+
+
+
+// 1. Print numbers from 1 to 20
+
+
+// The i++ tells the loop to add 1 to i every time it runs.
+
+
+// for (let i = 1; i <= 20; i++) {
+//   console.log(i);
+// }
+
+
+// ------------------------------------------------
+
+
+// 2. Sum of the first 10 natural numbers
+
+// We start with sum = 0 and add the value of i during each loop.
+
+
+// let sum = 0;
+// for (let i = 1; i <= 10; i++) {
+//   sum = sum + i;
+// }
+// console.log("The sum is:", sum);
+
+
+// --------------------------------------------------
+
+
+// 3. Multiplication table (Example: 5)
+
+// This prints the result of 5 * i for each step.
+
+
+// let num = 5;
+// for (let i = 1; i <= 10; i++) {
+//   console.log(num * i);
+// }
+
+
+
+// ---------------------------------------------
+
+
+// 4. Even numbers between 1 and 50
+
+// By using i += 2, we skip the odd numbers and jump straight to the next even one.
+
+
+// for (let i = 2; i <= 50; i += 2) {
+//   console.log(i);
+// }
+
+
+// ------------------------------------------------
+
+// 5. Iterate through an array of names
+
+// In JavaScript, the for...of loop is the simplest way to look at every item in a list.
+
+
+// let names = ["Alice", "Bob", "Charlie", "Diana"];
+
+// for (let name of names) {
+//   console.log(name);
+// }
+
+
+// ---------------------------------------
+
+// 6. Factorial of a number
+
+// Factorial is the product of all numbers up to your target. We start at 1 because multiplying by 0 results in 0.
+
+
+let number = 5;
+let factorial = 1;
+
+for (let i = 1; i <= number; i++) {
+  factorial = factorial * i;
+}
+console.log("Factorial of 5 is:", factorial);
+
+
+
+// --------------------------------------------
+
