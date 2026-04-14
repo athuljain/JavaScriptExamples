@@ -163,10 +163,21 @@
     <button onclick="performOperations('subtract')">Subtraction</button>
     <button onclick="performOperations('multiply')">Multiplication</button>
     <button onclick="performOperations('divide')">Division</button>
+
+    <button onclick="addFuntion()">ADD</button>
     
     <div id="result"></div>
 
     <script>
+
+        function addFunction(){
+              const num1 = parseFloat(document.getElementById('number1').value);
+            const num2 = parseFloat(document.getElementById('number2').value);
+            console.log(num1+num2)
+
+        }
+
+
         function performOperations(operation) {
             const num1 = parseFloat(document.getElementById('number1').value);
             const num2 = parseFloat(document.getElementById('number2').value);

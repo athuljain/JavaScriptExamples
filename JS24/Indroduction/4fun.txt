@@ -26,11 +26,11 @@ Reduces Redundancy – Avoid repetitive code.
 
 
 
-function greet() {
-    console.log("Hello!");
+function greet(a) {
+    console.log("Hello! ${a}");
 }
 
-greet();
+greet("soften");
 
 
 -----------------------------------------------------------------------------------------------
