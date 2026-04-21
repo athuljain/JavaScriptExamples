@@ -53,6 +53,68 @@ fetchData();
 
 
 
+a try...catch block is used for error handling. 
+It allows you to run code that might cause an error and handle 
+without crashing your program.
+
+
+try {
+  // code that may cause an error
+} catch (error) {
+  // code to handle the error
+}
+
+
+try {
+  let result = x + 10; // x is not defined → error
+  console.log(result);
+} catch (error) {
+  console.log("Error occurred:", error.message);
+}
+
+----------------------------------------------------
+
+try {
+  let num = 10;
+  console.log(num);
+} catch (error) {
+  console.log("Error:", error.message);
+} finally {
+  console.log("This will always execute");
+}
+
+
+-----------------------------------------------------
+
+Custom Error using throw
+
+
+function checkAge(age) {
+  try {
+    if (age < 18) {
+      throw "You are not eligible";
+    }
+    console.log("Access granted");
+  } catch (error) {
+    console.log("Error:", error);
+  }
+}
+
+checkAge(16);
+
+
+-----------------------------------------------------
+
+
+try → contains risky code
+catch → handles the error
+finally → runs always (optional)
+throw → used to create custom errors
+
+
+try...catch works only for runtime errors, not syntax errors.
+
+
 Concept	Description
 new Promise() =	Creates a Promise object
 .then() =	Handles resolved result

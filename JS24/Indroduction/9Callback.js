@@ -1,11 +1,12 @@
-// function greeting(name) {
-//   console.log("Hello " + name);
-// }
+function greeting(name) {
+  console.log("Hello " + name);
+}
 
-// function processUserInput(callback) {
-//   let name = "Athul";
-//   callback(name);  // calling the callback
-// }
+function processUserInput(callback) {
+    
+  let name = "Athul";
+  callback(name);  // calling the callback
+}
 
 // processUserInput(greeting);  // Pass greeting as a callback
 
@@ -80,7 +81,25 @@
 //   console.log("Current time:", new Date().toLocaleTimeString());
 // }
 
-// setInterval(showTime, 2000); // Runs every 2 seconds
+// setInterval(showTime,2000); // Runs every 2 seconds
+
+
+
+
+// function showTime() {
+//   console.log("Current time:", new Date().toLocaleTimeString());
+// }
+
+// // 1. Store the interval ID in a variable
+// const myInterval = setInterval(showTime, 2000); 
+
+// // 2. Use setTimeout to trigger the stop logic after 10,000ms (10 seconds)
+// setTimeout(() => {
+//   clearInterval(myInterval);
+//   console.log("Interval stopped.");
+// }, 10000);
+
+
 
 
 // --------------------------------------------------------------------------
@@ -95,13 +114,47 @@
 
 // ---------------------------------------------------------------
 
+
+
+
+
+
+
+
+
 // setImmediate
 
 
-console.log("Start");
+// console.log("Start");
+
+// setImmediate(() => {
+//   console.log("This runs immediately after current event loop");
+// });
+
+// console.log("End");
+
+
+
+
+
+console.log("1: Script Starts");
+
+setTimeout(() => {
+  console.log("2: Timeout (0ms delay)");
+}, 0);
 
 setImmediate(() => {
-  console.log("This runs immediately after current event loop");
+  console.log("3: setImmediate");
 });
 
-console.log("End");
+function syncCallback(name) {
+  console.log("4: Hello " + name);
+}
+
+function process(cb) {
+  cb("Athul");
+}
+
+process(syncCallback);
+
+console.log("5: Script Ends");
