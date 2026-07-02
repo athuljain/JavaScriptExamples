@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Storage Lab</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        .box { border: 1px solid #ccc; padding: 15px; border-radius: 8px; max-width: 400px; }
+        input { padding: 8px; width: 250px; margin-bottom: 10px; }
+        button { padding: 8px 15px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <h2>Web Storage Demo</h2>
+    <div class="box">
+        <label for="userData">Enter something to save:</label><br>
+        <input type="text" id="userData" placeholder="Type a name or message...">
+        <br>
+        <button onclick="saveData()">Save to Both</button>
+    </div>
+
+    <p id="display"></p>
+
+    <script>
+        function saveData() {
+            // 1. Get the value from the input field
+            const value = document.getElementById('userData').value;
+
+            if (!value) {
+                alert("Please enter a value first!");
+                return;
+            }
+
+            // 2. Store in Local Storage (Persistent)
+            localStorage.setItem('myLocalData', value);
+
+            // 3. Store in Session Storage (Temporary)
+            sessionStorage.setItem('mySessionData', value);
+
+            // Notify the user
+            document.getElementById('display').innerText = `Saved "${value}" to both storage types!`;
+            console.log("Data saved successfully.");
+        }
+    </script>
+</body>
+</html>

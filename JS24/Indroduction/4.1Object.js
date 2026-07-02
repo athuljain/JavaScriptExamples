@@ -16,8 +16,8 @@ console.log("bracket notation :",user['email']); // bracket notation
 
 // // if a property exists in an object?
 
-// console.log('name' in user);
-// console.log(user.hasOwnProperty('email'));
+console.log('name' in user);
+console.log(user.hasOwnProperty('email'));
 
 
 

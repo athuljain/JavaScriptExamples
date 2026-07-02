@@ -3,21 +3,37 @@
 // console.log(greeting); 
 
 // var greeting="mrng"
+
+
+
+
 // console.log(greeting); 
 
-// // Using let
+
+
+// // // Using let
 // let age = 25;
 //  console.log("age : ",age);
 
-// age = 26; // Updating value
+//  age = 26; // Updating value
 
 // console.log("updated age : ",age); 
+// let age1=30
+// console.log(age1)
 
 
 
-// // // // Using const
+// let name
+
+
+// // // // // Using const
+
+// const secondName
+
 // const country = "India";
 // console.log(country); 
+
+
 
 
 
@@ -32,12 +48,17 @@
 // ------------------------------------------------------------------------------------
 
 
-var x = 13;
-var y = 21;
-var z = x + y; 
+// var x = 15;
+// var y = 41;
+// var z = x + y; 
+
+// console.log("sum of 13 and 21 = ",z)
+
+
+// console.log("sum of",x,"and",y,"= ",z);
+// console.log("sum =",x+y)
+
 // console.log(`sum of ${x} and ${y} = ${z}`) //template literals
-console.log("sum of",x,"and",y,"= ",z);
-console.log(x+y)
 
 
 // var str1 = "hello";
@@ -45,6 +66,7 @@ console.log(x+y)
 // var str3 = str1 + " " + str2; 
 
 // console.log(`${str1} ${str2}`);
+
 
 // console.log("str3: ",str3);
 
@@ -64,14 +86,16 @@ console.log(x+y)
 
 // console.log(typeof(skills1));
 
-// const skills=["html","js","css"]
+// const skills=["html","js","css",24]
 
 // console.log(skills)
 // console.log(typeof(skills));
 
 // const user={
 //     name:"aleena",
-//     tech:"mern"
+//     tech:"mern",
+//     age:26,
+  
 // }
 
 // console.log("object : ",user);
@@ -108,31 +132,31 @@ console.log(x+y)
 //  Examples: >, <, >=, <=, ==, !=, ===, !==.
 
 
-// let z=5
-// let u="5"
-// let defenition=" is a number"
+let z=5
+let u="5"
+let defenition=" is a number"
 
 
-// console.log(z+u);
+console.log(z+u);
 
-// console.log(z+defenition);
+console.log(z+defenition);
 
-// console.log("==",z==u)
+console.log("==",z==u)
 
-// console.log("===",z===u)
-
-
-
-// let x = 5;
-// let y = 10;
+console.log("===",z===u)
 
 
-// console.log("x > y",x > y); 
-// console.log(x < y); 
-// console.log(x == y); 
-// console.log(x != y); 
-// console.log("===",x === 5);
-// console.log(x !== "5"); 
+
+let x = 5;
+let y = 10;
+
+
+console.log("x > y",x > y); 
+console.log(x < y); 
+console.log(x == y); 
+console.log(x != y); 
+console.log("===",x === 5);
+console.log(x !== "5"); 
 
 
 
@@ -171,7 +195,7 @@ console.log(x+y)
 
 // let age = 15;
 
-// let message = (age >= 18) ? "You are an adult" : "You are a minor";
+let message = (age >= 18) ? "You are an adult" : "You are a minor";
 // console.log(message); 
 
 

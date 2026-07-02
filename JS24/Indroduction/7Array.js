@@ -7,9 +7,9 @@
 
 // You can access an element of an array using its index.
 
-let fruits = ["Apple", "Banana", "Cherry"];
-console.log(fruits)
-console.log(fruits[2]); 
+// let fruits = ["Apple", "Banana", "Cherry"];
+// console.log(fruits)
+// console.log(fruits[2]); 
 
 
 // Modifying Array Elements:

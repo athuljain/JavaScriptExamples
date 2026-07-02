@@ -1,12 +1,12 @@
-function greeting(name) {
-  console.log("Hello " + name);
-}
+// function greeting(name) {
+//   console.log("Hello " + name);
+// }
 
-function processUserInput(callback) {
+// function processUserInput(callback) {
     
-  let name = "Athul";
-  callback(name);  // calling the callback
-}
+//   let name = "Athul";
+//   callback(name);  // calling the callback
+// }
 
 // processUserInput(greeting);  // Pass greeting as a callback
 
@@ -81,7 +81,7 @@ function processUserInput(callback) {
 //   console.log("Current time:", new Date().toLocaleTimeString());
 // }
 
-// setInterval(showTime,2000); // Runs every 2 seconds
+// setInterval(showTime,5000); // Runs every 2 seconds
 
 
 

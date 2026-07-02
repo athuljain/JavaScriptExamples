@@ -75,11 +75,24 @@
 
 
 
-const fastRequest = new Promise(res => setTimeout(() => res("Data received!"), 3000));
-const timeout = new Promise((_, rej) => setTimeout(() => rej("Request timed out!"), 2000));
+// const fastRequest = new Promise(res => setTimeout(() => res("Data received!"), 3000));
+// const timeout = new Promise((_, rej) => setTimeout(() => rej("Request timed out!"), 2000));
 
-Promise.race([fastRequest, timeout])
-    .then(response => console.log(response))
-    .catch(err => console.warn(err)); 
+// Promise.race([fastRequest, timeout])
+//     .then(response => console.log(response))
+//     .catch(err => console.warn(err)); 
 
 // In this case, 'timeout' wins because it triggers at 2s vs the request's 3s.
+
+
+
+
+
+
+
+
+
+
+
+
+

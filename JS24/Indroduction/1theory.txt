@@ -14,6 +14,7 @@ Why do we need programming?
 
 What is JavaScript?
 
+
         JavaScript is a high-level, interpreted (or JIT-compiled) programming language primarily 
         known as the scripting language for Web pages. It is also used in many non-browser 
         environments thanks to Node.js. It's prototype-based, multi-paradigm, single-threaded, 
@@ -91,10 +92,9 @@ What are Variables?
 
                 var x=01
                 var name="aleena"
+                
 
-            
-
-
+        
 
             In JavaScript, you can also use the "let" and "const" keywords to declare variables..
 
