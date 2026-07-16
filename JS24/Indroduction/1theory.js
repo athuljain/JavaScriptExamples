@@ -4,9 +4,6 @@
 
 // var greeting="mrng"
 
-
-
-
 // console.log(greeting); 
 
 

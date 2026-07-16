@@ -92,9 +92,9 @@
 // Immediately Invoked Function Expressions (IIFE): 
 
 
-        // (function() {
-        //     console.log("This function runs immediately!");
-        // })();
+        (function() {
+            console.log("This function runs immediately!");
+        })();
 
 
 

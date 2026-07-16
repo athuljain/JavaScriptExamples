@@ -80,7 +80,7 @@ if (marks >= 90) {
 
 
 
-let light = "red";
+let light = "green";
 
 switch (light) {
     case "red":
