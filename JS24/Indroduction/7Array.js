@@ -9,7 +9,11 @@
 
 // let fruits = ["Apple", "Banana", "Cherry"];
 // console.log(fruits)
+
+
 // console.log(fruits[2]); 
+// console.log(fruits[0]);
+
 
 
 // Modifying Array Elements:
@@ -17,7 +21,7 @@
 // You can modify an array element by using its index.
 
 // let fruits = ["Apple", "Banana", "Cherry"];
-// fruits[1] = "Mango"; 
+// fruits[2] = "Mango"; 
 // console.log(fruits); 
 
 
@@ -78,14 +82,16 @@
 
 // let fruits = ["Apple", "Banana", "Cherry"];
 
-// // Using for loop
+// console.log(fruits);
+
+// Using for loop
 // for (let i = 0; i < fruits.length; i++) {
 //     console.log(fruits[i]);
 // }
 
 // // Using forEach method
-// fruits.forEach(function(fruit) {
-//     console.log(fruit);
+// fruits.forEach(function(item) {
+//     console.log(item);
 // });
 
 
@@ -94,36 +100,59 @@
 // Array Methods:
 
 
-// map(): Creates a new array with the results of calling a provided function on every element in the array.
+// map(): Creates a new array with the results of calling a provided function on every 
+// element in the array.
 
 // let numbers = [1, 2, 3, 4];
+
 // let squaredNumbers = numbers.map(function(number) {
-//     return number * number;
+//     return number*3 ;
 // });
+
+// console.log("Squre",squaredNumbers);
+// console.log("orinal Array ",numbers);
+
+
+// let number=numbers.map(function(data){
+//     return data * 3
+// })
+
+// let num=numbers.map(function(item){
+//     return item
+// })
+
 // console.log("squared Array :",squaredNumbers); // Output: [1, 4, 9, 16]
 // console.log("Original Array :", numbers);
+// console.log(num);
 
 
 
 
 
-// filter(): Creates a new array with all elements that pass the test implemented by the provided function.
+
+
+// filter(): Creates a new array with all elements that pass the test 
+// implemented by the provided function.
 
 // let numbers = [1, 2, 3, 4, 5];
 // let evenNumbers = numbers.filter(function(number) {
 //     return number % 2 === 0;
 // });
 // console.log(evenNumbers); // Output: [2, 4]
+// console.log(numbers);
 
 
 
-// reduce(): Executes a reducer function (that you provide) on each element in the array (from left to right) to reduce it to a single value.
+
+// reduce(): Executes a reducer function (that you provide) on each element
+//  in the array (from left to right) to reduce it to a single value.
 
 
 // let numbers = [1, 2, 3, 4];
 // let sum = numbers.reduce(function(accumulator, currentValue) {
-//     return accumulator + currentValue;
+//     return accumulator - currentValue;
 // }, 0);
+
 // console.log(sum); // Output: 10
 
 
@@ -132,7 +161,9 @@
 // You can join elements of an array into a string using join().
 
 // let fruits = ["Apple", "Banana", "Cherry"];
-// let result = fruits.join(", ");
+// console.log(fruits);
+
+// let result = fruits.join(" | ");
 // console.log(result); // Output: "Apple, Banana, Cherry"
 
 
@@ -149,8 +180,8 @@
 
 
 // // Initial array
-// let items = ["apple", "banana", "cherry"];
-// console.log("Initial Array:", items);
+let items = ["apple", "banana", "cherry"];
+console.log("Initial Array:", items);
 
 // // // 1. push()
 // let pushLength = items.push("dates");
@@ -168,16 +199,16 @@
 // let unshiftLength = items.unshift("apricot");
 // console.log("4. After unshift('apricot'):", items, "| New Length:", unshiftLength);
 
-// // // 5. slice()
-// let slicedItems = items.slice(0, 2);
+// // // // 5. slice()
+// let slicedItems = items.slice(1,3);
 // console.log("5. slice(0, 2):", slicedItems, "| Original Array:", items);
 
 // // // 6. splice()
-// items.splice(1, 1, "blueberry", "cranberry");
-// console.log("6. After splice(1, 1, 'blueberry', 'cranberry'):", items);
+// items.splice(1, 1, "blueberry" )
+// console.log("6. After splice(1, 1, 'blueberry'):", items);
 
 // // // 7. concat()
-// let moreItems = ["elderberry", "fig"];
+// let moreItems = ["blueberry","mongo"]
 // let combined = items.concat(moreItems);
 // console.log("7. After concat(['elderberry', 'fig']):", combined);
 
@@ -196,3 +227,6 @@
 // console.log("10. includes('blueberry'):", hasBlueberry);
 
 
+// const numbers=[1,2,3,4,5]
+// const newNums=[...numbers]
+// console.log(newNums);

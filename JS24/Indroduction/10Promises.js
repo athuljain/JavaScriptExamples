@@ -12,7 +12,7 @@
 //     }, 2000);
 // });
 
-// // Handling it
+// // // Handling it
 // fetchUser
 //     .then(user => console.log("Success:", user.name))
 //     .catch(err => console.error("Error:", err));

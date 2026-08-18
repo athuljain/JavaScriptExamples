@@ -3,9 +3,10 @@
 // Use .split(), .reverse(), and .join() methods.
 
 
-// const str = "hello";
-// const reversed = str.split("").reverse().join("");
-// console.log(reversed); 
+const str = "hello";
+
+const reversed = str.split("").reverse().join("");
+console.log(reversed); 
 
 // -.---------------------------------------------------------------------
 
@@ -16,7 +17,6 @@
 // const message = "Welcome to JavaScript!";
 // console.log(message.includes("JavaScript"));
 // console.log(message.includes("Python"));     
-
 
 
 

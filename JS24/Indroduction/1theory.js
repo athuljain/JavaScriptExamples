@@ -1,6 +1,6 @@
 // // Using var
 // var greeting = "Hello";
-// console.log(greeting); 
+// // console.log(greeting); 
 
 // var greeting="mrng"
 
@@ -15,8 +15,8 @@
 //  age = 26; // Updating value
 
 // console.log("updated age : ",age); 
-// let age1=30
-// console.log(age1)
+// let age1=32
+// console.log("new age: ",age1)
 
 
 
@@ -25,13 +25,18 @@
 
 // // // // // Using const
 
-// const secondName
+// const secondName="tech"
+
+// console.log("Name :",name)
+// console.log("Second Name : ",secondName)
 
 // const country = "India";
 // console.log(country); 
 
 
 
+// name="soften"
+// console.log(name);
 
 
 //  country = "USA"; // Error: Assignment to constant variable
@@ -45,17 +50,19 @@
 // ------------------------------------------------------------------------------------
 
 
-// var x = 15;
-// var y = 41;
+// var x = 10;
+// var y = 50;
 // var z = x + y; 
 
-// console.log("sum of 13 and 21 = ",z)
+// console.log("sum of 15 and 41 = ",z)
 
 
-// console.log("sum of",x,"and",y,"= ",z);
+// console.log("sum of",x,"and",y,"= ",x+y);
 // console.log("sum =",x+y)
 
 // console.log(`sum of ${x} and ${y} = ${z}`) //template literals
+// console.log(`sum of ${x} and ${y} = ${x+y}`)
+
 
 
 // var str1 = "hello";
@@ -63,6 +70,7 @@
 // var str3 = str1 + " " + str2; 
 
 // console.log(`${str1} ${str2}`);
+
 
 
 // console.log("str3: ",str3);
@@ -92,10 +100,9 @@
 //     name:"aleena",
 //     tech:"mern",
 //     age:26,
-  
 // }
 
-// console.log("object : ",user);
+// // console.log("object : ",user);
 // console.log(typeof(user));
 
 
@@ -144,16 +151,16 @@ console.log("===",z===u)
 
 
 
-let x = 5;
-let y = 10;
+// let x = 5;
+// let y = 10;
 
 
-console.log("x > y",x > y); 
-console.log(x < y); 
-console.log(x == y); 
-console.log(x != y); 
-console.log("===",x === 5);
-console.log(x !== "5"); 
+// console.log("x > y",x > y); 
+// console.log(x < y); 
+// console.log(x == y); 
+// console.log(x != y); 
+// console.log("===",x === 5);
+// console.log(x !== "5"); 
 
 
 
@@ -190,10 +197,10 @@ console.log(x !== "5");
 //    ?:
 // A shorthand for if-else statements. Syntax: condition ? valueIfTrue : valueIfFalse.
 
-// let age = 15;
+let age = 19;
 
 let message = (age >= 18) ? "You are an adult" : "You are a minor";
-// console.log(message); 
+console.log(message); 
 
 
 

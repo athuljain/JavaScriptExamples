@@ -2,13 +2,19 @@
 //   console.log("Hello " + name);
 // }
 
+// function PrintName(name){
+//   console.log("Name : ",name);
+  
+// }
+
+
 // function processUserInput(callback) {
     
-//   let name = "Athul";
+//   let name = "Athul jain";
 //   callback(name);  // calling the callback
 // }
 
-// processUserInput(greeting);  // Pass greeting as a callback
+// processUserInput(PrintName);  // Pass greeting as a callback
 
 
 // -----------------------------------------------------------------------------
@@ -23,7 +29,7 @@
 //   callback();
 // }
 
-// callMe(sayHello); // Output: Hello World
+// callMe(sayHello); 
 
 
 
@@ -35,12 +41,17 @@
 //   console.log("Sum:", a + b);
 // }
 
+// function sub(a,b){
+//   console.log("Sub : ",a-b);
+  
+// }
+
 // function calculate(num1, num2, callback) {
 //   callback(num1, num2);
 // }
 
-// calculate(5, 10, add); // Output: Sum: 15
-
+// calculate(5, 10, add); 
+// calculate(5,2,sub)
 
 
 // ------------------------------------------------------------------------------
@@ -67,7 +78,8 @@
 // An asynchronous callback is a function that is executed after a non-blocking operation finishes, 
 // such as a timer, API request, file loading, or user event.
 
-// These operations do not block the program execution, and the callback runs later when the task completes.
+// These operations do not block the program execution, and the callback runs later when 
+// the task completes.
 
 // ---------------------------------------------------------------------------------------
 
@@ -81,7 +93,7 @@
 //   console.log("Current time:", new Date().toLocaleTimeString());
 // }
 
-// setInterval(showTime,5000); // Runs every 2 seconds
+// setInterval(showTime,2000); // Runs every 2 seconds
 
 
 
@@ -110,7 +122,7 @@
 //   console.log("Hello " + name);
 // }
 
-// setTimeout(greet, 3000, "Athul"); // Executes after 3 seconds
+// setTimeout(greet, 3000, "Athul"); 
 
 // ---------------------------------------------------------------
 
@@ -137,24 +149,29 @@
 
 
 
-console.log("1: Script Starts");
+// console.log("1: Script Starts");
 
-setTimeout(() => {
-  console.log("2: Timeout (0ms delay)");
-}, 0);
+// setTimeout(() => {
+//   console.log("2: Timeout (0ms delay)");
+// }, 0);
 
-setImmediate(() => {
-  console.log("3: setImmediate");
-});
+// setImmediate(() => {
+//   console.log("3: setImmediate");
+// });
 
-function syncCallback(name) {
-  console.log("4: Hello " + name);
-}
+// function syncCallback(name) {
+//   console.log("4: Hello " + name);
+// }
 
-function process(cb) {
-  cb("Athul");
-}
+// function process(cb) {
+//   cb("Athul");
+// }
 
-process(syncCallback);
+// process(syncCallback);
 
-console.log("5: Script Ends");
+// console.log("5: Script Ends");
+
+
+
+const name="chris";
+console.log(name.split("").reverse);

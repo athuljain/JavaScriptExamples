@@ -1,41 +1,43 @@
 // Named function
 
- function Wish(){
-    console.log("hello good mrng")
- }
- Wish()
+//  function Wish(){
+//     console.log("hello good mrng")
+//  }
 
- 
+
+//  Wish()
 
 //  -----------------------------------------------------------------
 
 
- const msg="good mrng from soften"
+//  const msg="good mrng from soften"
 
- function MrngWish(wish){
-    console.log('Mrng Wish : ',wish)
- }
- MrngWish(msg)
+//  function MrngWish(wish){
+//     console.log('Mrng Wish : ',wish)
+//  }
 
+// MrngWish(msg)
+// MrngWish("mrng")
 
 //  -------------------------------------------------------
 
+// const name="soften"
 
 //     function greet(name) {
 //         return `Hello, ${name}!`;
 //     }
 
-//     console.log(greet("Alice")); // Output: Hello, Alice!
+//     console.log(greet("abc")); 
 
 
     // ------------------------------------------------------
 
 
-    function SumFun(num1,num2){
-        console.log(`sum of ${num1} and ${num2} is ${num1+num2}`)
-    }
+//     function SumFun(num1,num2){
+//         console.log(`sum of ${num1} and ${num2} is ${num1+num2}`)
+//     }
 
-    SumFun(10,11)  
+//     SumFun(5,4)
 
 
 
@@ -46,11 +48,11 @@
 // Anonymous Functions: 
 
 
-    const Wish = function(){
-        console.log('hi good morning')
-    }
+//     const Wish = function(){
+//         console.log('hi good morning')
+//     }
 
-
+// Wish()
     
 
 
@@ -65,20 +67,25 @@
 
 // Arrow Functions: 
 
-//     const add=function (a,b){
-//         return a+b
-//     }
+    // const add=function (a,b){
+    //     return a+b
+    // }
 
 
-//     function AddNum(a,b){
-//         console.log(a+b)
-//     }
+    // function AddNum(a,b){
+    //     console.log(a+b)
+    // }
 
 
-    // const add = (a, b) => a + b;
+
+    // const Sum = (a, b) => a + b;
+
+
     // console.log(add(5, 3)); // Output: 8
+    // console.log(Sum(3,4));
+    
 
-    // const wish=()=> console.log('good mrng')
+//     const wish=()=> console.log('good mrng')
 
 // wish()
 
@@ -92,9 +99,13 @@
 // Immediately Invoked Function Expressions (IIFE): 
 
 
-        (function() {
-            console.log("This function runs immediately!");
-        })();
+// (() => {
+//   console.log("Runs immediately with an arrow function!");
+// })();
+
+        // (function() {
+        //     console.log("This function runs immediately!");
+        // })();
 
 
 
@@ -110,23 +121,43 @@
                 // }
                 // printNumbers();
 
+
+                // function Sum(num1,num2){
+                //     console.log(num1+num2);
+                    
+                // }
+                // Sum(1,2,3)
+
         
+
+//   function sumAll(...numbers) { // numbers will be an array
+//         return numbers.reduce((sum, num) => sum + num, 0);
+//     }
+//     console.log(sumAll(1, 2, 3));    // 6
+//     console.log(sumAll(10, 20, 30, 40)); // 100
+
+function MulAll(...numbers) { // numbers will be an array
+        return numbers.reduce((sum, num) => sum * num, 1);
+    }
+console.log(MulAll(1, 2, 3));
+
+
 
 //  Calculate the sum of all odd numbers from 1 to 50 using a while loop.?Anonymous Function)
 
 
-        // const calculateOddSum = function() {
-        //     let sum = 0;
-        //     let i = 1;
-        //     while (i <= 50) {
-        //         if (i % 2 !== 0) {
-        //             sum += i;
-        //         }
-        //         i++;
-        //     }
-        //     console.log("Sum of odd numbers from 1 to 50:", sum);
-        // };
-        // calculateOddSum();
+        const calculateOddSum = function() {
+            let sum = 0;
+            let i = 1;
+            while (i <= 50) {
+                if (i % 2 !== 0) {
+                    sum += i;
+                }
+                i++;
+            }
+            console.log("Sum of odd numbers from 1 to 50:", sum);
+        };
+        calculateOddSum();
 
 
 
@@ -240,5 +271,5 @@
 //     return count;
 // }
 
-// // Example usage:
+// // // Example usage:
 // console.log(countVowels("JavaScript")); // Output: 3

@@ -4,7 +4,7 @@
 // for (let i = 1; i <= 5; i++) {
 //     console.log(i);
 // }
-// // Output: 1, 2, 3, 4, 5
+// Output: 1, 2, 3, 4, 5
 
 
 // // while loop 
@@ -299,13 +299,13 @@
 // Factorial is the product of all numbers up to your target. We start at 1 because multiplying by 0 results in 0.
 
 
-let number = 5;
-let factorial = 1;
+// let number = 5;
+// let factorial = 1;
 
-for (let i = 1; i <= number; i++) {
-  factorial = factorial * i;
-}
-console.log("Factorial of 5 is:", factorial);
+// for (let i = 1; i <= number; i++) {
+//   factorial = factorial * i;
+// }
+// console.log("Factorial of 5 is:", factorial);
 
 
 
@@ -327,13 +327,13 @@ console.log("Factorial of 5 is:", factorial);
 // 2. Sum of odd numbers from 1 to 50
 
 
-// let sum = 0;
+// let total = 0;
 // let i = 1;
 // while (i <= 50) {
-//   sum += i;
+//   total += i;
 //   i += 2; // Jump by 2 to stay on odd numbers
 // }
-// console.log("Total sum of odds:", sum);
+// console.log("Total sum of odds:", total);
 
 
 // -------------------------------------------------
@@ -372,7 +372,7 @@ console.log("Factorial of 5 is:", factorial);
 
 // 5. Count the number of digits
 
-// let num = 5489;
+// let num = 54896;
 // let count = 0;
 
 // while (num > 0) {

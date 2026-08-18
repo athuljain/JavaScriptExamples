@@ -4,53 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .container{
-            background-color: yellowgreen;
-            height: 100px;
-        }
-        .headDiv{
-            background-color: yellow;
-            display: flex;
-        }
-        .leftDiv{
-            background-color: blueviolet;
-            width: 40%;
-        }
-        .rightDiv{
-            background-color: aquamarine;
-            width: 60%;
-        
-                margin-top: 51px;
-    margin-left: 127px;
-
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <div class="headDiv">
-
-            <div class="leftDiv">
+        <div class="header">
+            <div class="leftHead">
                 <h1>facebook</h1>
             </div>
-            <div class="rightDiv">
+            <div class="rightHead">
+                <table class="TableItem">
+                    <tr>
+                        <td>
+                            <p>email</p>
 
-                <input type="text" name="" id="">
-                <input type="text">
-                <button>login</button>
+                        </td>
+                        <td>password</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                        <td><button>Login</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Forgot</td>
+                    </tr>
+                </table>
             </div>
-
-
-
-
+            
         </div>
 
 
 
-
-
     </div>
-    
 </body>
+<style>
+    *{
+        margin: 0;
+        color: white;
+    }
+    .container{
+        height: 500px;
+        /* background-color: yellow; */
+    }
+    .TableItem{
+            margin-left: 179px;
+    margin-top: 20px;
+
+    }
+    .header{
+            background-color: blue;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+
+    }
+    .leftHead{
+        height: 130px;
+        width: 45%;
+        /* background-color: yellowgreen */
+    }
+        .rightHead{
+        height: 130px;
+        width: 45%;
+        /* background-color: rgb(50, 182, 205) */
+    }
+</style>
 </html>
