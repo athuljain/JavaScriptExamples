@@ -1,0 +1,255 @@
+<!-- ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie List Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .input-group {
+      margin-bottom: 10px;
+    }
+    label {
+      display: inline-block;
+      width: 110px;
+    }
+    input {
+      padding: 5px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Add Movie Details</h2>
+
+  <div class="input-group">
+    <label for="movieTitle">Movie Name:</label>
+    <input type="text" id="movieTitle" placeholder="Enter movie name">
+  </div>
+
+  <div class="input-group">
+    <label for="directorName">Director Name:</label>
+    <input type="text" id="directorName" placeholder="Enter director name">
+  </div>
+
+  <button onclick="addMovie()">Add Movie</button>
+
+  <table id="movieTable">
+    <thead>
+      <tr>
+        <th>Movie Name</th>
+        <th>Director Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      </tbody>
+  </table>
+
+  <script>
+    function addMovie() {
+      const titleInput = document.getElementById('movieTitle');
+      const directorInput = document.getElementById('directorName');
+      
+      const movieTitle = titleInput.value.trim();
+      const directorName = directorInput.value.trim();
+
+      if (movieTitle === '' || directorName === '') {
+        alert('Please fill in both fields.');
+        return;
+      }
+
+      const tableBody = document.getElementById('movieTable').getElementsByTagName('tbody')[0];
+      const newRow = tableBody.insertRow();
+
+      const titleCell = newRow.insertCell(0);
+      const directorCell = newRow.insertCell(1);
+
+      titleCell.textContent = movieTitle;
+      directorCell.textContent = directorName;
+
+      titleInput.value = '';
+      directorInput.value = '';
+    }
+  </script>
+
+</body>
+</html>
+
+``` -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie List Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .input-group {
+      margin-bottom: 10px;
+    }
+    label {
+      display: inline-block;
+      width: 110px;
+    }
+    input {
+      padding: 5px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 6px 12px;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+    .btn-edit {
+      background-color: #ffc107;
+      border: 1px solid #e0a800;
+    }
+    .btn-delete {
+      background-color: #dc3545;
+      color: white;
+      border: 1px solid #bd2130;
+    }
+    table {
+      width: 100%;
+      max-width: 650px;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Add Movie Details</h2>
+
+  <div class="input-group">
+    <label for="movieTitle">Movie Name:</label>
+    <input type="text" id="movieTitle" placeholder="Enter movie name">
+  </div>
+
+  <div class="input-group">
+    <label for="directorName">Director Name:</label>
+    <input type="text" id="directorName" placeholder="Enter director name">
+  </div>
+
+  <button id="addBtn" onclick="addOrUpdateMovie()">Add Movie</button>
+
+  <table id="movieTable">
+    <thead>
+      <tr>
+        <th>Movie Name</th>
+        <th>Director Name</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      </tbody>
+  </table>
+
+  <script>
+    let selectedRow = null;
+
+    function addOrUpdateMovie() {
+      const titleInput = document.getElementById('movieTitle');
+      const directorInput = document.getElementById('directorName');
+      
+      const movieTitle = titleInput.value.trim();
+      const directorName = directorInput.value.trim();
+
+      if (movieTitle === '' || directorName === '') {
+        alert('Please fill in both fields.');
+        return;
+      }
+
+      if (selectedRow === null) {
+        // Add new row
+        const tableBody = document.getElementById('movieTable').getElementsByTagName('tbody')[0];
+        const newRow = tableBody.insertRow();
+
+        const titleCell = newRow.insertCell(0);
+        const directorCell = newRow.insertCell(1);
+        const actionCell = newRow.insertCell(2);
+
+        titleCell.textContent = movieTitle;
+        directorCell.textContent = directorName;
+        actionCell.innerHTML = `
+          <button class="btn-edit" onclick="editMovie(this)">Edit</button>
+          <button class="btn-delete" onclick="deleteMovie(this)">Delete</button>
+        `;
+      } else {
+        // Update existing row
+        selectedRow.cells[0].textContent = movieTitle;
+        selectedRow.cells[1].textContent = directorName;
+        
+        // Reset state
+        selectedRow = null;
+        document.getElementById('addBtn').textContent = 'Add Movie';
+      }
+
+      // Clear input fields
+      titleInput.value = '';
+      directorInput.value = '';
+    }
+
+    function editMovie(button) {
+      selectedRow = button.parentElement.parentElement;
+      document.getElementById('movieTitle').value = selectedRow.cells[0].textContent;
+      document.getElementById('directorName').value = selectedRow.cells[1].textContent;
+      
+      // Change main button to update mode
+      document.getElementById('addBtn').textContent = 'Update Movie';
+    }
+
+    function deleteMovie(button) {
+      if (confirm('Are you sure you want to delete this movie?')) {
+        const row = button.parentElement.parentElement;
+        document.getElementById('movieTable').deleteRow(row.rowIndex);
+        
+        // Reset form state if the deleted row was currently being edited
+        if (selectedRow === row) {
+          selectedRow = null;
+          document.getElementById('movieTitle').value = '';
+          document.getElementById('directorName').value = '';
+          document.getElementById('addBtn').textContent = 'Add Movie';
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>

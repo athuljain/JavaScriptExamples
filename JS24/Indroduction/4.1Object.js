@@ -7,6 +7,8 @@
 
 // console.log("user object :",user)
 
+// console.log("user Name : ",user.name)
+
 // console.log(user.email)
 // console.log(user['name'])
 
@@ -15,26 +17,37 @@
 // console.log("bracket notation :",user['email']); // bracket notation
 
 
-// // if a property exists in an object?
+
+
+// const user = {
+//   name: "Athul Jain",
+//   age: 25,
+//   email: "athul@example.com",
+//   isVerified: true
+// };
+
+// // // if a property exists in an object?
 
 // console.log('names' in user);
 // console.log(user.hasOwnProperty('email'));
 
 
 
-// // // object destructuring
-
+// // // // object destructuring
 
 // const { name, email ,age} = user;
+// console.log("Name :",name);
+
 // console.log(name, email,age);
 
 
 
 
-//  const user = { name: "Athul" };
+//  const user = { name: "Athul",dep:"cs" };
 //  console.log(user)
  
 // user.age = 25; // Add
+// // user.age=26;
 // console.log(user)
 // delete user.name; // Delete
 // console.log(user); // Output: { age: 25 }
@@ -68,8 +81,10 @@
 //     street:"kochi"
 //   }
 // }
+// console.log(user.place.street);
 
-// console.log("user data: ",user.place.street)
+
+
 
 // ----------------------------------------------------
 
@@ -86,7 +101,7 @@
 
 
 // users.forEach(event => {
-//   console.log(event.name);
+//   console.log(event.age);
 // });
 
 

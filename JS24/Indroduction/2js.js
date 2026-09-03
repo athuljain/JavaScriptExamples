@@ -1,4 +1,4 @@
-// let age = 16;
+// let age = 19;
 
 // if (age >= 18) {
 //     console.log("You are eligible to vote.");
@@ -9,17 +9,17 @@
 
 // --------------------------------------------------------------------
 
-// let marks = 85;
+let marks = 95;
 
-// if (marks >= 90) {
-//     console.log("Grade: A");
-// } else if (marks >= 75) {
-//     console.log("Grade: B");
-// } else if (marks >= 50) {
-//     console.log("Grade: C");
-// } else {
-//     console.log("Grade: F");
-// }
+if (marks >= 90) {
+    console.log("Grade: A");
+} else if (marks >= 75) {
+    console.log("Grade: B");
+} else if (marks >= 50) {
+    console.log("Grade: C");
+} else {
+    console.log("Grade: F");
+}
 
 
 // -----------------------------------------------------------------------
@@ -44,7 +44,7 @@
 
 // // Nested if 
 
-// let number = 3;
+// let number = -3;
 
 // if (number > 0) {
 //     if (number % 2 === 0) {
@@ -53,7 +53,7 @@
 //         console.log("The number is positive but odd.");
 //     }
 // } else {
-//     console.log("The number is not negative.");
+//     console.log("The number is  negative.");
 // }
 
 
@@ -80,7 +80,7 @@
 
 
 
-// let light = "red";
+// let light = "greenf";
 
 // switch (light) {
 //     case "red":
@@ -103,21 +103,21 @@
 
 // Check if a number is even or odd?
 
-let number = 6;
+// let number = 6;
 
-let result = (number % 2 === 0) ? "Even" : "Odd";
-console.log(result); // Output: Odd
+// let result = (number % 2 === 0) ? "Even" : "Odd";
+// console.log(result); // Output: Odd
 
 
 
 // // Assign a grade based on marks?
 
-let marks = 85;
+// let marks = 85;
 
-let grade = (marks >= 90) ? "A" :
-            (marks >= 75) ? "B" :
-            (marks >= 50) ? "C" : "F";
-console.log(grade); // Output: B
+// let grade = (marks >= 90) ? "A" :
+//             (marks >= 75) ? "B" :
+//             (marks >= 50) ? "C" : "F";
+// console.log(grade); // Output: B
 
 
 
