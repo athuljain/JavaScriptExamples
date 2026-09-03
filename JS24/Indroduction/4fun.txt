@@ -102,8 +102,34 @@ What are rest parameters?
     console.log(sumAll(1, 2, 3));    // 6
     console.log(sumAll(10, 20, 30, 40)); // 100
 
+-----------------------------------------------------------------------
+
+Function Hoisting
+Hoisting dictates where functions can be called in your code relative to where they are defined.
+
+Function Declarations (Named Functions): Fully hoisted. You can call them before they are 
+declared in the code.
+
+Function Expressions & Arrow Functions: Not hoisted (they act like const/let variables). 
+Calling them before declaration throws a ReferenceError.
 
 
+// 1. Works fine due to Hoisting
+sayHello(); 
+
+function sayHello() {
+  console.log("Hello from a declared function!");
+}
+
+// 2. Throws TypeError or ReferenceError!
+sayHi(); // Uncaught ReferenceError: Cannot access 'sayHi' before initialization
+
+const sayHi = () => {
+  console.log("Hi from an arrow function!");
+};
+
+
+------------------------------------------------------------------------------
 
 
 

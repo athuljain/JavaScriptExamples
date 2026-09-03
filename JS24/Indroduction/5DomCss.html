@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Interactions</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Container Layout */
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* General Box Styling */
+        .box1, .box2, .box3 {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Box 1 Default Styles */
+        .box1 {
+            background-color: #e74c3c; /* Red */
+        }
+
+        /* Box 2 Default Styles */
+        .box2 {
+            background-color: #3498db; /* Blue */
+        }
+
+        /* Class applied to Box 2 on button click */
+        .box2.bg-changed {
+            background-color: #2ecc71; /* Green */
+        }
+
+        .box2 button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .box2 button:hover {
+            background-color: #ddd;
+        }
+
+        /* Box 3 Default & Hover Styles */
+        .box3 {
+            background-color: #9b59b6; /* Purple */
+        }
+
+        /* Requirement: Hover state for Box 3 */
+        .box3:hover {
+            background-color: #f1c40f; /* Yellow on hover */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box1">
+            <h1>1</h1>
+        </div>
+
+        <div class="box2" id="box2">
+            <h1>2</h1>
+            <button id="colorBtn">Click</button>
+        </div>
+
+        <div class="box3">
+            <h1>3</h1>
+        </div>
+    </div>
+
+    <!-- Internal JavaScript -->
+    <script>
+        const box2 = document.getElementById('box2');
+        const colorBtn = document.getElementById('colorBtn');
+
+        // Requirement: Click button in Box 2 to toggle background color
+        colorBtn.addEventListener('click', () => {
+            box2.classList.toggle('bg-changed');
+        });
+    </script>
+
+</body>
+</html>

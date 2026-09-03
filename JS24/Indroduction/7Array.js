@@ -230,3 +230,48 @@ console.log("Initial Array:", items);
 // const numbers=[1,2,3,4,5]
 // const newNums=[...numbers]
 // console.log(newNums);
+
+
+// -------------------------------------------------
+
+
+// Searching & Locating Elements (.find(), .findIndex(), .indexOf())
+// .find()
+// Returns the first element in an array that satisfies 
+// a testing condition. Returns undefined if no element matches.
+
+const users = [
+  { id: 1, name: "Athul" },
+  { id: 2, name: "Rahul" },
+  { id: 3, name: "Meera" }
+];
+
+// Find the user object with id 2
+const user = users.find(item => item.id === 2);
+console.log(user);
+
+
+// ----------------------------------------------------------------
+
+
+// const ages = [12, 15, 22, 18, 30];
+
+// const adultIndex = ages.findIndex(age => age >= 18);
+// console.log(adultIndex); 
+
+
+// --------------------------------------------------------------------
+
+
+// .some()
+// Checks if at least one element passes the given condition. Returns true or false.
+
+
+const numbers = [1, 3, 5, 8, 9];
+
+// Check if any number is even
+const hasEven = numbers.some(num => num % 2 === 0);
+console.log(hasEven); 
+
+
+// -------------------------------------------------------------------
